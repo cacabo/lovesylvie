@@ -6,12 +6,12 @@
       <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f| %>
         <%= devise_error_messages! %>
 
-        <div class="field">
+        <div class="field marg-bot-1">
           <%= f.label :email %><br />
-          <%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), class: 'form-control' %>
+          <%= f.email_field :email, autofocus: true, value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), class: 'form-control', required: true %>
         </div>
 
-        <div class="actions">
+        <div class="actions marg-bot-1">
           <%= f.submit "Resend confirmation instructions", class: 'btn btn-primary' %>
         </div>
       <% end %>
