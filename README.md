@@ -20,7 +20,8 @@ If these are not included in a given `.html.erb` file, then the application reso
 
 ### Styling
 * [Bootstrap 4 Alpha](https://v4-alpha.getbootstrap.com/getting-started/introduction/)
+  * [jQuery](https://jquery.com/), [Tether](http://tether.io/), and Bootstrap 4 Alpha javascript files are included
 * [Strapper](https://github.com/ccabo1/strapper)
   * The source code is included and can be edited
-* All additional styling can be written in [SCSS](http://sass-lang.com/) via the `app/assets/stylesheets*` directory
-* There are included styles for notifications and the navbar, which also can be edited
+* All additional styling can be written in [SCSS](http://sass-lang.com/) via the `app/assets/stylesheets/*` directory
+  * There are included styles for notifications and the navbar, which also can be edited
