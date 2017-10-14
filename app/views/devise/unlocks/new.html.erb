@@ -1,0 +1,21 @@
+<div class="container marg-top-2 marg-bot-2">
+  <div class="row">
+    <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+      <h2>Resend unlock instructions</h2>
+      <%= form_for(resource, as: resource_name, url: unlock_path(resource_name), html: { method: :post }) do |f| %>
+        <%= devise_error_messages! %>
+
+        <div class="field">
+          <%= f.label :email %><br />
+          <%= f.email_field :email, autofocus: true, class: 'form-control' %>
+        </div>
+
+        <div class="actions">
+          <%= f.submit "Resend unlock instructions", class: 'btn btn-primary' %>
+        </div>
+      <% end %>
+
+      <%= render "devise/shared/links" %>
+    </div>
+  </div>
+</div>

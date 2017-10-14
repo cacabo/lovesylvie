@@ -1,0 +1,11 @@
+<div class="container marg-top-2 marg-bot-2">
+  <div class="row">
+    <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
+      <p>Welcome <%= @email %>!</p>
+
+      <p>You can confirm your account email through the link below:</p>
+
+      <p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
+    </div>
+  </div>
+</div>
