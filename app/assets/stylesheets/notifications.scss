@@ -1,0 +1,27 @@
+$red: #FF7085;
+$green: #3ecf8e;
+
+#alert-container {
+  z-index: 1031;
+  padding: 0 1rem;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  font-weight: bold;
+  color: white;
+  background: black;
+
+  p {
+    margin: 0.5rem 0;
+    color: white;
+  }
+
+  &.red {
+    background: $red;
+  }
+
+  &.green {
+    background: $green;
+  }
+}

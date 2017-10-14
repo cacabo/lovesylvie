@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+// Ensure each page takes up the full screen height so as not to show the footer
+.full-page {
+  min-height: calc(100vh - 52px);
+}
+
+// Hide notifications and other elements
+.hidden {
+  display: none;
+}

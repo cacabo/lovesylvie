@@ -1,14 +1,103 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rails Boilerplate</title>
+    <title><%= content_for?(:title) ? content_for(:title) : "Rails Boilerplate" %></title>
+
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Cameron Cabo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <% description = content_for?(:description) ? content_for(:description) : 'Rails Boilerplate' %>
+    <meta name="description" content="<%= description %>">
+    <meta name="keywords" content="<%= content_for?(:keywords) ? content_for(:keywords) : 'rails,boilerplate' %>">
+
+    <!-- open graph -->
+    <meta property="og:image" content="<%= content_for?(:image) ? content_for(:image) : '' %>">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<%= content_for?(:title) ? content_for(:title) : 'Rails Boilerplate' %>">
+    <meta property="og:description" content="<%= description %>">
+    <meta property="og:site_name" content="Rails Boilerplate">
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta property="og:url" content="themetric.org"/>
+    <meta property="og:title" content="<%= content_for?(:title) ? content_for(:title) : 'Rails Boilerplate' %>"/>
+    <meta property="og:description" content="<%= description %>"/>
+    <meta property="og:image" content="<%= content_for?(:image) ? content_for(:image) : '' %>"/>
+
+    <!-- title and other tags -->
+    <title><%= content_for?(:title) ? content_for(:title) : "Rails Boilerplate" %></title>
+
+    <!-- font awesome icons -->
+    <script src="https://use.fontawesome.com/297cffcc6b.js"></script>
+
+    <!-- bootstrap 4 alpha -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <!-- inject notifications -->
+    <% if notice or alert %>
+      <div id="alert-container" class="hidden <%= notice ? 'green' : 'red' %>">
+        <% if notice %>
+          <div class="info" role="alert">
+            <p>
+              <%= notice %>
+            </p>
+          </div>
+        <% end %>
+        <% if alert %>
+          <div class="danger" role="alert">
+            <p>
+              <%= alert %>
+            </p>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+
+    <!-- navbar -->
+    <%= render 'shared/navbar' %>
+
+    <!-- body -->
+    <div class="full-page">
+      <%= yield %>
+    </div>
+
+    <!-- footer -->
+    <%= render 'shared/footer' %>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <!-- tether (required for bootstrap) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!-- display then hide notifications -->
+    <% if notice or alert %>
+      <script>
+        $(document).ready(function () {
+          $('#alert-container').delay(200).slideDown(200).delay(4000).slideUp(200);
+        });
+      </script>
+    <% end %>
+
+    <!-- turbolink loading -->
+    <script type="text/javascript">
+      document.addEventListener('turbolinks:load', function(event) {
+        if ((typeof ga) === 'function') {
+          ga('set', 'location', event.data.url);
+          ga('send', 'pageview');
+        }
+      });
+    </script>
   </body>
 </html>
