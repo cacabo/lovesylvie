@@ -1,0 +1,74 @@
+$icon-bar-color: #AFAFAF;
+
+/**
+ * Responsive mobile navbar with transitions
+ */
+.navbar-toggler {
+  height: 55px;
+  display: table-cell;
+  vertical-align: middle;
+  top: 0;
+}
+
+.navbar-toggler .icon-bar {
+  background-color: $icon-bar-color;
+}
+
+.navbar-toggler .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggler .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+.navbar-toggler,
+.navbar-toggler:active,
+.navbar-toggler:visited {
+  border: 0 solid transparent !important;
+  outline: 0 !important;
+}
+
+.navbar-toggler {
+  background: transparent !important;
+
+  &:hover {
+    background: transparent !important;
+  }
+
+  .icon-bar {
+    width: 22px;
+    transition: all 0.2s;
+  }
+
+  .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+
+  .middle-bar {
+    opacity: 0;
+  }
+
+  .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+}
+
+.navbar-toggler.collapsed {
+  .top-bar {
+    transform: rotate(0);
+  }
+
+  .middle-bar {
+    opacity: 1;
+  }
+
+  .bottom-bar {
+    transform: rotate(0);
+  }
+}
