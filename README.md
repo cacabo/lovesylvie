@@ -25,3 +25,14 @@ If these are not included in a given `.html.erb` file, then the application reso
   * The source code is included and can be edited
 * All additional styling can be written in [SCSS](http://sass-lang.com/) via the `app/assets/stylesheets/*` directory
   * There are included styles for notifications and the navbar, which also can be edited
+
+### Notifications
+To flash a red alert:
+```ruby
+flash[:alert] = "Your alert message"
+```
+To flash a green notice
+```ruby
+flash[:notice] = "Your notice message"
+```
+Note that notifications only show on page load.
