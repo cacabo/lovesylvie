@@ -11,6 +11,12 @@
   <div class="collapse navbar-collapse" id="nav">
     <!-- <ul class="navbar-nav mr-auto"></ul> -->
     <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="">Link1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">Link2</a>
+      </li>
       <% if current_user.nil? %>
         <li class="nav-item">
           <%= link_to "Register", new_user_registration_path, class: 'nav-link' %>
@@ -18,13 +24,11 @@
         <li class="nav-item">
           <%= link_to "Login", new_user_session_path, class: 'nav-link' %>
         </li>
+      <% else %>
+        <li class="nav-item">
+          <%= link_to "Logout", destroy_user_session_path, method: 'delete', class: 'nav-link' %>
+        </li>
       <% end %>
-      <li class="nav-item">
-        <a class="nav-link" href="">Link1</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="">Link2</a>
-      </li>
     </ul>
   </div>
 </nav>
