@@ -585,3 +585,25 @@ ul.no-decoration {
 .instagram-img {
   height: 15rem;
 }
+
+/**
+ * Text block
+ */
+
+.text-block {
+  p {
+    color: $gray-text;
+  }
+
+  p.light-gray-text {
+    color: $light-gray-text;
+  }
+
+  h6 {
+    margin-top: 2rem;
+    width: 100%;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid $purple;
+  }
+}
