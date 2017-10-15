@@ -1,3 +1,84 @@
+# Love Sylvie
+
+Web application / prelaunch referral website for Love Sylvie.
+
+[Hours spent on the project.](https://docs.google.com/spreadsheets/d/1g1syyCLaZ8JBEtkDs3nitVwXa_25NJjfSbeRzw2BbqQ/edit?usp=sharing)
+
+## Todo
+
+__General__ (9)
+- [ ] Figure out content_for stuff
+- [ ] Facebook, twitter meta tags
+- [ ] Link with mailer (2)
+- [x] Deploy to Heroku (1)
+- [x] Google sheet of time spent and hours
+- [ ] Views dependent on if admin or if user (5)
+
+__Setup__ (3.5)
+- [x] Bootstrap
+- [x] Strapper
+- [x] jQuery, JS, etc.
+- [x] Fontawesome
+- [x] Custom CSS (3)
+- [x] Custom font (0.5)
+
+__Views__ (40.5)
+- [ ] Error pages (1)
+- [ ] Campaign ended (0.5)
+- [ ] Home page (6)
+- [ ] About (15)
+  - [ ] Our story (4)
+  - [ ] Vision (1)
+  - [ ] Press (2)
+  - [ ] Blog (8)
+- [ ] Help (5)
+  - [ ] FAQs (2)
+  - [ ] Contact us (3)
+- [ ] Account page (1)
+- [ ] Our perfumes (8)
+  - [ ] Build discovery box (8)
+- [ ] Terms and conditions (1)
+- [ ] Export to CSV (1)
+- [ ] Admin views (3)
+  - [ ] Login, register, email, etc. (3)
+
+__Shared__ (1)
+- [x] Footer (0.5)
+- [x] Navbar (0.5)
+  - [x] Issue with navbar collapse toggle
+
+__Details__ (2)
+- [ ] Pretty flash notifications (1)
+- [ ] Devise mailing notifications (1)
+- [x] More click and hover styling
+- [x] Navbar dropdown transitions (0.5)
+
+__Database__ (6)
+- [ ] Add more to signup (first name, last name, email, password) (1)
+- [ ] Referral (2)
+  - [ ] Refer multiple friends at once (1)
+  - [ ] Name in referral (1)
+- [ ] Sendgrid for contact form (1)
+
+__Needed resources__
+- [ ] Logo as SVG in black with transparent back
+- [ ] Logo as SVG in white with transparent back
+- [ ] Additional images in product mockups
+
+Note that numbers in parenthesis (x) represent expected number of hours per task. The total estimated number of hours is: __63 hours__, although this is subject to (large) change depending on configuration, iteration, and specification.
+
+## Development instructions
+
+Clone the repository
+```
+git clone git@github.com:ccabo1/lovesylvie.git
+```
+Or fork the repository.
+
+Next, run `bundle install` to get the necessary gems then `rails s` to get the development server running on `localhost:3000`.
+
+This application uses SQLite3 for development and PostgreSQL for production.
+
 # Rails Boilerplate
 Boilerplate application for Ruby on Rails web apps
 
