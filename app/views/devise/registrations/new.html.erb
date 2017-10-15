@@ -3,13 +3,16 @@
     <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
       <h2 class="bold accent-text">Sign up</h2>
 
-      <% if not @user.nil? and not @user.email.nil? and not @user.email.length == 0 %>
-        <p>
-          <%= @user.email %> must be one good friend!
-        </p>
+      <% if params[:id] %>
+        <% if User.exists?(params[:id]) %>
+          <% @user = User.find(params[:id]) %>
+          <p class="gray-text">
+            <%= @user.email %> must be one good friend!
+          </p>
+        <% end %>
       <% end %>
 
-      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= form_for(resource, as: resource_name, url: create_referral_path) do |f| %>
         <%= devise_error_messages! %>
 
         <div class="field marg-bot-1">
