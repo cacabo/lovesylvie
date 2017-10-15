@@ -115,7 +115,9 @@ p {
   border: 2px solid white;
   color: white !important;
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     background: rgba(255, 255, 255, 0.1);
   }
 }
@@ -125,7 +127,9 @@ p {
   border: 2px solid $accent;
   color: $accent !important;
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     background: rgba(24, 54, 66, 0.1);
   }
 }
@@ -134,7 +138,9 @@ p {
   background: $purple;
   color: white !important;
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     background: $purple-light;
   }
 }
@@ -275,7 +281,16 @@ ul.no-decoration {
     }
   }
 
+  .nav-item {
+    outline: 0 !important;
+  }
+
+  .nav-link {
+    outline: 0 !important;
+  }
+
   a.nav-link {
+    outline: 0 !important;
     color: white !important;
     font-size: 0.8rem;
     padding-left: 1rem !important;
