@@ -119,5 +119,40 @@
          $('.register-email').focus();
       });
     </script>
+
+    <script type="text/javascript">
+      var $formBottom = $('#form-bottom');
+      var $formFooter = $('#footer-form');
+
+      $formFooter.submit(function(e) {
+        e.preventDefault();
+        var email = $('#footer_email').val();
+
+        // Email validation
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+          $formFooter.removeClass('hasError');
+          $('#register').modal('show');
+          $('.register-email').val(email);
+          $('.register-password').focus();
+        } else {
+          $formFooter.addClass('hasError');
+        }
+      });
+
+      $formBottom.submit(function(e) {
+        e.preventDefault();
+        var email = $('#bottom-email').val();
+
+        // Email validation
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+          $formBottom.removeClass('hasError');
+          $('#register').modal('show');
+          $('.register-email').val(email);
+          $('.register-password').focus();
+        } else {
+          $formBottom.addClass('hasError');
+        }
+      });
+    </script>
   </body>
 </html>

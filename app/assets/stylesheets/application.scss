@@ -35,6 +35,7 @@
  * COLOR PALETTE
  */
 
+$red: #FF7085;
 $light-gray-text: #AFAFAF;
 $gray: rgba(0, 0, 0, 0.15);
 $gray-text: #767171;
@@ -444,6 +445,10 @@ ul.no-decoration {
   border-radius: 0.25rem;
   box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
 
+  &.hasError {
+    border: 3px solid $red;
+  }
+
   #bottom-email {
     flex: 1;
     border-radius: 0.25rem 0rem 0rem 0.25rem;
@@ -493,11 +498,15 @@ ul.no-decoration {
 /**
  * Footer form
  */
-.footer-form {
+#footer-form {
   width: 100%;
   max-width: 24rem !important;
   display: flex;
   border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+
+  &.hasError {
+    border-bottom: 2px solid $red !important;
+  }
 
   &:hover,
   &:active,
