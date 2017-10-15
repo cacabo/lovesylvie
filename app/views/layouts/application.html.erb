@@ -108,5 +108,16 @@
         }
       });
     </script>
+
+    <!-- autofocus on modals -->
+    <script>
+      $('#login').on('shown.bs.modal', function () {
+         $('.login-email').focus();
+      });
+
+      $('#register').on('shown.bs.modal', function () {
+         $('.register-email').focus();
+      });
+    </script>
   </body>
 </html>
