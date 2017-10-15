@@ -1,0 +1,128 @@
+/**
+ * GENERAL FORM STYLING
+ */
+
+.form-control {
+  border-radius: 0px;
+
+  &:focus {
+    border-color: $purple;
+  }
+}
+
+/**
+ * FRONTPAGE EMAIL FORM
+ */
+
+#form-bottom {
+  width: 100%;
+  display: flex;
+  background: white;
+  border-radius: 0.25rem;
+  box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+
+  &.hasError {
+    border: 3px solid $red;
+  }
+
+  #bottom-email {
+    flex: 1;
+    border-radius: 0.25rem 0rem 0rem 0.25rem;
+    border: 1px solid $gray;
+    padding: 1rem 2rem;
+    outline: 0;
+
+    &:focus {
+      outline: 0;
+      border: 1px solid $gray;
+    }
+  }
+
+  .submit {
+    outline: 0;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 0rem 0.25rem 0.25rem 0rem;
+    border: 1px solid $gray;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.0375);
+    }
+
+    &:focus,
+    &:active {
+      background: rgba(0, 0, 0, 0.05);
+      outline: 0;
+    }
+  }
+}
+
+.list-center {
+  text-align: center;
+
+  li {
+    display: inline-block;
+    color: $gray;
+    padding: 0.5rem;
+
+    a {
+      color: $gray;
+    }
+  }
+}
+
+/**
+ * FOOTER FORM
+ */
+
+#footer-form {
+  width: 100%;
+  max-width: 24rem !important;
+  display: flex;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+
+  &.hasError {
+    border-bottom: 2px solid $red !important;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+
+  input {
+    background: transparent;
+    flex: 1;
+    border: 0px solid transparent;
+    outline: 0 !important;
+    padding: 0.5rem;
+    border-radius: 0;
+
+    &:focus,
+    &:hover,
+    &:active {
+      background: transparent;
+    }
+  }
+
+  button {
+    background: transparent;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 0px solid transparent;
+    box-shadow: 0px 0px 0px transparent;
+    color: rgba(0, 0, 0, 0.3);
+    outline: 0!important;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.5);
+    }
+
+    &:focus,
+    &:active {
+      color: rgba(0, 0, 0, 0.75);
+      outline: 0!important;
+    }
+  }
+}

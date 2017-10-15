@@ -87,6 +87,10 @@ $blue: #2289d8;
   margin-top: 0;
 }
 
+.marg-top-05 {
+  margin-top: 0.5rem;
+}
+
 .marg-top-1 {
   margin-top: 1rem;
 }
@@ -101,6 +105,10 @@ $blue: #2289d8;
 
 .marg-bot-0 {
   margin-bottom: 0;
+}
+
+.marg-bot-05 {
+  margin-bottom: 0.5rem;
 }
 
 .marg-bot-1 {
@@ -305,7 +313,7 @@ a.no-decoration:hover {
 }
 
 .caps {
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .bold {
@@ -438,6 +446,12 @@ button {
 /*
 ** Modules
 */
+ul.no-decoration {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
 ul.horizontal {
   list-style: none;
   margin: 0;

@@ -1,0 +1,120 @@
+/**
+ * FONTS
+ */
+
+a {
+  color: $purple;
+  text-decoration: none;
+
+  &:visited {
+    color: $purple;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $light-purple;
+    text-decoration: none;
+  }
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+.form-control,
+p {
+  font-family: 'Khula', sans-serif !important;
+}
+
+.accent-text {
+  color: $accent;
+}
+
+/**
+ * General
+ */
+
+.accent {
+  background: $accent;
+}
+
+.gray-text {
+  color: $gray-text !important;
+
+  a {
+    color: $gray-text !important;
+    text-decoration: underline;
+  }
+}
+
+.transparent-text {
+  opacity: 0.75;
+}
+
+.purple {
+  background: $purple !important;
+}
+
+.purple-text {
+  color: $purple !important;
+}
+
+.light-purple {
+  background: $light-purple;
+}
+
+.hover-transparent:hover {
+  opacity: 0.75;
+}
+
+*::placeholder {
+  color: $light-gray-text !important;
+}
+
+*::-webkit-input-placeholder {
+  color: $light-gray-text !important;
+}
+
+*::-moz-placeholder {
+  color: $light-gray-text !important;
+}
+
+*:-ms-input-placeholder {
+  color: $light-gray-text !important;
+}
+
+*:-moz-placeholder {
+  color: $light-gray-text !important;
+}
+
+/**
+ * Text block
+ */
+
+.text-block {
+  p {
+    color: $gray-text;
+  }
+
+  li {
+    color: $gray-text;
+  }
+
+  p.light-gray-text {
+    color: $light-gray-text;
+  }
+
+  h6 {
+    margin-top: 2rem;
+    width: 100%;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid $purple;
+  }
+}

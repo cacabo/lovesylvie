@@ -1,0 +1,82 @@
+/**
+ * FRONTPAGE
+ */
+
+.hero {
+  color: white;
+  text-align: center;
+}
+
+.hero-wrapper {
+  padding: 4rem 0rem 1rem 0rem;
+  background: rgba(126, 107, 143, 0.75);
+}
+
+.step {
+  display: flex;
+
+  .vertical-line {
+    z-index: -5;
+    border-left: 1rem solid rgba(0, 0, 0, 0.075);
+    height: auto;
+    margin-left: 1rem;
+    transform: translateY(1.5rem);
+  }
+
+  .step-wrapper {
+    display: flex;
+    margin-left: -2rem;
+  }
+
+  .step-content {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    flex: 1;
+  }
+
+  .step-circle {
+    margin-right: 1.5rem;
+    text-align: center;
+    vertical-align: middle;
+    background: $purple;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.2rem;
+    padding-top: 0.2rem;
+    border-radius: 50%;
+    display: block;
+    color: white;
+    font-weight: bold;
+    line-height: 3rem;
+  }
+}
+
+.perfume-list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  width: 100%;
+  display: flex;
+
+  li {
+    flex: 1;
+    text-align: center;
+    padding: 1rem 0rem;
+  }
+}
+
+.white-gradient {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 2rem;
+  background: transparent;
+  background: -webkit-linear-gradient(transparent, white);
+  background: -o-linear-gradient(transparent, white);
+  background: -moz-linear-gradient(transparent, white);
+  background: linear-gradient(transparent, white);
+}
+
+.instagram-img {
+  height: 15rem;
+}

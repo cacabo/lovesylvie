@@ -1,0 +1,40 @@
+/**
+ * Footer
+ */
+.footer {
+  .social {
+    ul {
+      display: flex;
+      text-align: center;
+      padding: 1rem;
+      list-style: none;
+      align-items: center;
+      justify-content: center;
+      margin: 0 !important;
+
+      li {
+        margin: 0 0.5rem;
+
+        a {
+          color: white;
+          text-decoration: none !important;
+        }
+      }
+    }
+  }
+
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 0.75rem;
+
+      a {
+        color: $gray-text;
+        text-decoration: none;
+      }
+    }
+  }
+}

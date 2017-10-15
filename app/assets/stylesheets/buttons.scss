@@ -1,0 +1,51 @@
+/**
+ * BUTTONS
+ */
+
+.btn {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.btn {
+  border-radius: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 1rem 1.5rem;
+}
+
+.btn-outline-white {
+  background: transparent;
+  border: 2px solid white;
+  color: white !important;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.btn-outline-accent {
+  background: transparent;
+  border: 2px solid $accent;
+  color: $accent !important;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: rgba(24, 54, 66, 0.1);
+  }
+}
+
+.btn-purple {
+  background: $purple;
+  color: white !important;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: $purple-light;
+  }
+}
