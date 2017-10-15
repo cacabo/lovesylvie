@@ -165,5 +165,14 @@
         $(this).toggleClass('expanded');
       });
     </script>
+
+    <script type="text/javascript">
+      $('.perfume-item').click(function() {
+        $('.perfume-item').removeClass('active');
+        $(this).addClass('active');
+        var value = $(this).attr('value');
+        $('#perfumes').carousel(parseInt(value));
+      });
+    </script>
   </body>
 </html>

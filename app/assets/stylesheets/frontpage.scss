@@ -51,17 +51,46 @@
   }
 }
 
+.carousel-item {
+  height: 50vh;
+  overflow: hidden;
+}
+
 .perfume-list {
+  margin: 1rem 0rem 1rem 0rem;
   list-style: none;
+  min-height: 91.19px;
   padding-left: 0;
-  margin-left: 0;
   width: 100%;
   display: flex;
+  align-items: flex-end;
 
   li {
+    cursor: hand;
+    cursor: pointer;
+    background: white;
+    margin: 0.1rem;
+    box-shadow: 0rem 0.2rem 0.4rem rgba(0, 0, 0, 0.15);
     flex: 1;
     text-align: center;
     padding: 1rem 0rem;
+    transition: all 0.2s;
+
+    &:hover {
+      padding: 1.2rem 0;
+      box-shadow: 0rem 0.1rem 0.3rem rgba(0, 0, 0, 0.25);
+    }
+
+    &.active {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      background: $accent;
+      color: white;
+
+      &:hover {
+        padding: 2rem 0;
+      }
+    }
   }
 }
 
