@@ -20,10 +20,14 @@
       </li>
       <% if current_user.nil? %>
         <li class="nav-item">
-          <%= link_to "REGISTER", new_user_registration_path, class: "nav-link" %>
+          <a href="" class="nav-link" data-toggle="modal" data-target="#register">
+            REGISTER
+          </a>
         </li>
         <li class="nav-item">
-          <a href="" class="nav-link" data-toggle="modal" data-target="#login">LOGIN</a>
+          <a href="" class="nav-link" data-toggle="modal" data-target="#login">
+            LOGIN
+          </a>
         </li>
       <% else %>
       <li class="nav-item">

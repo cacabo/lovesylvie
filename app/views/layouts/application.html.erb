@@ -75,6 +75,7 @@
     <!-- login -->
     <% if current_user.nil? %>
       <%= render 'shared/loginModal' %>
+      <%= render 'shared/registerModal' %>
     <% end %>
 
     <!-- footer -->
