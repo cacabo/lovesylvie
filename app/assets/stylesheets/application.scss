@@ -164,6 +164,11 @@ p {
 
 .gray-text {
   color: $gray-text !important;
+
+  a {
+    color: $gray-text !important;
+    text-decoration: underline;
+  }
 }
 
 .transparent-text {
