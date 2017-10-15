@@ -4,6 +4,14 @@
 
 p {
   color: $gray-text;
+
+  &.white-text {
+    color: white;
+  }
+}
+
+.white-text p {
+  color: white;
 }
 
 a {
