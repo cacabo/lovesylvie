@@ -1,8 +1,81 @@
-$icon-bar-color: #AFAFAF;
+$red: #FF7085;
+$light-gray-text: #AFAFAF;
+$gray: rgba(0, 0, 0, 0.15);
+$gray-text: #767171;
+$purple: #7e6b8f;
+$purple-light: #9680aa;
+$light-purple: #aca0bb;
+$navy: #313d5a;
+$accent: #183642;
 
 /**
- * Responsive mobile navbar with transitions
+ * Navbar
  */
+
+.navbar {
+  padding-top: 1rem;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  text-align: left;
+  color: white;
+  background: transparent;
+
+  &.purple {
+    position: relative;
+  }
+
+  .navbar-brand {
+    color: white;
+
+    &:hover,
+    &:focus,
+    &:visited, {
+      color: white;
+    }
+  }
+
+  .nav-item {
+    outline: 0 !important;
+  }
+
+  .nav-link {
+    outline: 0 !important;
+  }
+
+  a.nav-link {
+    outline: 0 !important;
+    color: white !important;
+    font-size: 0.8rem;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    padding-top: 0.5rem;
+    position: relative;
+    z-index: 5;
+    background: $purple;
+
+    .navbar-brand {
+      text-align: center;
+    }
+
+    .navbar-nav {
+      margin-left: 0px !important;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .center-mobile {
+    text-align: center;
+  }
+}
+
 .navbar-toggler {
   height: 55px;
   display: table-cell;
@@ -11,7 +84,7 @@ $icon-bar-color: #AFAFAF;
 }
 
 .navbar-toggler .icon-bar {
-  background-color: $icon-bar-color;
+  background-color: white;
 }
 
 .navbar-toggler .icon-bar {

@@ -7,7 +7,7 @@ Web application / prelaunch referral website for Love Sylvie.
 ## Todo
 
 __General__ (9)
-- [ ] Figure out content_for stuff
+- [x] Figure out content_for stuff
 - [ ] Facebook, twitter meta tags
 - [ ] Link with mailer (2)
 - [x] Deploy to Heroku (1)
@@ -37,7 +37,8 @@ __Views__ (40.5)
 - [ ] Account page (1)
 - [ ] Our perfumes (8)
   - [ ] Build discovery box (8)
-- [ ] Terms and conditions (1)
+- [x] Terms and conditions (1)
+- [x] Privacy policy
 - [ ] Export to CSV (1)
 - [ ] Admin views (3)
   - [ ] Login, register, email, etc. (3)
@@ -48,7 +49,7 @@ __Shared__ (1)
   - [x] Issue with navbar collapse toggle
 
 __Details__ (2)
-- [ ] Pretty flash notifications (1)
+- [x] Pretty flash notifications (1)
 - [ ] Devise mailing notifications (1)
 - [x] More click and hover styling
 - [x] Navbar dropdown transitions (0.5)
