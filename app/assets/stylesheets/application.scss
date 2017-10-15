@@ -14,8 +14,17 @@
  *= require_self
  */
 
+.btn {
+  cursor: pointer;
+  cursor: hand;
+}
+
 .full-page {
   min-height: 100vh;
+}
+
+.marg-top-05 {
+  margin-top: 0.5rem;
 }
 
 /**
@@ -34,6 +43,23 @@ $accent: #183642;
 /**
  * FONTS
  */
+
+a {
+  color: $purple;
+  text-decoration: none;
+
+  &:visited {
+    color: $purple;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $light-purple;
+    text-decoration: none;
+  }
+}
 
 body,
 h1,
@@ -253,11 +279,15 @@ ul.no-decoration {
   .navbar {
     padding-top: 0.5rem;
     position: relative;
-    z-index: 1300;
+    z-index: 5;
     background: $purple;
 
     .navbar-brand {
       text-align: center;
+    }
+
+    .navbar-nav {
+      margin-left: 0px !important;
     }
   }
 }
@@ -383,14 +413,14 @@ ul.no-decoration {
  * Email form
  */
 
-#new_user {
+#form-bottom {
   width: 100%;
   display: flex;
   background: white;
   border-radius: 0.25rem;
   box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
 
-  #user_email {
+  #bottom-email {
     flex: 1;
     border-radius: 0.25rem 0rem 0rem 0.25rem;
     border: 1px solid $gray;

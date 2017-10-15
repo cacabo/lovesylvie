@@ -1,0 +1,27 @@
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+  <div class="space-4"></div>
+  <div class="space-4"></div>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <div class="field marg-bot-1 marg-top-05">
+            <%= f.email_field :email, autofocus: true, class: 'form-control', required: true, placeholder: "Email..." %>
+          </div>
+
+          <div class="field">
+            <%= f.password_field :password, autocomplete: "off", class: 'form-control', required: true, placeholder: 'Password...' %>
+          </div>
+
+          <div class="actions">
+            <%= f.submit "Log in", class: 'btn btn-purple full-width' %>
+          </div>
+        <% end %>
+
+        <div class="links">
+          <%= render "devise/shared/links" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -72,6 +72,11 @@
       <%= yield %>
     </div>
 
+    <!-- login -->
+    <% if current_user.nil? %>
+      <%= render 'shared/loginModal' %>
+    <% end %>
+
     <!-- footer -->
     <%= render 'shared/footer' %>
 
