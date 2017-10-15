@@ -154,5 +154,16 @@
         }
       });
     </script>
+
+    <script type="text/javascript">
+      $('.title-collapse').click(function() {
+        if ($(this).hasClass('expanded')) {
+          $(this).next('p').slideUp(200);
+        } else {
+          $(this).next('p').slideDown(200);
+        }
+        $(this).toggleClass('expanded');
+      });
+    </script>
   </body>
 </html>

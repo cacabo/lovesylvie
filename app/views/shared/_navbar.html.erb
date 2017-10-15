@@ -17,7 +17,7 @@
         <a class="nav-link" href="">PLANS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="">OUR PERFUME</a>
+        <%= link_to "OUR PERFUME", perfume_path, class: "nav-link" %> 
       </li>
       <% if current_user.nil? %>
         <li class="nav-item">

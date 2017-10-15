@@ -7,7 +7,7 @@
  *
  * You're free to add application-wide styles to this file and they'll appear at the bottom of the
  * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
+ * files in this directory. Styleas in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
  *= require_self
@@ -38,4 +38,45 @@
 
 .display-none {
   display: none;
+}
+
+/**
+ * PERFUMES
+ */
+
+.collapser {
+  position: absolute;
+  right: 1rem;
+  height: 1rem;
+  width: 1rem;
+  cursor: hand;
+  cursor: pointer;
+
+  .bar-1 {
+    position: absolute;
+    top: calc(0.5rem - 1px);
+    width: 1rem;
+    height: 2px;
+    background: $purple;
+  }
+
+  .bar-2 {
+    position: absolute;
+    height: 1rem;
+    left: calc(0.5rem - 1px);
+    width: 2px;
+    background: $purple;
+    transition: all 0.2s;
+  }
+}
+
+.expanded {
+  .collapser .bar-2 {
+    transform: rotate(90deg);
+  }
+}
+
+.title-collapse {
+  cursor: hand;
+  cursor: pointer;
 }
