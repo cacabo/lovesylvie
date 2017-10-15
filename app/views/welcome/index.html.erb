@@ -1,16 +1,254 @@
-<div class="container marg-top-2 marg-bot-2">
-  <div class="row">
-    <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-      <h1>Rails Boilerplate</h1>
-      <div class="line-0"></div>
-      <p class="marg-top-1">
-        Built by <a href="http://cameroncabo.com" class="no-decoration">Cameron Cabo.</a> Learn more about this boilerplate and what is has to offer in the <a href="https://github.com/ccabo1/rails-boilerplate" class="no-decoration">GitHub repository.</a> Enjoy!
+<div class="hero background-image" style="background-image: url(<%= asset_path "hero.jpg" %>)">
+  <div class="hero-wrapper">
+    <div class="space-2"></div>
+    <div class="space-3 hidden-md-down"></div>
+    <div class="container-fluid">
+      <h1 class="bold">Perfume is an accessory</h1>
+      <h4 class="caps">On-demand perfume to match your style</h4>
+      <a href="#" class="caps btn btn-outline-white marg-top-2">
+        Build your free* discovery kit
+      </a>
+      <div class="space-2 hidden-md-down"></div>
+      <div class="space-4"></div>
+      <p class="caps transparent-text small">
+        *With subscription purchase otherwise $4.99 S&amp;H
       </p>
-      <% if current_user %>
-        <p>
-          Welcome <%= current_user.email %>!
-        </p>
-      <% end %>
     </div>
   </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="background-image col-10 push-1 col-md-4 col-lg-5 push-md-8 push-lg-7 push-xl-6 marg-bot-2" style="background-image: url(<%= asset_path "vial.jpg" %>)">
+      <div class="space-4 hidden-md-up"></div>
+      <div class="space-4 hidden-md-up"></div>
+      <div class="space-4 hidden-md-up"></div>
+      <div class="space-4 hidden-md-up"></div>
+      <div class="space-4 hidden-md-up"></div>
+      <div class="space-4 hidden-md-up"></div>
+      <div class="space-4 hidden-md-up"></div>
+      <div class="white-gradient"></div>
+    </div>
+    <div class="col-12 col-md-8 col-lg-6 col-xl-4 pull-md-4 pull-lg-5">
+      <div class="space-2"></div>
+      <div class="space-2 hidden-md-down"></div>
+      <h1 class="marg-bot-2 accent-text bold center-mobile">
+        Discover something great
+      </h1>
+      <div class="step" id="first">
+        <div class="vertical-line"></div>
+        <div class="step-wrapper">
+          <div class="step-circle">
+            <p>1</p>
+          </div>
+          <div class="step-content">
+            <h3 class="purple-text">Build your discovery box</h3>
+            <p>
+              Free with the purchase of an initial subscription, or $4.99 S&amp;H otherwise.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="step" id="second">
+        <div class="vertical-line"></div>
+        <div class="step-wrapper">
+          <div class="step-circle">
+            <p>2</p>
+          </div>
+          <div class="step-content">
+            <h3 class="purple-text">Enroll in a subscription plan</h3>
+            <p>
+              After receiving your Discovery Box, pick the scent that is right for you.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="step" id="third">
+        <div class="step-circle">
+          <p>3</p>
+        </div>
+        <div class="step-content">
+          <h3 class="purple-text">Manage your subscription</h3>
+          <p>
+            Change your scent, adjust your plan, skip a shipment, or cancel any time.
+          </p>
+        </div>
+      </div>
+      <a href="#" class="btn btn-purple full-width marg-bot-05">
+        Get started on my discovery box
+      </a>
+      <a href="#" class="btn btn-outline-accent full-width">
+        Learn more about plans
+      </a>
+      <div class="space-2 hidden-md-down"></div>
+      <div class="space-2"></div>
+    </div>
+    <!-- close col -->
+  </div>
+  <!-- close row -->
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 col-md-5 background-image" style="background-image: url(<%= asset_path "box.jpg" %>)">
+      <div class="space-4 hidden-md-up"></div>
+      <div class="space-4 hidden-md-up"></div>
+      <div class="space-4 hidden-md-up"></div>
+      <div class="space-4 hidden-md-up"></div>
+      <div class="space-4 hidden-md-up"></div>
+    </div>
+    <div class="col-12 col-md-7 light-purple">
+      <div class="space-2"></div>
+      <div class="pad-2">
+        <h2 class="white-text marg-bot-2 bold center-mobile">
+          What is a discovery box?
+        </h2>
+        <ul class="no-decoration white-text">
+          <li><i class="fa fa-check marg-right-1" aria-hidden="true"></i>5 personalized samples</li>
+          <li><i class="fa fa-check marg-right-1" aria-hidden="true"></i>Delivered to your door within 1 week</li>
+          <li><i class="fa fa-check marg-right-1" aria-hidden="true"></i>Free with subscription plan, or $4.99 for S&amp;H.</li>
+        </ul>
+        <a href="#" class="btn btn-outline-white marg-top-1">Get started</a>
+      </div>
+      <div class="space-2"></div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid marg-top-2 marg-bot-2">
+  <div class="row">
+    <div class="col-12">
+      <div class="space-1 hidden-md-down"></div>
+      <h2 class="marg-bot-2 accent-text bold center-mobile">
+        Meet your perfumes
+      </h2>
+      <div id="perfumes" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="col-12 col-md-6 gray">
+              Stuff 1
+            </div>
+            <div class="col-12 col-md-6">
+              <h4>Vivienne</h4>
+              <p class="caps">
+                Explorer, sexy, independent, free-spirited
+              </p>
+              <p>
+                Explorer of people. Independent, sexy, and free-spirited. Vivienne is a natural leader with a friendly demeanor, making her a sure fit with friends from all over the world.
+              </p>
+              <a href="#" class="marg-top-1 btn btn-outline-accent">
+                Learn more
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-12 col-md-6 gray">
+              Stuff 2
+            </div>
+            <div class="col-12 col-md-6">
+              <h4>Macie</h4>
+              <p class="caps">
+                ...
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+              <a href="#" class="marg-top-1 btn btn-outline-accent">
+                Learn more
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul class="perfume-list">
+    <li class="perfume-link" id="alexis">Alexis</li>
+    <li class="perfume-link" id="vivienne">Vivienne</li>
+    <li class="perfume-link" id="macie">Macie</li>
+    <li class="perfume-link" id="zoe">Zoe</li>
+    <li class="perfume-link" id="kyra">Kyra</li>
+  </ul>
+</div>
+
+<div class="container marg-top-2 marg-bot-2">
+  <div class="row">
+    <div class="col-12">
+      <div class="space-2 hidden-md-down"></div>
+      <h2 class="purple-text center marg-bot-1">
+        #tryLoveSylvie
+      </h2>
+      <h5 class="transparent-text gray-text center marg-bot-2 caps">
+        Share your scent
+      </h5>
+      <div class="row">
+        <div class="col-6 col-md-4 instagram-img background-image" style="background-image: url(https://i.pinimg.com/736x/74/c2/69/74c26949630220bb9b63207d3f287077--flower-children-flower-girls.jpg)"></div>
+        <div class="col-6 col-md-4 instagram-img background-image" style="background-image: url(https://s4.favim.com/orig/50/city-fashion-girl-inspiration-inspirations-Favim.com-449476.jpg)"></div>
+        <div class="col-6 col-md-4 instagram-img background-image" style="background-image: url(https://i.pinimg.com/736x/5c/54/f8/5c54f81965d3c68a4933ff30e22dc88a--id-magazine-magazine-editorial.jpg)"></div>
+        <div class="col-6 col-md-4 instagram-img background-image" style="background-image: url(https://ak5.picdn.net/shutterstock/videos/26504405/thumb/1.jpg)"></div>
+        <div class="col-6 col-md-4 instagram-img background-image" style="background-image: url(http://i.huffpost.com/gen/4372536/images/n-SINGLE-WOMAN-NYC-628x314.jpg)"></div>
+        <div class="col-6 col-md-4 instagram-img background-image" style="background-image: url(https://ak0.picdn.net/shutterstock/videos/12665720/thumb/1.jpg)"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <ul class="no-decoration list-center">
+    <li>
+      <a href="#">
+        <i class="fa fa-snapchat fa-2x"></i>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fa fa-twitter fa-2x"></i>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fa fa-facebook fa-2x"></i>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fa fa-pinterest fa-2x"></i>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fa fa-instagram fa-2x"></i>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <i class="fa fa-youtube fa-2x"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class="accent">
+  <div class="space-4"></div>
+  <div class="space-2"></div>
+  <div class="space-2 hidden-md-2"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+        <h2 class="white-text marg-bot-2 center">
+          Receive exclusive offers and updates
+        </h2>
+        <div class="space-1"></div>
+        <div class="form" id="front-page-form">
+          <form id="new_user">
+            <input id="user_email", placeholder="Email..." />
+            <button class="submit">
+              <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="space-2 hidden-md-2"></div>
+  <div class="space-2"></div>
+  <div class="space-4"></div>
 </div>
