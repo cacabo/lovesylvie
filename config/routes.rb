@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   root 'welcome#index'
 
+  get '/terms_and_conditions', to: 'welcome#terms_and_conditions', as: 'terms'
+  get '/privacy_policy', to: 'welcome#privacy_policy', as: 'privacy'
+
   # get '/register/:id', to: 'registrations#new', as: 'referral'
   get '/users/:id', to: 'users#show', as: 'user'
 
