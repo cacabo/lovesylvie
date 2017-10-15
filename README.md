@@ -25,7 +25,7 @@ __Setup__ (3.5)
 __Views__ (40.5)
 - [ ] Error pages (1)
 - [ ] Campaign ended (0.5)
-- [ ] Home page (6)
+- [x] Home page (6)
 - [ ] About (15)
   - [ ] Our story (4)
   - [ ] Vision (1)
@@ -35,13 +35,14 @@ __Views__ (40.5)
   - [ ] FAQs (2)
   - [ ] Contact us (3)
 - [ ] Account page (1)
-- [ ] Our perfumes (8)
+- [ ] Our perfumes (13)
   - [ ] Build discovery box (8)
+  - [x] Build basic carousel (3)
+  - [ ] Make carousel mobile responsive (2)
 - [x] Terms and conditions (1)
 - [x] Privacy policy
 - [ ] Export to CSV (1)
-- [ ] Admin views (3)
-  - [ ] Login, register, email, etc. (3)
+- [ ] User views (3)
 
 __Shared__ (1)
 - [x] Footer (0.5)
@@ -66,7 +67,7 @@ __Needed resources__
 - [ ] Logo as SVG in white with transparent back
 - [ ] Additional images in product mockups
 
-Note that numbers in parenthesis (x) represent expected number of hours per task. The total estimated number of hours is: __63 hours__, although this is subject to (large) change depending on configuration, iteration, and specification.
+Note that numbers in parenthesis (x) represent expected number of hours per task. The total estimated number of hours is: __68 hours__, although this is subject to (large) change depending on configuration, iteration, and specification.
 
 ## Development instructions
 
