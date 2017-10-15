@@ -167,6 +167,10 @@
     </script>
 
     <script type="text/javascript">
+      $('#perfumes').carousel({
+        interval: false,
+      });
+      $('#perfumes').carousel(1);
       $('.perfume-item').click(function() {
         $('.perfume-item').removeClass('active');
         $(this).addClass('active');

@@ -45,9 +45,13 @@
     padding-top: 0.2rem;
     border-radius: 50%;
     display: block;
-    color: white;
+    color: white !important;
     font-weight: bold;
     line-height: 3rem;
+
+    p {
+      color: white;
+    }
   }
 }
 
