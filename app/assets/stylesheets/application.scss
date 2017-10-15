@@ -74,6 +74,10 @@ p {
   font-family: 'Khula', sans-serif !important;
 }
 
+.form-control:focus {
+  border-color: $purple;
+}
+
 .accent-text {
   color: $accent;
 }

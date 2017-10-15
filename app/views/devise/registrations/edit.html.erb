@@ -1,7 +1,7 @@
 <div class="container marg-top-2 marg-bot-2">
   <div class="row">
     <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
-      <h2>Edit <%= resource_name.to_s.humanize %></h2>
+      <h2 class="bold accent-text">Edit <%= resource_name.to_s.humanize %></h2>
 
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
         <%= devise_error_messages! %>
@@ -35,7 +35,7 @@
         </div>
 
         <div class="actions marg-bot-1">
-          <%= f.submit "Update", class: 'btn btn-primary', required: true %>
+          <%= f.submit "Update", class: 'btn btn-purple full-width', required: true %>
         </div>
       <% end %>
 
