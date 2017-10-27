@@ -13,6 +13,10 @@ __General__ (9)
 - [x] Deploy to Heroku (1)
 - [x] Google sheet of time spent and hours
 - [ ] Views dependent on if admin or if user (5)
+- [ ] 3 bottles over each other for discover something great
+
+__Blog__
+- [ ] Promote articles on Facebook
 
 __Setup__ (3.5)
 - [x] Bootstrap

@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["4m2Or"]); }
+
+__d("encodeInlineStyleRanges",["UnicodeUtils","findRangesImmutable"],(function a(b,c,d,e,f,g){"use strict";var h=function h(m,n){return m===n},i=function i(m){return!!m},j=[];function k(m,n,o){var p=[],q=n.map(function(r){return r.has(o)}).toList();c("findRangesImmutable")(q,h,i,function(r,s){var t=m.getText();p.push({offset:c("UnicodeUtils").strlen(t.slice(0,r)),length:c("UnicodeUtils").strlen(t.slice(r,s)),style:o})});return p}function l(m){var n=m.getCharacterList().map(function(p){return p.getStyle()}).toList(),o=n.flatten().toSet().map(function(p){return k(m,n,p)});return Array.prototype.concat.apply(j,o.toJS())}f.exports=l}),null);

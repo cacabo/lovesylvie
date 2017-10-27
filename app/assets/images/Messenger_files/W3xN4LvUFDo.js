@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["LEGJs"]); }
+
+__d("UFIInstanceActionType",[],(function a(b,c,d,e,f,g){f.exports=Object.freeze({CHANGE_ORDER_MODE:"story_change_order_mode",CHANGE_VISIBILITY:"story_change_visibility",INIT:"instance_init",PLAY_LIVE_VOD_HIGHLIGHTS:"play_live_vod_highlights",RECEIVED_VOD_COMMENTS:"received_vod_comments",REMOVE:"story_remove",REQUESTED_VOD_COMMENTS:"requested_vod_comments",TOGGLE_COMMENTS:"story_toggle_comments",TOGGLE_COMMERCIAL_BREAK:"story_toggle_commercial_break",TRANSLATE_ALL:"translate_all"})}),null);

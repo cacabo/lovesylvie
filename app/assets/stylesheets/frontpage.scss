@@ -9,7 +9,7 @@
 
 .hero-wrapper {
   padding: 4rem 0rem 1rem 0rem;
-  background: rgba(126, 107, 143, 0.75);
+  background: rgba(126, 107, 143, 0.6);
 }
 
 .step {
@@ -96,6 +96,28 @@
       }
     }
   }
+}
+
+#video-wrapper {
+  overflow: hidden !important;
+}
+
+.accent-transparent {
+  position: absolute;
+  height: 60vh;
+  width: 100%;
+  background: $accent;
+  opacity: 0.5;
+  z-index: -8;
+}
+
+#video {
+  min-width: 100vw;
+  min-height: 40vh;
+  height: auto;
+  width: auto;
+  position: absolute;
+  z-index: -10;
 }
 
 .white-gradient {

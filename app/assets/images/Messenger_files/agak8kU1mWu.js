@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["KKYOJ"]); }
+
+__d("messengerCalculateTruncationState",["Style"],(function a(b,c,d,e,f,g){"use strict";function h(i,j,k,l,m){if(!l||!j)return;var n=m?m.offsetWidth:0,o=Math.ceil(.5*(i.offsetWidth+l.offsetWidth)),p=i.offsetWidth-k.offsetWidth-12;if(o<=p){c("Style").set(i,"text-align","center");c("Style").set(j,"width","auto");c("Style").set(j,"margin-left","auto")}else{if(document.body.dir==="rtl")c("Style").set(i,"text-align","right");else{c("Style").set(i,"text-align","left");c("Style").set(j,"margin-left",n+"px")}var q=Math.max(i.offsetWidth-n-k.offsetWidth-11,0);c("Style").set(j,"width",q+"px")}}f.exports=h}),null);

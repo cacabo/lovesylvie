@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["+6gt3"]); }
+
+__d("MessengerRTCGroupCallParticipantsPickerDialogController",["DOM","MessengerRTCGroupCallParticipantsPickerDialog.react","React","ReactDOM"],(function a(b,c,d,e,f,g){"use strict";var h={_container:c("DOM").create("div"),render:function i(j){var k=j.participants,l=j.thread,m=j.viewerID,n=j.trigger,o=j.conferenceName,p=j.hasVideo,q=j.handleCall;c("ReactDOM").render(c("React").createElement(c("MessengerRTCGroupCallParticipantsPickerDialog.react"),{participants:k,thread:l,viewerID:m,trigger:n,conferenceName:o,hasVideo:p,handleCall:q,onUnmount:function(){return this._onUnmount()}.bind(this)}),this._container)},_onUnmount:function i(){c("ReactDOM").unmountComponentAtNode(this._container)}};f.exports=h}),null);

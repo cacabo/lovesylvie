@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["lsTVQ"]); }
+
+__d("MercurySyncMarkReadTransformer",["MercuryActionType","MercuryGlobalActionType","MessagingTag"],(function a(b,c,d,e,f,g){"use strict";function h(i){if(i.folders&&i.folders.length>0)return i.folders.map(function(j){return{action_type:c("MercuryGlobalActionType").MARK_ALL_READ,action_id:null,folder:c("MessagingTag").IRIS_MAPPING[j],timestamp:parseInt(i.watermarkTimestamp,10)}});return i.threadKeys.map(function(j){return{action_type:c("MercuryActionType").CHANGE_READ_STATUS,other_user_fbid:j.otherUserFbId,thread_fbid:j.threadFbId,mark_as_read:true,timestamp:parseInt(i.watermarkTimestamp,10),folder:c("MessagingTag").INBOX}})}f.exports={transform:h}}),null);

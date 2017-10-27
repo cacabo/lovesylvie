@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["Rg0t+"]); }
+
+__d("MessengerEmojiUsageUtils",["MessengerSupportedEmojiUtils","Utf16"],(function a(b,c,d,e,f,g){"use strict";var h=65039,i={findAllEmojis:function j(k){var l=[],m=c("MessengerSupportedEmojiUtils").parse(k);m.forEach(function(n){var o=[];n.emoji.forEach(function(p){var q=c("Utf16").decode(p);if(q)o.push(q)});o[o.length-1]===h&&o.pop();l.push(o)});return l}};f.exports=i}),null);

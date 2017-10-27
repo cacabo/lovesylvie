@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["xbt1q"]); }
+
+__d("MercuryMessageCustomizations",[],(function a(b,c,d,e,f,g){"use strict";function h(j,k){var l=j.customizations;if(!l)return null;var m=l.filter(function(n){return n.customization_type===k});return m.length>0?m[0].customization_value:null}function i(j){var k=JSON.parse(j),l=[];Object.keys(k).forEach(function(m){l.push({customization_type:m,customization_value:k[m]})});return l}f.exports={getCustomizationValue:h,parseCustomizations:i}}),null);

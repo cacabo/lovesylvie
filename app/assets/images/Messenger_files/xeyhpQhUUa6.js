@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["quO+Z"]); }
+
+__d("HelpLink.react",["fbt","React","joinClasses","TooltipLink.react"],(function a(b,c,d,e,f,g,h){var i,j;i=babelHelpers.inherits(k,c("React").Component);j=i&&i.prototype;k.prototype.render=function(){"use strict";return c("React").createElement(c("TooltipLink.react"),babelHelpers["extends"]({"aria-label":this.props.label},this.props,{className:c("joinClasses")(this.props.className,"uiHelpLink mls")}),undefined)};function k(){"use strict";i.apply(this,arguments)}k.defaultProps={href:"#",label:h._("Help")};f.exports=k}),null);

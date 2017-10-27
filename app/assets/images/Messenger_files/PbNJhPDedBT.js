@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["NdnKN"]); }
+
+__d("MercurySyncThreadActionTransformer",["MercuryActionType","MessagingThreadAction"],(function a(b,c,d,e,f,g){"use strict";function h(i){var j={action_type:c("MercuryActionType").CHANGE_ARCHIVED_STATUS,thread_fbid:i.threadKey.threadFbId,other_user_fbid:i.threadKey.otherUserFbId,archived:i.action===c("MessagingThreadAction").ACTION_ARCHIVED};return j}f.exports={transform:h}}),null);

@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["3uNm\/"]); }
+
+__d("MessengerMDotMeReferralStore",["MessengerActions","MessengerStore"],(function a(b,c,d,e,f,g){var h,i;h=babelHelpers.inherits(j,c("MessengerStore"));i=h&&h.prototype;function j(){"use strict";i.constructor.call(this);this.$MessengerMDotMeReferralStore1={refCode:null,refThreadID:null}}j.prototype.getState=function(){"use strict";return this.$MessengerMDotMeReferralStore1};j.prototype.__onDispatch=function(k){"use strict";switch(k.type){case c("MessengerActions").Types.UPDATE_MDOT_ME:this.$MessengerMDotMeReferralStore1.refCode=k.refCode;this.$MessengerMDotMeReferralStore1.refThreadID=k.refThreadID;this.emitChange()}};f.exports=new j()}),null);

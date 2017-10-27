@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["YcnBZ"]); }
+
+__d("MessengerMessageActionsWrapper.react",["ImmutableObject","React"],(function a(b,c,d,e,f,g){"use strict";var h=c("React").PropTypes,i=c("React").createClass({displayName:"MessengerMessageActionsWrapper",propTypes:{message:h.instanceOf(c("ImmutableObject")).isRequired,onShowMenu:h.func.isRequired},render:function j(){return c("React").createElement("div",babelHelpers["extends"]({onMouseEnter:this._handleShowMenu,onMouseLeave:this._handleHideMenu},this.props),this.props.children)},_handleShowMenu:function j(){this.props.onShowMenu(this.props.message.message_id,true)},_handleHideMenu:function j(){this.props.onShowMenu(this.props.message.message_id,false)}});f.exports=i}),null);

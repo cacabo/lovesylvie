@@ -2,6 +2,9 @@
  * Footer
  */
 .footer {
+  z-index: 200 !important;
+  background: white;
+
   .social {
     ul {
       display: flex;

@@ -10,8 +10,9 @@
       </a>
       <div class="space-2 hidden-md-down"></div>
       <div class="space-4"></div>
+      <div class="space-4"></div>
       <p class="caps transparent-text small white-text">
-        *With subscription purchase otherwise $4.99 S&amp;H
+        *With subscription purchase, otherwise $4.99 S&amp;H
       </p>
     </div>
   </div>
@@ -115,7 +116,7 @@
 
 <%= render 'shared/perfumes' %>
 
-<div class="container marg-top-2 marg-bot-2">
+<!-- <div class="container marg-top-2 marg-bot-2">
   <div class="row">
     <div class="col-12">
       <div class="space-2 hidden-md-down"></div>
@@ -135,7 +136,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <div class="container">
   <ul class="no-decoration list-center">
@@ -172,7 +173,9 @@
   </ul>
 </div>
 
-<div class="accent">
+<div id="video-wrapper">
+  <%= video_tag "video.mp4", autoplay: true, loop: true, id: 'video' %>
+  <div class="accent-transparent"></div>
   <div class="space-4"></div>
   <div class="space-2"></div>
   <div class="space-2 hidden-md-2"></div>

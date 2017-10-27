@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["u58uW"]); }
+
+__d("MessengerFileAttachment.react",["cx","Link.react","React"],(function a(b,c,d,e,f,g,h){"use strict";var i,j,k=c("React").PropTypes;i=babelHelpers.inherits(l,c("React").PureComponent);j=i&&i.prototype;l.prototype.render=function(){return c("React").createElement(c("Link.react"),{className:"_4pcn _2uf4",target:"_blank",href:this.props.attachment.url},c("React").createElement("div",{className:"_2uf5"}),this.props.attachment.name)};function l(){i.apply(this,arguments)}l.propTypes={attachment:k.object.isRequired};f.exports=l}),null);

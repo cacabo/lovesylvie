@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["O\/cl3"]); }
+
+__d("MessengerURIListener",["MessengerActions","MessengerURISerializer","PageTransitions"],(function a(b,c,d,e,f,g){"use strict";var h=false,i={start:function k(){if(!h)c("PageTransitions").registerHandler(j,6);h=true},stop:function k(){c("PageTransitions").removeHandler(j,6);h=false}};function j(k){var l=c("MessengerURISerializer").deserialize(k);if(l.notMessenger)return false;c("PageTransitions").transitionComplete();c("MessengerActions").changeState(l);return true}f.exports=i}),null);

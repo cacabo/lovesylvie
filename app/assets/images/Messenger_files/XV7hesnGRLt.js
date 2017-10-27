@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["zh5iE"]); }
+
+__d("ChatSidebarSheetChatOffline.react",["fbt","Link.react","React"],(function a(b,c,d,e,f,g,h){"use strict";var i,j,k=c("React").PropTypes;i=babelHelpers.inherits(l,c("React").PureComponent);j=i&&i.prototype;l.prototype.render=function(){return c("React").createElement("div",null,h._("{=Go online} to see who's available.",[h.param("=Go online",c("React").createElement(c("Link.react"),{className:"fbChatGoOnlineLink",onClick:this.props.onGoOnlineClick},h._("Turn on chat")))]))};function l(){i.apply(this,arguments)}l.propTypes={onGoOnlineClick:k.func.isRequired};f.exports=l}),null);

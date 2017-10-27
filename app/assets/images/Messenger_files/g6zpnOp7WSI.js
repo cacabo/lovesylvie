@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["mK1mG"]); }
+
+__d("MercurySyncRtcCallDataTransformer",["MercuryActionType"],(function a(b,c,d,e,f,g){"use strict";function h(i){var j=i.messageMetadata.threadKey&&i.messageMetadata.threadKey.threadFbId?i.messageMetadata.threadKey.threadFbId.toString():undefined,k=i.initiator&&i.initiator.userFbId?i.initiator.userFbId.toString():undefined;return{action_type:c("MercuryActionType").UPDATE_RTC_CALL_DATA,thread_fbid:j,call_state:i.callState,server_info_data:i.serverInfoData,initiator_fbid:k}}f.exports={transform:h}}),null);

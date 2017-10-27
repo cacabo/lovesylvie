@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["jcm2B"]); }
+
+__d("keysRe",[],(function a(b,c,d,e,f,g){"use strict";var h=8,i=9,j=13,k=18,l=27,m=32,n=33,o=34,p=35,q=36,r=37,s=38,t=39,u=40,v=46,w=188,x=190,y=65,z=90,A=48,B=96,C=105;g.backspace=h;g.tab=i;g.$$return=j;g.alt=k;g.esc=l;g.space=m;g.page_up=n;g.page_down=o;g.end_=p;g.home=q;g.left=r;g.up=s;g.right=t;g.down=u;g.$$delete=v;g.comma=w;g.period=x;g.a=y;g.z=z;g.zero=A;g.numpad_0=B;g.numpad_9=C}),null);

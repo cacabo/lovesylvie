@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["I4tgJ"]); }
+
+__d("MentionResultsPropTypes",["React","SearchableEntry","SelectionState"],(function a(b,c,d,e,f,g){var h=c("React").PropTypes,i={viewID:h.string.isRequired,selection:h.instanceOf(c("SelectionState")).isRequired,contextComponent:h.object.isRequired,mentionableEntries:h.array.isRequired,highlightedMentionable:h.instanceOf(c("SearchableEntry")),onMentionSelect:h.func.isRequired,onMentionHighlight:h.func.isRequired,onMentionRenderHighlight:h.func.isRequired};f.exports=i}),null);

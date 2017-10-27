@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["g1zCx"]); }
+
+__d("UFIConstants",["FeedbackActionType","UFIFeedbackMode","FeedbackSourceType","FeedbackPayloadSourceType","UFIStatus","UFIPaging"],(function a(b,c,d,e,f,g){"use strict";var h=80,i={UFIActionType:c("FeedbackActionType"),UFIFeedbackMode:c("UFIFeedbackMode"),UFIFeedbackSourceType:c("FeedbackSourceType"),UFIPayloadSourceType:c("FeedbackPayloadSourceType"),UFIStatus:c("UFIStatus"),UFIPaging:c("UFIPaging"),attachmentTruncationLength:h,commentTruncationLength:420,commentTruncationMaxLines:3,commentTruncationPercent:.6,commentURLTruncationLength:60,infiniteScrollRangeForQANDAPermalinks:1e3,minCommentsForOrderingModeSelector:1,unavailableCommentKey:"unavailable_comment_key"};f.exports=i}),null);

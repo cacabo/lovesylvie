@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["N6Odr"]); }
+
+__d("MessengerMentionsEntityDecorator.react",["cx","React"],(function a(b,c,d,e,f,g,h){"use strict";var i,j;i=babelHelpers.inherits(k,c("React").PureComponent);j=i&&i.prototype;k.prototype.render=function(){return c("React").createElement("span",{className:"_fy2"},this.props.children)};function k(){i.apply(this,arguments)}f.exports=k}),null);

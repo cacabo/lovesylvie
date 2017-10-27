@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["c42KF"]); }
+
+__d("mercuryThreadTitleReact",["utilsRe","ReasonReact","bs_js_null_undefined","MercuryThreadTitle.react"],(function a(b,c,d,e,f,g){"use strict";function h(i,j,k,l,m,n,o,p){return c("ReasonReact").wrapJsForReason(c("MercuryThreadTitle.react"),{className:c("bs_js_null_undefined").from_opt(i),thread:j,viewer:k,isNewThread:c("utilsRe").optionBoolToNullUndefinedBoolean(l),showUnreadCount:c("utilsRe").optionBoolToNullUndefinedBoolean(m),useShortName:c("utilsRe").optionBoolToNullUndefinedBoolean(n),useAndSeparator:c("utilsRe").optionBoolToNullUndefinedBoolean(o)},p)}g.make=h}),null);

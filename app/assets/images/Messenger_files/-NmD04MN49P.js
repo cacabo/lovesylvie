@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["PyGcH"]); }
+
+__d("TypeaheadFacepile",["DOM"],(function a(b,c,d,e,f,g){function h(){}h.render=function(i){var j=[c("DOM").create("span",{className:"splitpic leftpic"},[c("DOM").create("img",{alt:"",src:i[0]})]),c("DOM").create("span",{className:"splitpic"+(i[2]?" toppic":"")},[c("DOM").create("img",{alt:"",src:i[1]})])];if(i[2])j.push(c("DOM").create("span",{className:"splitpic bottompic"},[c("DOM").create("img",{alt:"",src:i[2]})]));return c("DOM").create("span",{className:"splitpics clearfix"},j)};f.exports=h}),null);

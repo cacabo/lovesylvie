@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["npGG6"]); }
+
+__d("MercurySyncMarkUnreadTransformer",["MercuryActionType","MessagingTag"],(function a(b,c,d,e,f,g){"use strict";function h(i){return i.threadKeys.map(function(j){return{action_type:c("MercuryActionType").CHANGE_READ_STATUS,other_user_fbid:j.otherUserFbId,thread_fbid:j.threadFbId,mark_as_read:false,timestamp:parseInt(i.watermarkTimestamp,10),folder:c("MessagingTag").INBOX}})}f.exports={transform:h}}),null);

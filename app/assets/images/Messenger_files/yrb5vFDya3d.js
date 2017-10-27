@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["ta9sH"]); }
+
+__d("MessengerRefreshPrompt",["fbt","Visibility","setIntervalAcrossTransitions"],(function a(b,c,d,e,f,g,h){var i=1e3*60*60,j=1e3*60*60*24*3,k=function k(l){var m=Date.now();c("setIntervalAcrossTransitions")(function(){if(Date.now()-m>j)c("Visibility").once(c("Visibility").VISIBLE,function(){l({promotionID:null,promotionContent:h._("A new version of Messenger is available."),primaryActionTitle:h._("Refresh"),instanceLogData:{},primaryActionURI:window.location.href});m=Date.now()})},i)};f.exports=k}),null);

@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["p8H7V"]); }
+
+__d("NavigationTimingHelper",["NavigationMetricsEnumJS","forEachObject","performance"],(function a(b,c,d,e,f,g){function h(j,k){var l={};c("forEachObject")(c("NavigationMetricsEnumJS"),function(m){var n=k[m];if(n)l[m]=n+j});return l}var i={getAsyncRequestTimings:function j(k){if(!k||!c("performance").timing||!c("performance").getEntriesByName)return undefined;var l=c("performance").getEntriesByName(k);if(l.length===0)return undefined;return h(c("performance").timing.navigationStart,l[0])},getNavTimings:function j(){if(!c("performance").timing)return undefined;return h(0,c("performance").timing)}};f.exports=i}),null);

@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["ii+hn"]); }
+
+__d("MessengerStickerUtils",["MercuryAttachmentType"],(function a(b,c,d,e,f,g){"use strict";function h(k){return!!(k&&k.attach_type===c("MercuryAttachmentType").STICKER)}function i(k){var l=k.attachments;return!!(k.is_like_preview||k.sticker_id||l&&l.length===1&&h(l[0]))}function j(k){return k.size===1&&i(k.first())}f.exports={isStickerMessageGroup:j,isStickerMessage:i,isStickerAttachment:h}}),null);

@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["7jDE8"]); }
+
+__d("messengerDaysInStreakReact",["cx","fbt","React","bs_pervasives","ReasonReact"],(function a(b,c,d,e,f,g,h,i){"use strict";var j=c("ReasonReact").statelessComponent("MessengerDaysInStreakReact");function k(m,n){var o=j.slice();o[9]=function(){var p=m.days_in_streak;if(p==null)return null;else if(p<1)return null;else{var q=c("bs_pervasives").string_of_int(p);return c("React").createElement("div",{className:"_60oa"},i._("Messaging Streak: {daysInStreak}",[i.param("daysInStreak",q)]))}};return o}var l=c("ReasonReact").wrapReasonForJs(j,function(m){return k(m.thread,[])});g.component=j;g.make=k;g.jsComponent=l}),null);

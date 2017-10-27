@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["lfWew"]); }
+
+__d("MercurySyncThreadMuteSettingsTransformer",["MercuryActionType"],(function a(b,c,d,e,f,g){"use strict";function h(i){var j={action_type:c("MercuryActionType").CHANGE_MUTE_SETTINGS,thread_fbid:i.threadKey.threadFbId,other_user_fbid:i.threadKey.otherUserFbId,mute_until:parseInt(i.expireTime,10)};return j}f.exports={transform:h}}),null);

@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["sD+YP"]); }
+
+__d("messengerThreadSearchIconSVGReact",["React"],(function a(b,c,d,e,f,g){"use strict";function h(i,j){return c("React").createElement("div",{className:i},c("React").createElement("svg",{viewBox:"8 8 48 48"},c("React").createElement("title",undefined,"search conversation"),c("React").createElement("circle",{cx:"28",cy:"28",fill:"none",r:"14",stroke:j,strokeMiterlimit:"10",strokeWidth:"2"}),c("React").createElement("path",{clipRule:"evenodd",d:"M50,50L37.9,37.9",fill:"none",fillRule:"evenodd",stroke:j,strokeLinecap:"round",strokeMiterlimit:"10",strokeWidth:"2"})))}g.make=h}),null);

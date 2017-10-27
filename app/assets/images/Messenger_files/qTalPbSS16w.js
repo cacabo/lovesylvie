@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["1JgF7"]); }
+
+__d("MessengerSearchFunnelLoggerConstants",[],(function a(b,c,d,e,f,g){"use strict";f.exports={NAME:"WWW_MESSENGER_SEARCH_SESSION_FUNNEL",FETCHED_STATE_IMPRESSION_LIST:"fetched_state_impression_list",FB_SIDEBAR_TAG:"fb_sidebar",USER_CONTACT:"user_contact",USER_NON_CONTACT:"user_non_contact",GROUP:"group",PAGE:"page",GAME:"game",TINCAN:"tincan",SMS:"sms",SMS_GROUP:"sms_group",COWORKER:"coworker",OTHER:"other"}}),null);
