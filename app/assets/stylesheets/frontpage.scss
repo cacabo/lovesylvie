@@ -55,6 +55,12 @@
   }
 }
 
+.social-list {
+  li a:hover {
+    color: rgba(0, 0, 0, 0.3) !important;
+  }
+}
+
 .carousel-item {
   height: 50vh;
   overflow: hidden;
@@ -112,8 +118,7 @@
 }
 
 #video {
-  min-width: 100vw;
-  min-height: 40vh;
+  min-width: 100%;
   height: auto;
   width: auto;
   position: absolute;

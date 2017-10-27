@@ -6,7 +6,7 @@
     <span class="icon-bar bottom-bar"></span>
   </button>
   <a class="navbar-brand" href="<%= root_path %>">
-    Love Sylvie
+    <%= image_tag 'logoWhite.svg' %>
   </a>
 
   <div class="collapse navbar-collapse" id="nav">
@@ -17,7 +17,7 @@
         <a class="nav-link" href="">PLANS</a>
       </li>
       <li class="nav-item">
-        <%= link_to "OUR PERFUME", perfume_path, class: "nav-link" %> 
+        <%= link_to "OUR PERFUME", perfume_path, class: "nav-link" %>
       </li>
       <% if current_user.nil? %>
         <li class="nav-item">

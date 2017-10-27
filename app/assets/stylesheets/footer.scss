@@ -41,3 +41,17 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .footer .social ul {
+    padding: 1.2rem;
+
+    li {
+      margin: 0rem 0.6rem;
+
+      a .fa {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

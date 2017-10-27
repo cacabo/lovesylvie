@@ -17,6 +17,13 @@
 
   .navbar-brand {
     color: white;
+    padding: 0px;
+    margin-right: 0 !important;
+
+    img {
+      height: 48px;
+      width: auto;
+    }
 
     &:hover,
     &:focus,
@@ -36,9 +43,15 @@
   a.nav-link {
     outline: 0 !important;
     color: white !important;
-    font-size: 0.8rem;
+    font-weight: 300;
+    font-size: 1rem;
     padding-left: 1rem !important;
     padding-right: 1rem !important;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
@@ -67,7 +80,7 @@
 }
 
 .navbar-toggler {
-  height: 55px;
+  height: 64px;
   display: table-cell;
   vertical-align: middle;
   top: 0;
