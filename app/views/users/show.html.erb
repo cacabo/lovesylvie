@@ -1,6 +1,7 @@
 <div class="container marg-top-2 marg-bot-2">
   <div class="row">
     <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      <div class="space-2"></div>
       <h2>
         Hi <%= @user.email %>
       </h2>
@@ -10,7 +11,7 @@
         <% else %>
           Ride on, <%= @user.referrals %> of your friends have signed up by your referral. Might as well refer some more to get some awesome perks:
         <% end %>
-        <%= request.original_url + 'register/' + current_user.id.to_s %>
+        <input class="unique-link" value="<%= request.original_url + 'register/' + current_user.id.to_s %>" readonly="readonly" />
       </p>
     </div>
   </div>
