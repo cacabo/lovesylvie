@@ -87,3 +87,17 @@
   cursor: hand;
   cursor: pointer;
 }
+
+/**
+ * Highlight color
+ */
+
+ ::selection {
+   background: $light-purple;
+   color: white;
+ }
+
+ ::-moz-selection {
+   background: $light-purple;
+   color: white;
+ }
