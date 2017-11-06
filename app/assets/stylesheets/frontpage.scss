@@ -118,11 +118,8 @@
 }
 
 .accent-transparent {
-  position: absolute;
-  height: 60vh;
   width: 100%;
-  background: $accent;
-  opacity: 0.5;
+  background: rgba(24, 54, 66, 0.5);
   z-index: -8;
 }
 

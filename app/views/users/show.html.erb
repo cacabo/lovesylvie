@@ -1,16 +1,16 @@
 <div class="container marg-top-2 marg-bot-2">
   <div class="row">
     <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-      <strong>Hi!</strong> <%= @user.email %><br>
-      <p>
-        Want some awesome perks, refer a friend with your unique link:
-      </p>
+      <h2>
+        Hi <%= @user.email %>
+      </h2>
       <p>
         <% if @user.referrals == 0 %>
-          You haven't referred anyone yet, let's get started
+          Want some awesome perks? Refer a friend with your unique link:
         <% else %>
-          Ride on, <%= @user.referrals %> have signed up with your unique link.
+          Ride on, <%= @user.referrals %> of your friends have signed up by your referral. Might as well refer some more to get some awesome perks:
         <% end %>
+        <%= request.original_url + 'register/' + current_user.id.to_s %>
       </p>
     </div>
   </div>

@@ -175,38 +175,39 @@
 
 <div id="video-wrapper">
   <%= video_tag "video.mp4", autoplay: true, loop: true, id: 'video' %>
-  <div class="accent-transparent"></div>
-  <div class="space-4"></div>
-  <div class="space-4"></div>
-  <div class="space-4 hidden-lg-down"></div>
-  <div class="space-2 hidden-md-down"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-        <% if current_user.nil? %>
-          <h2 class="white-text marg-bot-2 center">
-            Receive exclusive offers and updates
-          </h2>
-          <div class="space-1"></div>
-          <div class="form" id="front-page-form">
-            <form id="form-bottom">
-              <input id="bottom-email", placeholder="Email..." />
-              <button class="submit">
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-              </button>
-            </form>
-          </div>
-        <% else %>
-          <h2 class="white-text marg-bot-2 center">
-            Invite your friends and receive benefits
-            <input class="unique-link" value="<%= request.original_url + 'register/' + current_user.id.to_s %>" />
-          </h2>
-        <% end %>
+  <div class="accent-transparent">
+    <div class="space-4"></div>
+    <div class="space-4"></div>
+    <div class="space-4 hidden-lg-down"></div>
+    <div class="space-2 hidden-md-down"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+          <% if current_user.nil? %>
+            <h2 class="white-text marg-bot-2 center">
+              Receive exclusive offers and updates
+            </h2>
+            <div class="space-1"></div>
+            <div class="form" id="front-page-form">
+              <form id="form-bottom">
+                <input id="bottom-email", placeholder="Email..." />
+                <button class="submit">
+                  <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </button>
+              </form>
+            </div>
+          <% else %>
+            <h2 class="white-text marg-bot-2 center">
+              Invite your friends and receive benefits
+              <input class="unique-link" value="<%= request.original_url + 'register/' + current_user.id.to_s %>" readonly="readonly" />
+            </h2>
+          <% end %>
+        </div>
       </div>
     </div>
+    <div class="space-2 hidden-md-down"></div>
+    <div class="space-4 hidden-lg-down"></div>
+    <div class="space-4"></div>
+    <div class="space-4"></div>
   </div>
-  <div class="space-2 hidden-md-down"></div>
-  <div class="space-4 hidden-lg-down"></div>
-  <div class="space-4"></div>
-  <div class="space-4"></div>
 </div>
