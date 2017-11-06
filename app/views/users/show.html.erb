@@ -1,8 +1,17 @@
 <div class="container marg-top-2 marg-bot-2">
   <div class="row">
     <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-      <strong>Email:</strong> <%= @user.email %><br>
-      <strong>Referrals:</strong> <%= @user.referrals %>
+      <strong>Hi!</strong> <%= @user.email %><br>
+      <p>
+        Want some awesome perks, refer a friend with your unique link:
+      </p>
+      <p>
+        <% if @user.referrals == 0 %>
+          You haven't referred anyone yet, let's get started
+        <% else %>
+          Ride on, <%= @user.referrals %> have signed up with your unique link.
+        <% end %>
+      </p>
     </div>
   </div>
 </div>

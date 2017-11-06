@@ -4,15 +4,17 @@
 
 #alert-container {
   z-index: 1031;
-  padding: 0.5rem 1rem;
-  margin: 1rem;
-  width: 100%;
+  padding: 0.5rem 1.25rem;
+  width: auto;
   height: auto;
+  display: inline-block;
   position: fixed;
   bottom: 1rem;
+  right: 1rem;
   font-weight: bold;
   color: white;
   background: black;
+  border-radius: 0.4rem;
 
   p {
     margin: 0.5rem 0;
@@ -20,10 +22,10 @@
   }
 
   &.red {
-    background: $red;
+    background: $accent;
   }
 
   &.green {
-    background: $green;
+    background: $accent;
   }
 }
