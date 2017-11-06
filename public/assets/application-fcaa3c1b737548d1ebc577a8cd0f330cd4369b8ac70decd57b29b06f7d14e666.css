@@ -1,0 +1,1411 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styleas in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+ */
+/*
+** Color palette
+*/
+/*
+** SPACING AND PADDING
+*/
+/* line 17, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.pad-0 {
+  padding: 0 !important;
+}
+
+/* line 21, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.pad-1 {
+  padding: 1rem;
+}
+
+/* line 25, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.pad-2 {
+  padding: 2rem;
+}
+
+/* line 29, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.pad-0-1 {
+  padding: 0 1rem;
+}
+
+/* line 33, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.pad-0-2 {
+  padding: 0 2rem;
+}
+
+/* line 37, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.pad-1-0 {
+  padding: 1rem 0;
+}
+
+/* line 41, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.pad-2-0 {
+  padding: 2rem 0;
+}
+
+/* line 45, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.pad-1-2 {
+  padding: 1rem 2rem;
+}
+
+/* line 49, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.pad-2-1 {
+  padding: 2rem 1rem;
+}
+
+/* line 53, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.space-0,
+.space-1,
+.space-2,
+.space-3,
+.space-4 {
+  display: block;
+  width: 100%;
+}
+
+/* line 62, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.space-0 {
+  height: 0rem;
+}
+
+/* line 66, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.space-1 {
+  height: 1rem;
+}
+
+/* line 70, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.space-2 {
+  height: 2rem;
+}
+
+/* line 74, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.space-3 {
+  height: 3rem;
+}
+
+/* line 78, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.space-4 {
+  height: 4rem;
+}
+
+/* line 82, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.marg-0 {
+  margin: 0 !important;
+}
+
+/* line 86, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.marg-top-0 {
+  margin-top: 0;
+}
+
+/* line 90, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.marg-top-05 {
+  margin-top: 0.5rem;
+}
+
+/* line 94, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.marg-top-1 {
+  margin-top: 1rem;
+}
+
+/* line 98, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.marg-top-2 {
+  margin-top: 2rem;
+}
+
+/* line 102, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.marg-top-3 {
+  margin-top: 3rem;
+}
+
+/* line 106, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.marg-bot-0 {
+  margin-bottom: 0;
+}
+
+/* line 110, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.marg-bot-05 {
+  margin-bottom: 0.5rem;
+}
+
+/* line 114, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.marg-bot-1 {
+  margin-bottom: 1rem;
+}
+
+/* line 118, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.marg-bot-2 {
+  margin-bottom: 2rem;
+}
+
+/* line 122, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.marg-bot-3 {
+  margin-bottom: 3rem;
+}
+
+/* line 126, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.marg-right-0 {
+  margin-right: 0;
+}
+
+/* line 130, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.marg-right-05 {
+  margin-right: 0.5rem;
+}
+
+/* line 134, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.marg-right-1 {
+  margin-right: 1rem;
+}
+
+/* line 138, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.marg-left-0 {
+  margin-left: 0;
+}
+
+/* line 142, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.marg-left-05 {
+  margin-left: 0.5rem;
+}
+
+/* line 146, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.marg-left-1 {
+  margin-left: 1rem;
+}
+
+/*
+** Borders, lines, and dividers
+*/
+/* line 153, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.border {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* line 157, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.light-border {
+  border: 1px solid rgba(0, 0, 0, 0.075);
+}
+
+/* line 161, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.round-1 {
+  border-radius: 0.25rem;
+}
+
+/* line 165, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.round-2 {
+  border-radius: 0.5rem;
+}
+
+/* line 169, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.round-3 {
+  border-radius: 0.75rem;
+}
+
+/* line 173, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.round-4 {
+  border-radius: 1rem;
+}
+
+/* line 177, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.line-0,
+.line-1,
+.line-2 {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.15);
+}
+/* line 185, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.line-0.light-line,
+.line-1.light-line,
+.line-2.light-line {
+  background: rgba(0, 0, 0, 0.075);
+}
+
+/* line 190, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.line-0 {
+  margin: 0;
+}
+
+/* line 194, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.line-1 {
+  margin: 1rem 0;
+}
+
+/* line 198, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.line-2 {
+  margin: 2rem 0;
+}
+
+/*
+** Coloring and typography
+*/
+/* line 205, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.black {
+  background: black;
+}
+
+/* line 209, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.white {
+  background: white;
+}
+
+/* line 213, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.white-blue {
+  background: #f6f9fc;
+}
+
+/* line 217, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.light-gray {
+  background: rgba(0, 0, 0, 0.075);
+}
+
+/* line 221, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.gray {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* line 225, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.green {
+  background: #24b47e;
+}
+
+/* line 229, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.purple {
+  background: #6772e5;
+}
+
+/* line 233, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.blue {
+  background: #2289d8;
+}
+
+/* line 237, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.black-text-important {
+  color: black !important;
+}
+/* line 240, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.black-text-important:hover, .black-text-important:active, .black-text-important:visited, .black-text-important:focus {
+  color: black !important;
+}
+
+/* line 248, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.white-text-important {
+  color: white !important;
+}
+/* line 251, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.white-text-important:hover, .white-text-important:active, .white-text-important:visited, .white-text-important:focus {
+  color: white !important;
+}
+
+/* line 259, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.black-text,
+a.black-text {
+  color: black;
+}
+
+/* line 264, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.white-text,
+a.white-text {
+  color: white;
+}
+
+/* line 269, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.gray-text,
+a.gray-text {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* line 274, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.blue-gray-text,
+a.blue-gray-text {
+  color: #8898aa !important;
+}
+
+/* line 279, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.light-gray-text,
+a.light-gray-text {
+  color: rgba(0, 0, 0, 0.3) !important;
+}
+
+/* line 284, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.green-text,
+a.green-text {
+  color: #24b47e !important;
+}
+
+/* line 289, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.purple-text,
+a.purple-text {
+  color: #6772e5 !important;
+}
+
+/* line 294, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.blue-text,
+a.blue-text {
+  color: #2289d8 !important;
+}
+
+/* line 299, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.black-text-hover:hover,
+a.black-text-hover:hover {
+  color: black;
+}
+
+/* line 304, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.white-text-hover:hover,
+a.white-text-hover:hover {
+  color: white;
+}
+
+/* line 309, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.no-decoration,
+a.no-decoration,
+a.no-decoration:hover {
+  text-decoration: none;
+}
+
+/* line 315, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.caps {
+  text-transform: uppercase;
+}
+
+/* line 319, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 323, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.italic {
+  font-style: italic;
+}
+
+/*
+** Shading
+*/
+/* line 330, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.hover {
+  transition: all 0.2s ease;
+}
+
+/* line 334, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.shade-1 {
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+/* line 337, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.shade-1.hover:hover {
+  box-shadow: 0 0.0625rem 0.375rem rgba(0, 0, 0, 0.175);
+}
+
+/* line 342, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.shade-2 {
+  box-shadow: 0 0.1875rem 0.625rem rgba(0, 0, 0, 0.15);
+}
+/* line 345, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.shade-2.hover:hover {
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.225);
+}
+
+/* line 350, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.shade-3 {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+}
+/* line 353, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.shade-3.hover:hover {
+  box-shadow: 0 0.1875rem 0.5rem rgba(0, 0, 0, 0.275);
+}
+
+/* line 358, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.shade-4 {
+  box-shadow: 0 0.3125rem 0.875rem rgba(0, 0, 0, 0.25);
+}
+/* line 361, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.shade-4.hover:hover {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.325);
+}
+
+/*
+** Further functionallity
+*/
+/* line 368, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.cursor,
+button {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 374, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.animate {
+  transition: all 0.2s ease;
+}
+
+/*
+** Positioning
+*/
+/* line 380, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.absolute {
+  position: absolute;
+}
+/* line 383, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.absolute.right {
+  right: 0;
+}
+
+/* line 388, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.fixed {
+  position: fixed;
+}
+
+/* line 392, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.relative {
+  position: relative;
+}
+
+/* line 396, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.inline {
+  display: inline-block;
+}
+
+/* line 400, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.block {
+  display: block;
+}
+
+/* line 404, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.full-width {
+  width: 100%;
+}
+
+/* line 408, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.left {
+  text-align: left;
+}
+
+/* line 412, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.float-left {
+  float: left;
+}
+
+/* line 416, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.right {
+  text-align: right;
+}
+
+/* line 420, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.float-right {
+  float: right;
+}
+
+/* line 424, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.center {
+  width: 100%;
+  text-align: center;
+}
+
+/* line 429, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.background-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 437, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+.background-image.parallax {
+  background-attachment: fixed;
+}
+@media only screen and (max-device-width: 1024px) {
+  /* line 437, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+  .background-image.parallax {
+    background-attachment: scroll;
+  }
+}
+
+/*
+** Modules
+*/
+/* line 449, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+ul.no-decoration {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* line 455, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+ul.horizontal {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 460, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+ul.horizontal li {
+  float: left;
+  margin-right: 1rem;
+}
+/* line 465, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/strapper.scss */
+ul.horizontal.right li {
+  float: right;
+  margin-right: 0rem;
+  margin-left: 1rem;
+}
+
+/**
+ * COLOR PALETTE
+ */
+/**
+ * NOTIFICATIONS
+ */
+/* line 5, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/notifications.scss */
+#alert-container {
+  z-index: 1031;
+  padding: 0.5rem 1.25rem;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-weight: bold;
+  color: white;
+  background: black;
+  border-radius: 0.4rem;
+}
+/* line 19, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/notifications.scss */
+#alert-container p {
+  margin: 0.5rem 0;
+  color: white;
+}
+/* line 24, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/notifications.scss */
+#alert-container.red {
+  background: #183642;
+}
+/* line 28, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/notifications.scss */
+#alert-container.green {
+  background: #183642;
+}
+
+/**
+ * BUTTONS
+ */
+/* line 5, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/buttons.scss */
+.btn {
+  cursor: pointer;
+  cursor: hand;
+}
+
+/* line 10, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/buttons.scss */
+.btn {
+  border-radius: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 1rem 1.5rem;
+}
+
+/* line 18, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/buttons.scss */
+.btn-outline-white {
+  background: transparent;
+  border: 2px solid white;
+  color: white !important;
+}
+/* line 23, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/buttons.scss */
+.btn-outline-white:hover, .btn-outline-white:focus, .btn-outline-white:active {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* line 30, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/buttons.scss */
+.btn-outline-accent {
+  background: transparent;
+  border: 2px solid #183642;
+  color: #183642 !important;
+}
+/* line 35, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/buttons.scss */
+.btn-outline-accent:hover, .btn-outline-accent:focus, .btn-outline-accent:active {
+  background: rgba(24, 54, 66, 0.1);
+}
+
+/* line 42, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/buttons.scss */
+.btn-purple {
+  background: #7e6b8f;
+  color: white !important;
+}
+/* line 46, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/buttons.scss */
+.btn-purple:hover, .btn-purple:focus, .btn-purple:active {
+  background: #9680aa;
+}
+
+/**
+ * NAVBAR
+ */
+/* line 5, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+.navbar {
+  padding-top: 1rem;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  text-align: left;
+  color: white;
+  background: transparent;
+}
+/* line 14, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+.navbar.purple {
+  position: relative;
+}
+/* line 18, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+.navbar .navbar-brand {
+  color: white;
+  padding: 0px;
+  margin-right: 0 !important;
+}
+/* line 23, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+.navbar .navbar-brand img {
+  height: 48px;
+  width: auto;
+}
+/* line 28, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+.navbar .navbar-brand:hover, .navbar .navbar-brand:focus, .navbar .navbar-brand:visited {
+  color: white;
+}
+/* line 35, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+.navbar .nav-item {
+  outline: 0 !important;
+}
+/* line 39, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+.navbar .nav-link {
+  outline: 0 !important;
+}
+/* line 43, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+.navbar a.nav-link {
+  outline: 0 !important;
+  color: white !important;
+  font-weight: 300;
+  font-size: 1rem;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  opacity: 0.8;
+}
+/* line 52, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+.navbar a.nav-link:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 992px) {
+  /* line 59, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+  .navbar {
+    padding-top: 0.5rem;
+    position: relative;
+    z-index: 5;
+    background: #7e6b8f;
+  }
+  /* line 65, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+  .navbar .navbar-brand {
+    text-align: center;
+  }
+  /* line 69, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+  .navbar .navbar-nav {
+    margin-left: 0px !important;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 77, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+  .center-mobile {
+    text-align: center;
+  }
+}
+/* line 82, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+.navbar-toggler {
+  height: 64px;
+  display: table-cell;
+  vertical-align: middle;
+  top: 0;
+}
+
+/* line 89, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+.navbar-toggler .icon-bar {
+  background-color: white;
+}
+
+/* line 93, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+.navbar-toggler .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+/* line 100, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+.navbar-toggler .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+
+/* line 104, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+.navbar-toggler,
+.navbar-toggler:active,
+.navbar-toggler:visited {
+  border: 0 solid transparent !important;
+  outline: 0 !important;
+}
+
+/* line 111, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+.navbar-toggler {
+  background: transparent !important;
+}
+/* line 114, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+.navbar-toggler:hover {
+  background: transparent !important;
+}
+/* line 118, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+.navbar-toggler .icon-bar {
+  width: 22px;
+  transition: all 0.2s;
+}
+/* line 123, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+/* line 128, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+/* line 132, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+/* line 139, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+/* line 143, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+/* line 147, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/navbar.scss */
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+/**
+ * Footer
+ */
+/* line 4, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/footer.scss */
+.footer {
+  z-index: 200 !important;
+  background: white;
+}
+/* line 9, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/footer.scss */
+.footer .social ul {
+  display: flex;
+  text-align: center;
+  padding: 1rem;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0 !important;
+}
+/* line 18, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/footer.scss */
+.footer .social ul li {
+  margin: 0 0.5rem;
+}
+/* line 21, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/footer.scss */
+.footer .social ul li a {
+  color: white;
+  text-decoration: none !important;
+}
+/* line 29, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/footer.scss */
+.footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 34, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/footer.scss */
+.footer .footer-links ul li {
+  margin-bottom: 0.75rem;
+}
+/* line 37, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/footer.scss */
+.footer .footer-links ul li a {
+  color: #767171;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 46, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/footer.scss */
+  .footer .social ul {
+    padding: 1.2rem;
+  }
+  /* line 49, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/footer.scss */
+  .footer .social ul li {
+    margin: 0rem 0.6rem;
+  }
+  /* line 52, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/footer.scss */
+  .footer .social ul li a .fa {
+    font-size: 1.6rem;
+  }
+}
+/**
+ * FRONTPAGE
+ */
+/* line 5, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+.hero {
+  color: white;
+  text-align: center;
+}
+
+/* line 10, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+.hero-wrapper {
+  padding: 4rem 0rem 1rem 0rem;
+  background: rgba(126, 107, 143, 0.6);
+}
+
+/* line 15, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+.step {
+  display: flex;
+}
+/* line 18, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+.step .vertical-line {
+  z-index: -5;
+  border-left: 1rem solid rgba(0, 0, 0, 0.075);
+  height: auto;
+  margin-left: 1rem;
+  transform: translateY(1.5rem);
+}
+/* line 26, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+.step .step-wrapper {
+  display: flex;
+  margin-left: -2rem;
+}
+/* line 31, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+.step .step-content {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  flex: 1;
+}
+/* line 37, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+.step .step-circle {
+  margin-right: 1.5rem;
+  text-align: center;
+  vertical-align: middle;
+  background: #7e6b8f;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.2rem;
+  padding-top: 0.2rem;
+  border-radius: 50%;
+  display: block;
+  color: white !important;
+  font-weight: bold;
+  line-height: 3rem;
+}
+/* line 52, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+.step .step-circle p {
+  color: white;
+}
+
+/* line 59, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+.social-list li a:hover {
+  color: rgba(0, 0, 0, 0.3) !important;
+}
+
+/* line 64, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+.carousel-item {
+  height: 50vh;
+  overflow: hidden;
+}
+/* line 68, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+.carousel-item img {
+  height: 50vh;
+  width: auto;
+}
+/* line 73, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+.carousel-item .content {
+  flex: 1;
+}
+
+/* line 78, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+.perfume-list {
+  margin: 1rem 0rem 1rem 0rem;
+  list-style: none;
+  min-height: 91.19px;
+  padding-left: 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+/* line 87, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+.perfume-list li {
+  cursor: hand;
+  cursor: pointer;
+  background: white;
+  margin: 0.1rem;
+  box-shadow: 0rem 0.2rem 0.4rem rgba(0, 0, 0, 0.15);
+  flex: 1;
+  text-align: center;
+  padding: 1rem 0rem;
+  transition: all 0.2s;
+}
+/* line 98, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+.perfume-list li:hover {
+  padding: 1.2rem 0;
+  box-shadow: 0rem 0.1rem 0.3rem rgba(0, 0, 0, 0.25);
+}
+/* line 103, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+.perfume-list li.active {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background: #183642;
+  color: white;
+}
+/* line 109, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+.perfume-list li.active:hover {
+  padding: 2rem 0;
+}
+
+/* line 116, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+#video-wrapper {
+  overflow: hidden !important;
+}
+
+/* line 120, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+.accent-transparent {
+  width: 100%;
+  background: rgba(24, 54, 66, 0.5);
+  z-index: -8;
+}
+
+/* line 126, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+#video {
+  min-width: 100%;
+  height: auto;
+  width: auto;
+  position: absolute;
+  z-index: -10;
+}
+
+/* line 134, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+.white-gradient {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 2rem;
+  background: transparent;
+  background: -webkit-linear-gradient(transparent, white);
+  background: -o-linear-gradient(transparent, white);
+  background: -moz-linear-gradient(transparent, white);
+  background: linear-gradient(transparent, white);
+}
+
+/* line 146, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+.instagram-img {
+  height: 15rem;
+}
+
+/* line 150, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+.unique-link {
+  margin-top: 2rem;
+  width: 100%;
+  background: white;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  color: #767171;
+  font-size: 1.2rem;
+  font-weight: 300;
+  outline: 0 !important;
+}
+/* line 163, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/frontpage.scss */
+.unique-link:active, .unique-link:focus {
+  outline: 0 !important;
+}
+
+/**
+ * GENERAL FORM STYLING
+ */
+/* line 5, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/forms.scss */
+.form-control {
+  border-radius: 0px;
+}
+/* line 8, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/forms.scss */
+.form-control:focus {
+  border-color: #7e6b8f;
+}
+
+/**
+ * FRONTPAGE EMAIL FORM
+ */
+/* line 17, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/forms.scss */
+#form-bottom {
+  width: 100%;
+  display: flex;
+  background: white;
+  border-radius: 0.25rem;
+  box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+/* line 24, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/forms.scss */
+#form-bottom.hasError {
+  border: 3px solid #FF7085;
+}
+/* line 28, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/forms.scss */
+#form-bottom #bottom-email {
+  flex: 1;
+  border-radius: 0.25rem 0rem 0rem 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 1rem 2rem;
+  outline: 0;
+}
+/* line 35, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/forms.scss */
+#form-bottom #bottom-email:focus {
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+/* line 41, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/forms.scss */
+#form-bottom .submit {
+  outline: 0;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0rem 0.25rem 0.25rem 0rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+/* line 48, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/forms.scss */
+#form-bottom .submit:hover {
+  background: rgba(0, 0, 0, 0.0375);
+}
+/* line 52, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/forms.scss */
+#form-bottom .submit:focus, #form-bottom .submit:active {
+  background: rgba(0, 0, 0, 0.05);
+  outline: 0;
+}
+
+/* line 60, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/forms.scss */
+.list-center {
+  text-align: center;
+}
+/* line 63, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/forms.scss */
+.list-center li {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.15);
+  padding: 0.5rem;
+}
+/* line 68, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/forms.scss */
+.list-center li a {
+  color: rgba(0, 0, 0, 0.15);
+}
+
+/**
+ * FOOTER FORM
+ */
+/* line 78, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/forms.scss */
+#footer-form {
+  width: 100%;
+  max-width: 24rem !important;
+  display: flex;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+}
+/* line 84, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/forms.scss */
+#footer-form.hasError {
+  border-bottom: 2px solid #FF7085 !important;
+}
+/* line 88, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/forms.scss */
+#footer-form:hover, #footer-form:active, #footer-form:focus {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+/* line 94, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/forms.scss */
+#footer-form input {
+  background: transparent;
+  flex: 1;
+  border: 0px solid transparent;
+  outline: 0 !important;
+  padding: 0.5rem;
+  border-radius: 0;
+}
+/* line 102, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/forms.scss */
+#footer-form input:focus, #footer-form input:hover, #footer-form input:active {
+  background: transparent;
+}
+/* line 109, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/forms.scss */
+#footer-form button {
+  background: transparent;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 0px solid transparent;
+  box-shadow: 0px 0px 0px transparent;
+  color: rgba(0, 0, 0, 0.3);
+  outline: 0 !important;
+}
+/* line 118, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/forms.scss */
+#footer-form button:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+/* line 122, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/forms.scss */
+#footer-form button:focus, #footer-form button:active {
+  color: rgba(0, 0, 0, 0.75);
+  outline: 0 !important;
+}
+
+/**
+ * FONTS
+ */
+/* line 5, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+p {
+  color: #767171;
+}
+/* line 8, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+p.white-text {
+  color: white;
+}
+
+/* line 13, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+.thin {
+  font-weight: 300;
+}
+
+/* line 17, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+.white-text p {
+  color: white;
+}
+
+/* line 21, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+a {
+  color: #7e6b8f;
+  text-decoration: none;
+}
+/* line 25, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+a:visited {
+  color: #7e6b8f;
+  text-decoration: none;
+}
+/* line 30, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+a:hover, a:active, a:focus {
+  color: #aca0bb;
+  text-decoration: none;
+}
+
+/* line 38, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+.form-control,
+p {
+  font-family: 'Khula', sans-serif !important;
+}
+
+/* line 51, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+.accent-text {
+  color: #183642;
+}
+
+/**
+ * General
+ */
+/* line 59, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+.accent {
+  background: #183642;
+}
+
+/* line 63, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+.gray-text {
+  color: #767171 !important;
+}
+/* line 66, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+.gray-text a {
+  color: #767171 !important;
+  text-decoration: underline;
+}
+
+/* line 72, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+.transparent-text {
+  opacity: 0.75;
+}
+
+/* line 76, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+.purple {
+  background: #7e6b8f !important;
+}
+
+/* line 80, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+.purple-text {
+  color: #7e6b8f !important;
+}
+
+/* line 84, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+.light-purple {
+  background: #aca0bb;
+}
+
+/* line 88, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+.hover-transparent:hover {
+  opacity: 0.75;
+}
+
+/* line 92, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+*::placeholder {
+  color: #AFAFAF !important;
+}
+
+/* line 96, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+*::-webkit-input-placeholder {
+  color: #AFAFAF !important;
+}
+
+/* line 100, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+*::-moz-placeholder {
+  color: #AFAFAF !important;
+}
+
+/* line 104, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+*:-ms-input-placeholder {
+  color: #AFAFAF !important;
+}
+
+/* line 108, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+*:-moz-placeholder {
+  color: #AFAFAF !important;
+}
+
+/**
+ * Text block
+ */
+/* line 117, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+.text-block p {
+  color: #767171;
+}
+/* line 121, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+.text-block li {
+  color: #767171;
+}
+/* line 125, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+.text-block p.light-gray-text {
+  color: #AFAFAF;
+}
+/* line 129, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/textAndColors.scss */
+.text-block h6 {
+  margin-top: 2rem;
+  width: 100%;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #7e6b8f;
+}
+
+/* line 1, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/modal.scss */
+.form-control {
+  width: 100% !important;
+}
+
+/* line 5, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/modal.scss */
+.modal-dialog {
+  border-radius: 0px !important;
+}
+/* line 8, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/modal.scss */
+.modal-dialog .modal-body {
+  padding: 0.5rem 0rem 0rem 0rem;
+}
+/* line 11, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/modal.scss */
+.modal-dialog .modal-body .form-control {
+  border-radius: 0px;
+  border: 0px solid transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+/* line 17, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/modal.scss */
+.modal-dialog .modal-body .links {
+  padding: 1rem;
+}
+
+/**
+ * GENERAL STYLING AND SPACING
+ */
+/* line 32, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/application.scss */
+.full-page {
+  min-height: 100vh;
+}
+
+/* line 36, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/application.scss */
+.full-height {
+  min-height: 100vh;
+}
+
+/* line 40, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/application.scss */
+.display-none {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) and (min-device-width: 1024px) {
+  /* line 45, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/application.scss */
+  .marg-wide {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+/**
+ * PERFUMES
+ */
+/* line 55, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/application.scss */
+.collapser {
+  position: absolute;
+  right: 1rem;
+  height: 1rem;
+  width: 1rem;
+  cursor: hand;
+  cursor: pointer;
+}
+/* line 63, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/application.scss */
+.collapser .bar-1 {
+  position: absolute;
+  top: calc(0.5rem - 1px);
+  width: 1rem;
+  height: 2px;
+  background: #7e6b8f;
+}
+/* line 71, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/application.scss */
+.collapser .bar-2 {
+  position: absolute;
+  height: 1rem;
+  left: calc(0.5rem - 1px);
+  width: 2px;
+  background: #7e6b8f;
+  transition: all 0.2s;
+}
+
+/* line 82, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/application.scss */
+.expanded .collapser .bar-2 {
+  transform: rotate(90deg);
+}
+
+/* line 87, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/application.scss */
+.title-collapse {
+  cursor: hand;
+  cursor: pointer;
+}
+
+/**
+ * Highlight color
+ */
+/* line 96, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/application.scss */
+::selection {
+  background: #aca0bb;
+  color: white;
+}
+
+/* line 101, /Users/cameroncabo/Projects/lovesylvie/app/assets/stylesheets/application.scss */
+::-moz-selection {
+  background: #aca0bb;
+  color: white;
+}
