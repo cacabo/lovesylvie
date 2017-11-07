@@ -6,10 +6,26 @@ class PostsController < ApplicationController
   end
 
   def new
-    @post = current_user.posts.build
+    @post = Post.new
+  end
+
+  def create
+    @post = current_user.posts.new(params[:post])
+
+    if @post.save
+      flash[:notice] = "Post created successfully"
+      redirect_to @post
+    else
+      flash[:alert] = "There was an issue creating your post"
+      render "new"
+    end
   end
 
   private
+
+  def post_params
+    params.require(:post).permit(:title, :text)
+  end
 
   def correct_admin
     unless current_user and current_user.isAdmin

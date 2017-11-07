@@ -5,6 +5,9 @@
       <h2>
         Hi <%= @user.email %>
       </h2>
+      <% if current_user.isAdmin %>
+        <p><strong>ADMIN</strong></p>
+      <% end %>
       <p>
         <% if @user.referrals == 0 %>
           Want some awesome perks? Refer a friend with your unique link:
