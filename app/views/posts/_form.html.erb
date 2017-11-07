@@ -1,0 +1,33 @@
+<%= form_for @post, html: { multipart: true } do |f| %>
+  <% if @post.errors.any? %>
+    <div class="alert alert-danger" id="error_explanation">
+      <h4>
+        <%= pluralize(@post.errors.count, "error") %> prohibited
+        this article from being saved:
+      </h4>
+      <ul>
+        <% @post.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+      <%= f.text_field :title, placeholder: "Pick your title...", required: true %>
+  </p>
+
+  <p>
+      <%= f.text_area :text, class: "no-scroll animate min-30", placeholder: "Write your article here...", required: true %>
+  </p>
+
+  <p>
+      <%= f.file_field :image %>
+  </p>
+
+  <div class="space"></div>
+
+  <p>
+      <%= f.submit "Submit Post", class: "btn btn-primary" %>
+  </p>
+<% end %>

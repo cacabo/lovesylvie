@@ -6,8 +6,7 @@ Rails.application.routes.draw do
   get '/perfume', to: 'welcome#perfume', as: 'perfume'
 
   # routes for posts
-  get '/posts', to: 'post#index', as: 'posts'
-  get '/posts/:id', to: 'post#show', as: 'post'
+  resources :posts
 
   # user show page
   get '/users/:id', to: 'users#show', as: 'user'
