@@ -13,6 +13,15 @@
   text-transform: uppercase;
   font-size: 0.8rem;
   padding: 1rem 1.5rem;
+
+  &.btn-sm {
+    padding: 0.5rem 1rem;
+  }
+
+  &.right {
+    position: absolute;
+    right: 0;
+  }
 }
 
 .btn-outline-white {
