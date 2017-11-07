@@ -36,6 +36,18 @@
   }
 }
 
+.btn-outline-purple {
+  background: transparent;
+  border: 2px solid $purple;
+  color: $purple !important;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: $transparent-purple;
+  }
+}
+
 .btn-outline-accent {
   background: transparent;
   border: 2px solid $accent;
@@ -44,7 +56,7 @@
   &:hover,
   &:focus,
   &:active {
-    background: rgba(24, 54, 66, 0.1);
+    background: $transparent-accent;
   }
 }
 
