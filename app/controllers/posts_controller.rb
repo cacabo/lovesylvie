@@ -6,11 +6,11 @@ class PostsController < ApplicationController
   end
 
   def new
-    @post = Post.new
+    @post = current_user.posts.build
   end
 
   def create
-    @post = current_user.posts.new(params[:post])
+    @post = current_user.posts.build(post_params)
 
     if @post.save
       flash[:notice] = "Post created successfully"
@@ -27,6 +27,11 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+
+    if @post.nil?
+      flash[:alert] = "Post not found"
+      redirect_to posts_path
+    end
   end
 
   def update
@@ -36,7 +41,7 @@ class PostsController < ApplicationController
       flash[:notice] = "Post updated successfully"
       redirect_to @post
     else
-      flash [:alert] = "There was an error updating your post"
+      flash[:alert] = "There was an error updating your post"
       render 'edit'
     end
   end
