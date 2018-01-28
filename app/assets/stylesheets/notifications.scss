@@ -22,10 +22,14 @@
   }
 
   &.red {
-    background: $accent;
+    background: $red;
   }
 
   &.green {
-    background: $accent;
+    background: $green;
+  }
+
+  &.hidden {
+    display: none;
   }
 }
