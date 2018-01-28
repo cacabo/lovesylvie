@@ -1,4 +1,10 @@
 <div class="post">
-  <h1><%= @post.title %></h1>
-  <%= @post.text %>
+  <%= link_to post do %>
+    <% if post.image and post.image.file? %>
+      <%= image_tag post.image.url(:large) %> 
+    <% end %>
+    <h2>
+      <%= post.title %>
+    </h2>
+  <% end %>
 </div>

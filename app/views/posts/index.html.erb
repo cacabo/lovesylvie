@@ -7,11 +7,13 @@
     <div class="row">
         <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
           <% if not current_user.nil? and current_user.isAdmin %>
-            <%= link_to "New post", new_post_path, class: "btn btn-purple btn-sm right" %>
+            <%= link_to "New post", new_post_path, class: "btn btn-outline-purple btn-sm right" %>
           <% end %>
 
           <% if @posts and @posts.length > 0 %>
-            <h2>Listing posts</h2>
+            <h2 class="bold marg-bot-1">
+              Learn more about us
+            </h2>
 
             <% @posts.each do |post| %>
               <%= render post %>
