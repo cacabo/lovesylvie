@@ -32,7 +32,7 @@ end
 
 # Deployment DB
 group :production do
-    gem 'pg', '~> 1.0'
+    gem 'pg', '~> 0.21.0'
 end
 
 group :development, :test do
