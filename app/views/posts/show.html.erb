@@ -18,6 +18,8 @@
 
           <% if not current_user.nil? and current_user.isAdmin %>
             <%= link_to "Edit post", edit_post_path(@post), class: "btn btn-outline-purple btn-sm marg-top-1" %>
+
+            <div className="space-2" />
           <% end %>
         </div>
     </div>
