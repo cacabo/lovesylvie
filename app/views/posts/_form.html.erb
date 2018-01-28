@@ -1,4 +1,4 @@
-<%= form_for @post, html: { multipart: true }, class: 'article-form' do |f| %>
+<%= form_for @post, html: { multipart: true, id: 'post-form' } do |f| %>
   <% if @post.errors.any? %>
     <div class="alert alert-danger" id="error_explanation">
       <h4>
@@ -13,12 +13,14 @@
     </div>
   <% end %>
 
-  <label for="title" class="form-label">Title</label>
-  <%= f.text_field :title, placeholder: "Pick your title...", required: true, class: 'form-field form-control', autofocus: true %>
+  <%= f.text_field :title, placeholder: "Title...", required: true, class: 'form-field form-control', autofocus: true, id: "title" %>
 
-  <label for="text" class="form-label">Post body</label>
-  <%= f.text_area :text, class: "no-scroll animate min-30", placeholder: "Write your article here...", required: true, class: 'form-field form-control' %>
+  <label>
+    Article image
+  </label>
   <%= f.file_field :image %>
+
+  <%= f.text_area :text, class: "no-scroll animate min-30", placeholder: "Write your article here...", required: true, class: 'form-field form-control', id: "body" %>
 
   <div class="space-2"></div>
 
