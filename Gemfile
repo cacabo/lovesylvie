@@ -19,6 +19,9 @@ gem 'devise', '~> 4.2'
 # For WYSIWYG article forms
 gem 'ckeditor', '~> 4.2'
 
+# For image uploading
+gem "paperclip", "~> 5.0.0"
+
 # Development DB
 group :development, :test do
     gem 'sqlite3'
