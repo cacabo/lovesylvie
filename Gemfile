@@ -22,6 +22,9 @@ gem 'ckeditor', '~> 4.2'
 # For image uploading
 gem "paperclip", "~> 5.0.0"
 
+# For saving images to aws
+gem 'aws-sdk', '~> 2.3.0'
+
 # Development DB
 group :development, :test do
     gem 'sqlite3'
