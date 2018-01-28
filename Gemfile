@@ -20,19 +20,19 @@ gem 'devise', '~> 4.2'
 gem 'ckeditor', '~> 4.2'
 
 # For image uploading
-gem "paperclip", "~> 5.0.0"
+gem 'paperclip', '~> 5.2', '>= 5.2.1'
 
 # For saving images to aws
 gem 'aws-sdk', '~> 2.3.0'
 
 # Development DB
 group :development, :test do
-    gem 'sqlite3'
+    gem 'sqlite3', '~> 1.3', '>= 1.3.11'
 end
 
 # Deployment DB
 group :production do
-    gem 'pg'
+    gem 'pg', '~> 1.0'
 end
 
 group :development, :test do
