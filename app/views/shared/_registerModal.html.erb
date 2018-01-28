@@ -4,7 +4,16 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
+        <div class="close-wrapper full-width">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
         <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+          <h3 class="title">
+            Register
+          </h3>
+
           <%= devise_error_messages! %>
 
           <div class="field marg-bot-1 marg-top-05">

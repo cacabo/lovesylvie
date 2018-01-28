@@ -12,11 +12,8 @@ __General__ (9)
 - [ ] Link with mailer (2)
 - [x] Deploy to Heroku (1)
 - [x] Google sheet of time spent and hours
-- [ ] Views dependent on if admin or if user (5)
+- [x] Views dependent on if admin or if user (5)
 - [ ] 3 bottles over each other for discover something great
-
-__Blog__
-- [ ] Promote articles on Facebook
 
 __Setup__ (3.5)
 - [x] Bootstrap
@@ -67,9 +64,8 @@ __Database__ (6)
 - [ ] Sendgrid for contact form (1)
 
 __Needed resources__
-- [ ] Logo as SVG in black with transparent back
-- [ ] Logo as SVG in white with transparent back
-- [ ] Additional images in product mockups
+- [x] Logo as SVG in black with transparent back
+- [x] Logo as SVG in white with transparent back
 
 Note that numbers in parenthesis (x) represent expected number of hours per task. The total estimated number of hours is: __68 hours__, although this is subject to (large) change depending on configuration, iteration, and specification.
 

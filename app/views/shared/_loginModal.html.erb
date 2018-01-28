@@ -4,7 +4,15 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
+        <div class="close-wrapper">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
         <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <h3 class="title">
+            Login
+          </h3>
           <div class="field marg-bot-1 marg-top-05">
             <%= f.email_field :email, class: 'form-control login-email', required: true, placeholder: "Email..." %>
           </div>
