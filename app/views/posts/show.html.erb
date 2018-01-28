@@ -6,8 +6,8 @@
 <div class="container marg-top-2">
     <div class="row">
         <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 post">
-          <% if not current_user.nil? and current_user.isAdmin %>
-            <%= link_to "Edit post", edit_post_path(@post), class: "btn btn-purple btn-sm right" %>
+          <% if @post.image and @post.image.url and @post.image.file? %>
+            <%= image_tag @post.image.url, class: "img-fluid full-width" %>
           <% end %>
 
           <h2>
@@ -15,6 +15,10 @@
           </h2>
 
           <%= @post.text.html_safe %>
+
+          <% if not current_user.nil? and current_user.isAdmin %>
+            <%= link_to "Edit post", edit_post_path(@post), class: "btn btn-outline-purple btn-sm marg-top-1" %>
+          <% end %>
         </div>
     </div>
 </div>
