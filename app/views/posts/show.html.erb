@@ -1,18 +1,20 @@
 <head>
     <% title 'Love Sylvie | ' + @post.title %>
-    <% description @post.body.limit(200) %>
+    <% description @post.text[0, 200] %>
 </head>
 
 <div class="container marg-top-2">
     <div class="row">
-        <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+        <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 post">
           <% if not current_user.nil? and current_user.isAdmin %>
             <%= link_to "Edit post", edit_post_path(@post), class: "btn btn-purple btn-sm right" %>
           <% end %>
 
-          <h2><%= @post.title %></h2>
+          <h2>
+            <%= @post.title %>
+          </h2>
 
-          <%= @post.text %>
+          <%= @post.text.html_safe %>
         </div>
     </div>
 </div>
