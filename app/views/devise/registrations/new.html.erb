@@ -2,36 +2,40 @@
   <div class="space-2 hidden-md-down"></div>
   <div class="row">
     <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
-      <h2 class="bold accent-text">Sign up</h2>
-
       <% if params[:id] %>
         <% if User.exists?(params[:id]) %>
-          <% @user = User.find(params[:id]) %>
-          <p class="gray-text">
-            <%= @user.email %> must be one good friend!
-          </p>
+          <% @referrer = User.find(params[:id]) %>
         <% end %>
       <% end %>
 
-      <%= form_for(resource, as: resource_name, url: create_referral_path) do |f| %>
+      <% # form_for(resource, as: resource_name, url: create_referral_path) do |f| %>
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <h2 class="bold accent-text">
+          <% if @referrer and @referrer.email %>
+            Referral sign up
+          <% else %>
+            Register
+          <% end %>
+        </h2>
+
+        <% if @referrer and @referrer.email %>
+          <p class="gray-text">
+            <%= @referrer.email %> must be one good friend!
+          </p>
+        <% end %>
+
         <%= devise_error_messages! %>
 
         <div class="field marg-bot-1">
-          <%= f.label :email %><br />
-          <%= f.email_field :email, autofocus: true, class: 'form-control', required: true %>
+          <%= f.email_field :email, autofocus: true, class: 'form-control', required: true, placeholder: 'Email' %>
         </div>
 
         <div class="field marg-bot-1">
-          <%= f.label :password %>
-          <% if @minimum_password_length %>
-          <em>(<%= @minimum_password_length %> characters minimum)</em>
-          <% end %><br />
-          <%= f.password_field :password, autocomplete: "off", class: 'form-control', required: true %>
+          <%= f.password_field :password, autocomplete: "off", class: 'form-control', required: true, placeholder: 'Password' %>
         </div>
 
         <div class="field marg-bot-1">
-          <%= f.label :password_confirmation %><br />
-          <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control', required: true %>
+          <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control', required: true, placeholder: 'Confirm password' %>
         </div>
 
         <div class="actions marg-bot-1">

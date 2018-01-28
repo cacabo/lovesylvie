@@ -2,17 +2,17 @@
   <div class="space-2 hidden-md-down"></div>
   <div class="row">
     <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
-      <h2 class="bold accent-text">Log in</h2>
-
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <h2 class="bold accent-text">
+          Log in
+        </h2>
+
         <div class="field marg-bot-1">
-          <%= f.label :email %><br />
-          <%= f.email_field :email, autofocus: true, class: 'form-control', required: true %>
+          <%= f.email_field :email, autofocus: true, class: 'form-control', required: true, placeholder: 'Email' %>
         </div>
 
         <div class="field marg-bot-1">
-          <%= f.label :password %><br />
-          <%= f.password_field :password, autocomplete: "off", class: 'form-control', required: true %>
+          <%= f.password_field :password, autocomplete: "off", class: 'form-control', required: true, placeholder: 'Password'%>
         </div>
 
         <% if devise_mapping.rememberable? -%>
