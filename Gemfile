@@ -12,12 +12,19 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+
+# For user models
 gem 'devise', '~> 4.2'
 
+# For WYSIWYG article forms
+gem 'ckeditor', '~> 4.2'
+
+# Development DB
 group :development, :test do
     gem 'sqlite3'
 end
 
+# Deployment DB
 group :production do
     gem 'pg'
 end
