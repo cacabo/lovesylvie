@@ -8,14 +8,24 @@
       <% if current_user.isAdmin %>
         <p class="light-gray-text"><strong>ADMIN</strong></p>
       <% end %>
-      <p class="big">
-        <% if @user.referrals == 0 %>
+      <% if @user.referrals == 0 %>
+        <p class="big">
           It looks like you haven't referred anyone yet. Want some awesome perks? Get a friend to sign up with your unique link:
-        <% else %>
+        </p>
+      <% else %>
+        <p class="big">
           Ride on, <%= @user.referrals %> of your friends have signed up by your referral. Might as well refer some more to get some awesome perks:
-        <% end %>
-        <input class="unique-link" value="<%= request.original_url + 'register/' + current_user.id.to_s %>" readonly="readonly" />
-      </p>
+        </p>
+        <div class="referrals">
+          <div class="bar" />
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      <% end %>
+      <input class="unique-link" value="<%= request.original_url + 'register/' + current_user.id.to_s %>" readonly="readonly">
+      <div class="space-4"></div>
     </div>
   </div>
 </div>
