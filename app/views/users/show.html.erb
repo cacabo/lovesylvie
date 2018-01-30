@@ -1,29 +1,62 @@
-<div class="container marg-top-2 marg-bot-2">
+<div class="container marg-top-2">
   <div class="row">
     <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
       <div class="space-2"></div>
       <h2 class="marg-bot-1">
         Hi <%= @user.email %>
       </h2>
+
+      <!-- If the user is an admin, print out "admin" -->
       <% if current_user.isAdmin %>
-        <p class="light-gray-text"><strong>ADMIN</strong></p>
+        <p class="light-gray-text">
+          <strong>ADMIN</strong>
+        </p>
       <% end %>
+
+      <!-- Render text based on if the user has referred anyone yet or not -->
       <% if @user.referrals == 0 %>
         <p class="big">
           It looks like you haven't referred anyone yet. Want some awesome perks? Get a friend to sign up with your unique link:
         </p>
       <% else %>
         <p class="big">
-          Ride on, <%= @user.referrals %> of your friends have signed up by your referral. Might as well refer some more to get some awesome perks:
+          Ride on, <strong><%= @user.referrals %></strong> of your friends have signed up by your referral. Might as well refer some more to get some awesome perks:
         </p>
-        <div class="referrals">
-          <div class="bar" />
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
       <% end %>
+
+      <!-- Visualize the user's referrals -->
+      <div class="referrals">
+        <div class="bar" />
+        <div class="markers">
+          <div class="<%= @user.referrals >= 0 ? "marker active" : "marker" %>">
+            <div class="circle"></div>
+            <div class="number">
+              0
+            </div>
+          </div>
+          <div class="<%= @user.referrals >= 5 ? "marker active" : "marker" %>">
+            <div class="circle"></div>
+            <div class="number">
+              5
+            </div>
+          </div>
+          <div class="<%= @user.referrals >= 25 ? "marker active" : "marker" %>">
+            <div class="circle"></div>
+            <div class="number">
+              25
+            </div>
+          </div>
+          <div class="<%= @user.referrals >= 50 ? "marker active" : "marker" %>">
+            <div class="circle"></div>
+            <div class="number">
+              50
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="space-2"></div>
+
+      <!-- Render the user's unique link -->
       <input class="unique-link" value="<%= request.original_url + 'register/' + current_user.id.to_s %>" readonly="readonly">
       <div class="space-4"></div>
     </div>

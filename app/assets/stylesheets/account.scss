@@ -2,13 +2,72 @@
  * Styling for the user's account page
  */
 .referrals {
+  display: block;
   width: 100%;
-  height: 3rem;
+  padding-top: 1rem;
 
   .bar {
     width: 100%;
     margin-top: 1rem;
     height: 1rem;
-    background: rgba(0, 0, 0, 0.1);
+    background: $light-gray;
+  }
+
+  .markers {
+    width: 100%;
+    display: flex;
+    transform: translateY(-1rem);
+    justify-content: space-between;
+
+    .marker {
+      width: 3rem;
+
+      .circle {
+        width: 3rem;
+        height: 3rem;
+        background: $light-gray;
+        border-radius: 50%;
+      }
+
+      .number {
+        width: 3rem;
+        text-align: center;
+        padding-top: 0.4rem;
+        color: $light-gray-text;
+      }
+
+      // When the user has reached this marker
+      &.active {
+        .circle {
+          background: $light-purple;
+          transition: all 0.2s ease;
+
+          &::before {
+            content: "";
+            width: 4rem;
+            height: 4rem;
+            background: $transparent-purple;
+            position: absolute;
+            transform: translate(-0.5rem, -0.5rem);
+            border-radius: 50%;
+            transition: all 0.4s ease;
+          }
+
+          &:hover {
+            background: $purple;
+
+            &::before{
+              width: 5rem;
+              height: 5rem;
+              transform: translate(-1rem, -1rem);
+            }
+          }
+        }
+
+        .number {
+          color: $purple;
+        }
+      }
+    }
   }
 }
