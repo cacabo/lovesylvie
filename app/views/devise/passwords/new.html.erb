@@ -2,14 +2,17 @@
   <div class="space-2 hidden-md-down"></div>
   <div class="row">
     <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
-      <h2 class="bold accent-text">Forgot your password?</h2>
+      <h2 class="bold accent-text">Password reset</h2>
+
+      <p>
+        Forgot your password? Enter your email below and we'll send you an email with a link to change your password.
+      </p>
 
       <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
         <%= devise_error_messages! %>
 
         <div class="field marg-bot-1">
-          <%= f.label :email %><br />
-          <%= f.email_field :email, autofocus: true, class: 'form-control', required: true %>
+          <%= f.email_field :email, autofocus: true, class: 'form-control', required: true, placeholder: "Email" %>
         </div>
 
         <div class="actions marg-bot-1">
