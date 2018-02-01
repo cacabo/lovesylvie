@@ -13,6 +13,9 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
+# For the mailer
+gem 'mail_form', '~> 1.7'
+
 # For user models
 gem 'devise', '~> 4.2'
 

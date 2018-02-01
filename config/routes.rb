@@ -14,6 +14,9 @@ Rails.application.routes.draw do
   # devise links for users
   devise_for :users, controllers: {registrations: 'registrations'}, path: '', path_names: { sign_in: 'login', sign_out: 'logout', password: 'password', confirmation: 'verification', unlock: 'unblock', registration: 'register', sign_up: '' }
 
+  # contact form
+  resources :contacts, only: [:new, :create]
+
   # unique registration links
   devise_scope :user do
     get 'register/:id', to: 'registrations#new', as: 'new_referral'

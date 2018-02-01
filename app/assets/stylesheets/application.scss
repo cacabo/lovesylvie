@@ -30,6 +30,10 @@
  * GENERAL STYLING AND SPACING
  */
 
+.hidden {
+  display: none !important;
+}
+
 .full-page {
   min-height: 100vh !important;
 }

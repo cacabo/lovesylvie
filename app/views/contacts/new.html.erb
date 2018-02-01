@@ -1,0 +1,28 @@
+<div class="container marg-top-2 marg-bot-2">
+  <div class="space-2 hidden-md-down"></div>
+  <div class="row">
+    <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+      <h2 class="bold accent-text">Contact us</h2>
+
+      <p>
+        Have questions about our platform? Leave us an email and we will get back to you as soon as possible.
+      </p>
+
+      <%= form_for @contact do |f| %>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <%= f.text_field :name, class: "form-control", type: "text", placeholder: "Name" %>
+          </div>
+          <div class="col-12 col-md-6">
+            <%= f.text_field :email, class: "form-control", type: "email", placeholder: "Email" %>
+          </div>
+        </div>
+        <%= f.text_area :message, class: "form-control", type: "text", placeholder: "Your message...", rows: "6" %>
+        <div class="hidden">
+          <%= f.text_field :nickname, hint: "Leave this blank" %>
+        </div>
+        <%= f.submit 'Send message', class: "btn btn-purple full-width", type: "submit" %>
+      <% end %>
+    </div>
+  </div>
+</div>
