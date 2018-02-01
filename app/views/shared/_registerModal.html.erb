@@ -18,14 +18,17 @@
 
           <div class="field marg-bot-1 marg-top-05">
             <%= f.email_field :email, class: 'form-control register-email', required: true, placeholder: "Email", id: "register-email" %>
+            <i class="fa fa-fw fa-envelope after" aria-hidden="true"></i>
           </div>
 
           <div class="field marg-bot-1">
             <%= f.password_field :password, autocomplete: "off", class: 'form-control register-password', required: true, placeholder: "Password", id: "register-password" %>
+            <i class="fa fa-fw fa-lock after" aria-hidden="true"></i>
           </div>
 
           <div class="field">
             <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control', required: true, placeholder: "Confirm password" %>
+            <i class="fa fa-fw fa-unlock after" aria-hidden="true"></i>
           </div>
 
           <div class="actions">
@@ -34,7 +37,7 @@
         <% end %>
 
         <div class="links">
-          <%= render "devise/shared/links" %>
+          Already have an account? <%= link_to "Login here.", new_user_session_path %>
         </div>
       </div>
     </div>

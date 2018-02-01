@@ -47,11 +47,11 @@
                 <li>
                   <%= link_to "My Account", user_path(current_user) %>
                 </li>
-                <li>
+                <!-- <li>
                   <a href="#">
                     Discovery box
                   </a>
-                </li>
+                </li> -->
               <% else %>
                 <li>
                   <%= link_to "Login", new_user_session_path %>
@@ -67,16 +67,6 @@
             <p class="text-muted bold transparent-text">ABOUT US</p>
             <ul>
               <li>
-                <a href="#">
-                  Our Story
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Vision
-                </a>
-              </li>
-              <li>
                 <a href="/posts">
                   Blog
                 </a>
@@ -87,11 +77,6 @@
           <div class="col-6 col-md-4 footer-links">
             <p class="text-muted bold transparent-text">HELP</p>
             <ul>
-              <li>
-                <a href="#">
-                  FAQ
-                </a>
-              </li>
               <!-- <li>
                 <a href="#">
                   Returns and exchanges

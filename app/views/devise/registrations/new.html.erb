@@ -1,44 +1,51 @@
-<div class="container marg-top-2 marg-bot-2">
-  <div class="space-2 hidden-md-down"></div>
-  <div class="row">
-    <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
-      <%= form_for(resource, as: resource_name, url: @referrer ? create_referral_path : registration_path(resource_name)) do |f| %>
-        <h2 class="bold accent-text">
-          <% if @referrer and @referrer.email %>
-            Referral sign up
-          <% else %>
-            Register
+<div class="background-image full-page" style="background-image: url(<%= asset_path "background.jpg" %>)">
+  <div class="container">
+    <div class="space-2"></div>
+    <div class="space-2 hidden-md-down"></div>
+    <div class="row">
+      <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+        <div class="white round-2 pad-2 shade-2">
+          <%= form_for(resource, as: resource_name, url: @referrer ? create_referral_path : registration_path(resource_name)) do |f| %>
+            <h2 class="bold accent-text">
+              <% if @referrer and @referrer.email %>
+                Referral sign up
+              <% else %>
+                Register
+              <% end %>
+            </h2>
+
+            <% if @referrer and @referrer.email %>
+              <p class="gray-text big">
+                <strong><%= @referrer.email %></strong> must be one good friend! Sign up and get some awesome perks.
+              </p>
+            <% end %>
+
+            <%= devise_error_messages! %>
+
+            <div class="field marg-bot-1">
+              <%= f.email_field :email, autofocus: true, class: 'form-control', required: true, placeholder: 'Email' %>
+              <i class="fa fa-fw fa-envelope after" aria-hidden="true"></i>
+            </div>
+
+            <div class="field marg-bot-1">
+              <%= f.password_field :password, autocomplete: "off", class: 'form-control', required: true, placeholder: 'Password' %>
+              <i class="fa fa-fw fa-lock after" aria-hidden="true"></i>
+            </div>
+
+            <div class="field marg-bot-1">
+              <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control', required: true, placeholder: 'Confirm password' %>
+              <i class="fa fa-fw fa-unlock after" aria-hidden="true"></i>
+            </div>
+
+            <div class="actions marg-bot-1">
+              <%= f.submit "Sign up", class: 'btn btn-purple full-width' %>
+            </div>
           <% end %>
-        </h2>
 
-        <% if @referrer and @referrer.email %>
-          <p class="gray-text big">
-            <strong><%= @referrer.email %></strong> must be one good friend! Sign up and get some awesome perks.
-          </p>
-        <% end %>
-
-        <%= devise_error_messages! %>
-
-        <div class="field marg-bot-1">
-          <%= f.email_field :email, autofocus: true, class: 'form-control', required: true, placeholder: 'Email' %>
+          Already have an account? <%= link_to "Login here.", new_user_session_path %>
         </div>
-
-        <div class="field marg-bot-1">
-          <%= f.password_field :password, autocomplete: "off", class: 'form-control', required: true, placeholder: 'Password' %>
-        </div>
-
-        <div class="field marg-bot-1">
-          <%= f.password_field :password_confirmation, autocomplete: "off", class: 'form-control', required: true, placeholder: 'Confirm password' %>
-        </div>
-
-        <div class="actions marg-bot-1">
-          <%= f.submit "Sign up", class: 'btn btn-purple full-width' %>
-        </div>
-      <% end %>
-
-      <% if @user.nil? %>
-        <%= render "devise/shared/links" %>
-      <% end %>
+        <div class="space-2"></div>
+      </div>
     </div>
   </div>
 </div>

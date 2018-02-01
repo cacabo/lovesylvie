@@ -15,10 +15,12 @@
           </h3>
           <div class="field marg-bot-1 marg-top-05">
             <%= f.email_field :email, class: 'form-control login-email', required: true, placeholder: "Email" %>
+            <i class="fa fa-fw fa-envelope after" aria-hidden="true"></i>
           </div>
 
           <div class="field">
             <%= f.password_field :password, autocomplete: "off", class: 'form-control login-password', required: true, placeholder: 'Password' %>
+            <i class="fa fa-fw fa-unlock after" aria-hidden="true"></i>
           </div>
 
           <div class="actions">
@@ -27,7 +29,7 @@
         <% end %>
 
         <div class="links">
-          <%= render "devise/shared/links" %>
+          Don't have an account? <%= link_to "Register here.", new_user_registration_path %>
         </div>
       </div>
     </div>
