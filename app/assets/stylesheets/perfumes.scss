@@ -1,6 +1,10 @@
 // Place all the styles related to the Perfumes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/**
+ * Style the list of perfumes that admins see
+ */
 .perfume {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1rem 0rem;
@@ -14,5 +18,82 @@
 
   h4, p {
     margin-bottom: 0.5rem;
+  }
+}
+
+/**
+ * Styling individual perfume carousel listing
+ */
+.carousel-item {
+  padding: 0rem 1rem;
+  height: 40vh;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h3, p {
+    margin-bottom: 0.5rem;
+  }
+
+  .characteristics {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $light-gray-text;
+    font-style: italic;
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  .white-transparent {
+    background: rgba(255, 255, 255, 0.65);
+  }
+}
+
+
+/**
+ * Stling the list of perfumes that you click for more info about a specific
+ * perfume
+ */
+.perfume-list {
+  margin: 1rem 0rem 1rem 0rem;
+  list-style: none;
+  min-height: 91.19px;
+  padding-left: 0;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+
+  li {
+    cursor: hand;
+    cursor: pointer;
+    background: white;
+    margin: 0.1rem;
+    box-shadow: 0rem 0.2rem 0.4rem rgba(0, 0, 0, 0.15);
+    flex: 1;
+    text-align: center;
+    padding: 1rem 0rem;
+    transition: all 0.2s;
+
+    &:hover {
+      padding: 1.2rem 0;
+      box-shadow: 0rem 0.1rem 0.3rem rgba(0, 0, 0, 0.25);
+    }
+
+    // Change the color and height of the selected perfume
+    &.active {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      background: $accent;
+      color: white;
+
+      &:hover {
+        padding: 2rem 0;
+      }
+    }
   }
 }
