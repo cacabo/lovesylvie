@@ -15,8 +15,10 @@
           <p>
             <%= p.body %>
           </p>
+          <%= link_to "Edit", edit_perfume_path(p) %>
         </div>
       <% end %>
+      <%= link_to "Create New", new_perfume_path, class: "btn btn-outline-purple btn-sm" %>
     </div>
   </div>
 </div>

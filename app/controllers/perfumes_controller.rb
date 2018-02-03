@@ -16,7 +16,7 @@ class PerfumesController < ApplicationController
       flash[:notice] = "Perfume created successfully"
       redirect_to perfumes_path
     else
-      flash[:alert] = "There was an issue creating the perfume entry"
+      flash[:alert] = "There was an issue creating the perfume"
       render "new"
     end
   end
@@ -28,7 +28,7 @@ class PerfumesController < ApplicationController
   def update
     @perfume = Perfume.find(params[:id])
 
-    if @perfume.update(post_params)
+    if @perfume.update(perfume_params)
       flash[:notice] = "Perfume updated successfully"
       redirect_to perfumes_path
     else
@@ -52,7 +52,7 @@ class PerfumesController < ApplicationController
 
   def correct_admin
     unless current_user and current_user.isAdmin
-      flash[:alert] = "Only admins can access this"
+      flash[:alert] = "Admin access only"
       redirect_to(root_url)
     end
   end

@@ -1,4 +1,4 @@
-<%= form_for @perfume, html: { multipart: true, id: 'perfume-form' } do |f| %>
+<%= form_for @perfume, html: { multipart: true } do |f| %>
   <% if @perfume.errors.any? %>
     <div class="alert alert-danger" id="error_explanation">
       <h4>

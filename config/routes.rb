@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   resources :posts
 
   # resources for perfumes
-  resources :perfumes, except: [:show]
+  resources :perfumes
 
   # user show page
   get '/users/:id', to: 'users#show', as: 'user'
