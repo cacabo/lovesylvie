@@ -17,6 +17,11 @@
   <%= f.text_field :characteristics, placeholder: "Characteristics", required: true, class: 'border form-control' %>
   <%= f.text_area :body, placeholder: "Body...", required: true, class: 'border form-control' %>
 
+  <label>
+    Perfume image
+  </label>
+  <%= f.file_field :image %>
+
   <div class="space-2"></div>
 
   <%= f.submit "Submit Perfume", class: "btn btn-purple" %>

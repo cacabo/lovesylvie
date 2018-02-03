@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get '/terms', to: 'welcome#terms_and_conditions', as: 'terms'
   get '/privacy', to: 'welcome#privacy_policy', as: 'privacy'
-  get '/perfume', to: 'welcome#perfume', as: 'perfume'
+  get '/perfume', to: 'welcome#perfume', as: 'perfume_overview'
 
   # routes for posts
   resources :posts
