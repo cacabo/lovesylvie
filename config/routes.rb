@@ -25,4 +25,7 @@ Rails.application.routes.draw do
     get 'register/:id', to: 'registrations#new', as: 'new_referral'
     post 'register/:id', to: 'registrations#create', as: 'create_referral'
   end
+
+  # 404 error
+  get '*unmatched_route', to: 'welcome#not_found', as: 'not_found'
 end
