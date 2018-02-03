@@ -1,0 +1,50 @@
+<% @perfumes = Perfume.all %>
+
+<div class="container-fluid marg-top-2 marg-bot-2 marg-wide">
+  <div class="row">
+    <div class="col-12">
+      <div class="space-1 hidden-md-down"></div>
+      <h2 class="marg-bot-2 accent-text bold center-mobile">
+        Meet your perfumes
+      </h2>
+
+      <!-- Render the perfumes -->
+      <div id="perfumes" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <!-- Render each perfume -->
+          <% @perfumes.each_with_index do |p, index| %>
+            <div class="<%= index == 0 ? "carousel-item active background-image" : "carousel-item background-image" %>" style="background-image: url(<%= p.image.url() %>)">
+              <div class="row full-width">
+                <div class="col-md-4 hidden-md-down">
+                  <% if p.image.file? %>
+                    <%= image_tag p.image.url, class: "img-fluid marg-bot-1" %>
+                  <% end %>
+                </div>
+                <div class="col-12 col-md-8 white-transparent">
+                  <h3 class="accent-text bold">
+                    <%= p.name %>
+                  </h3>
+                  <p class="caps">
+                    <%= p.characteristics %>
+                  </p>
+                  <p>
+                    <%= p.body %>
+                  </p>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Render the links to toggle different perfumes -->
+  <ul class="perfume-list">
+    <% @perfumes.each_with_index do |p, index| %>
+      <li class="<%= index == 1 ? "perfume-item active" : "perfume-item" %>" value="<%= index %>">
+        <%= p.name %>
+      </li>
+    <% end %>
+  </ul>
+</div>

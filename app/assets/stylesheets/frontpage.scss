@@ -61,20 +61,28 @@
   }
 }
 
+// Styling individual perfumes
 .carousel-item {
-  height: 50vh;
+  padding: 0rem 1rem;
+  height: 40vh;
   overflow: hidden;
 
   img {
-    height: 50vh;
-    width: auto;
+    width: 100%;
+    height: auto;
   }
 
   .content {
     flex: 1;
   }
+
+  .white-transparent {
+    background: rgba(255, 255, 255, 0.65);
+  }
 }
 
+
+// Stling the list of perfumes
 .perfume-list {
   margin: 1rem 0rem 1rem 0rem;
   list-style: none;
@@ -100,6 +108,7 @@
       box-shadow: 0rem 0.1rem 0.3rem rgba(0, 0, 0, 0.25);
     }
 
+    // Change the color and height of the selected perfume
     &.active {
       padding-top: 2rem;
       padding-bottom: 2rem;
@@ -163,5 +172,11 @@
   &:active,
   &:focus {
     outline: 0 !important;
+  }
+}
+
+@media screen and (min-width: 992px) and (min-device-width: 992px) {
+  .carousel-item {
+    background-image: none !important;
   }
 }
