@@ -1,0 +1,23 @@
+<%= form_for @perfume, html: { multipart: true, id: 'perfume-form' } do |f| %>
+  <% if @perfume.errors.any? %>
+    <div class="alert alert-danger" id="error_explanation">
+      <h4>
+        <%= pluralize(@perfume.errors.count, "error") %> prohibited
+        this perfume from being saved:
+      </h4>
+      <ul>
+        <% @perfume.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= f.text_field :name, placeholder: "Name", required: true, class: 'border form-control', autofocus: true %>
+  <%= f.text_field :characteristics, placeholder: "Characteristics", required: true, class: 'border form-control' %>
+  <%= f.text_area :body, placeholder: "Body...", required: true, class: 'border form-control' %>
+
+  <div class="space-2"></div>
+
+  <%= f.submit "Submit Perfume", class: "btn btn-purple" %>
+<% end %>

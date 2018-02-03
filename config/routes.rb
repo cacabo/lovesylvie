@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   # routes for posts
   resources :posts
 
+  # resources for perfumes
+  resources :perfumes, except: [:show]
+
   # user show page
   get '/users/:id', to: 'users#show', as: 'user'
 
