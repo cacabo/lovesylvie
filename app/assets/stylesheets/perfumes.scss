@@ -4,4 +4,15 @@
 .perfume {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1rem 0rem;
+
+  .characteristics {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $light-gray-text;
+    font-style: italic;
+  }
+
+  h4, p {
+    margin-bottom: 0.5rem;
+  }
 }

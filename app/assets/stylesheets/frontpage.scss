@@ -72,6 +72,17 @@
     height: auto;
   }
 
+  h3, p {
+    margin-bottom: 0.5rem;
+  }
+
+  .characteristics {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $light-gray-text;
+    font-style: italic;
+  }
+
   .content {
     flex: 1;
   }
@@ -175,7 +186,7 @@
   }
 }
 
-@media screen and (min-width: 992px) and (min-device-width: 992px) {
+@media screen and (min-width: 768px) and (min-device-width: 768px) {
   .carousel-item {
     background-image: none !important;
   }
