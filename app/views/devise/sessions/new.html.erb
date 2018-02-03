@@ -10,6 +10,8 @@
               Log in
             </h2>
 
+            <%= devise_error_messages! %>
+
             <div class="field marg-bot-1">
               <%= f.email_field :email, autofocus: true, class: 'form-control', required: true, placeholder: 'Email' %>
               <i class="fa fa-fw fa-envelope after" aria-hidden="true"></i>
