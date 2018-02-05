@@ -5,9 +5,10 @@ class Contact < MailForm::Base
   attribute :message,  validate: true
   attribute :nickname, captcha: true
 
+  # Define the parameters for the email to be sent
   def headers
     {
-      subject: "Contact form",
+      subject: "Inquiry about Love Sylvie",
       to: "cameron.cabo@outlook.com",
       from: %("#{name}" <#{email}>)
     }
