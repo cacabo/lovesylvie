@@ -93,8 +93,8 @@
     <!-- display then hide notifications -->
     <% if notice or alert %>
       <script>
-        $(document).ready(function () {
-          $('#alert-container').delay(200).slideDown(200).delay(4000).slideUp(200);
+        $(document).ready(function() {
+          $('#alert-container').slideDown(200).delay(4000).slideUp(200);
         });
       </script>
     <% end %>
