@@ -1,70 +1,8 @@
 # Love Sylvie
 
-Web application / prelaunch referral website for Love Sylvie.
-
-[Hours spent on the project.](https://docs.google.com/spreadsheets/d/1g1syyCLaZ8JBEtkDs3nitVwXa_25NJjfSbeRzw2BbqQ/edit?usp=sharing)
-
-## Todo
-
-__General__ (9)
-- [x] Figure out content_for stuff
-- [ ] Facebook, twitter meta tags
-- [ ] Link with mailer (2)
-- [x] Deploy to Heroku (1)
-- [x] Google sheet of time spent and hours
-- [x] Views dependent on if admin or if user (5)
-- [ ] 3 bottles over each other for discover something great
-
-__Setup__ (3.5)
-- [x] Bootstrap
-- [x] Strapper
-- [x] jQuery, JS, etc.
-- [x] Fontawesome
-- [x] Custom CSS (3)
-- [x] Custom font (0.5)
-
-__Views__ (40.5)
-- [ ] Error pages (1)
-- [ ] Campaign ended (0.5)
-- [x] Home page (6)
-- [ ] About (15)
-  - [ ] Our story (4)
-  - [ ] Vision (1)
-  - [ ] Press (2)
-  - [ ] Blog (8)
-- [x] Contact us (3)
-- [ ] Account page (1)
-- [ ] Our perfumes (13)
-  - [ ] Build discovery box (8)
-  - [x] Build basic carousel (3)
-  - [ ] Make carousel mobile responsive (2)
-- [x] Terms and conditions (1)
-- [x] Privacy policy
-- [ ] Export to CSV (1)
-- [x] User views (3)
-
-__Shared__ (1)
-- [x] Footer (0.5)
-- [x] Navbar (0.5)
-  - [x] Issue with navbar collapse toggle
-
-__Details__ (2)
-- [x] Pretty flash notifications (1)
-- [ ] Devise mailing notifications (1)
-- [x] More click and hover styling
-- [x] Navbar dropdown transitions (0.5)
-
-__Database__ (6)
-- [ ] Referral (2)
-  - [ ] Refer friends for email (1)
-  - [ ] Name in referral (1)
-- [ ] Sendgrid for contact form (1)
-
-__Needed resources__
-- [x] Logo as SVG in black with transparent back
-- [x] Logo as SVG in white with transparent back
-
-Note that numbers in parenthesis (x) represent expected number of hours per task. The total estimated number of hours is: __68 hours__, although this is subject to (large) change depending on configuration, iteration, and specification.
+Web application / prelaunch referral web application and admin dashboard for Love, Sylvie.
+* [Hours spent on the project.](https://docs.google.com/spreadsheets/d/1g1syyCLaZ8JBEtkDs3nitVwXa_25NJjfSbeRzw2BbqQ/edit?usp=sharing)
+* [Trello](https://trello.com/b/cqsAISkw/love-sylvie)
 
 ## Development instructions
 
@@ -79,7 +17,8 @@ Next, run `bundle install` to get the necessary gems then `rails s` to get the d
 This application uses SQLite3 for development and PostgreSQL for production.
 
 # Rails Boilerplate
-Boilerplate application for Ruby on Rails web apps
+
+Boilerplate application for Ruby on Rails web apps. This application was built atop this boilerplate. 
 
 ### Functionality
 * Simple templating with a navbar, full-page height page content, and footer
