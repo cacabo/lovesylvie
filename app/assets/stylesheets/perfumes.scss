@@ -24,33 +24,56 @@
 /**
  * Styling individual perfume carousel listing
  */
-.carousel-item {
-  padding: 0rem 1rem;
-  height: 40vh;
-  overflow: hidden;
+#perfumes {
+  .flex {
+    display: flex;
 
-  img {
-    width: 100%;
-    height: auto;
+    .img {
+      height: 50vh;
+      max-width: 50vw;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      margin-right: 2rem;
+    }
+
+    .content {
+      flex: 1;
+    }
   }
 
-  h3, p {
-    margin-bottom: 0.5rem;
-  }
+  .carousel-item {
+    padding: 0rem 1rem;
+    height: 50vh;
+    overflow: hidden;
 
-  .characteristics {
-    text-transform: uppercase;
-    font-weight: bold;
-    color: $light-gray-text;
-    font-style: italic;
-  }
+    h3, p {
+      margin-bottom: 0.5rem;
+    }
 
-  .content {
-    flex: 1;
+    .characteristics {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $light-gray-text;
+      font-style: italic;
+    }
   }
+}
 
-  .white-transparent {
-    background: rgba(255, 255, 255, 0.65);
+@media screen and (max-width: 548px) {
+  #perfumes {
+    .flex {
+      .img {
+        position: absolute;
+        z-index: -1;
+        opacity: 0.8;
+        max-width: none;
+      }
+
+      .content {
+        margin-top: 1rem;
+        margin-left: 4rem;
+      }
+    }
   }
 }
 

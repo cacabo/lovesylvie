@@ -13,14 +13,12 @@
         <div class="carousel-inner" role="listbox">
           <!-- Render each perfume -->
           <% @perfumes.each_with_index do |p, index| %>
-            <div class="<%= index == 0 ? "carousel-item active background-image" : "carousel-item background-image" %>" style="background-image: url(<%= p.image.url() %>)">
-              <div class="row full-width">
-                <div class="col-4 hidden-sm-down">
-                  <% if p.image.file? %>
-                    <%= image_tag p.image.url, class: "img-fluid marg-bot-1" %>
-                  <% end %>
-                </div>
-                <div class="col-12 col-md-8 col-lg-6 white-transparent">
+            <div class="<%= index == 0 ? "carousel-item active" : "carousel-item" %>">
+              <div class="flex">
+                <% if p.image.file? %>
+                  <%= image_tag p.image.url, class: "img" %>
+                <% end %>
+                <div class="content">
                   <h3 class="accent-text bold">
                     <%= p.name %>
                   </h3>
