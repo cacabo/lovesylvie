@@ -10,12 +10,16 @@
             <%= image_tag @post.image.url, class: "img-fluid full-width" %>
           <% end %>
 
-          <h2>
+          <h2 class="serif">
             <%= @post.title %>
           </h2>
 
           <%= @post.text.html_safe %>
 
+          <div class="space-1"></div>
+          <%= link_to "Back to all posts", posts_path, class: "btn btn-outline-accent btn-sm marg-top-1" %>
+
+          <!-- Render links to edit and delete if the user is an admin -->
           <% if not current_user.nil? and current_user.isAdmin %>
             <%= link_to "Edit post", edit_post_path(@post), class: "btn btn-outline-purple btn-sm marg-top-1" %>
             <%= link_to "Delete post", post_path(@post), method: :delete, data: { confirm: "Permanently delete post. Are you sure? This cannot be undone." }, class: "btn btn-outline-purple btn-sm marg-top-1" %>

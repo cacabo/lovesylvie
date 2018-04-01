@@ -49,7 +49,11 @@ h6,
 input,
 .form-control,
 p {
-  font-family: 'Khula', sans-serif !important;
+  font-family: 'Khula', sans-serif;
+}
+
+.serif {
+  font-family: 'Merriweather', 'Times New Roman', 'Times', serif;
 }
 
 .accent-text {

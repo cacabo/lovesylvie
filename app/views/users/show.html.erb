@@ -9,7 +9,7 @@
       <!-- If the user is an admin, print out "admin" -->
       <% if current_user.isAdmin %>
         <p class="tag">
-          <strong>ADMIN</strong>
+          Admin
         </p>
       <% end %>
 
@@ -26,7 +26,7 @@
 
       <!-- Visualize the user's referrals -->
       <div class="referrals">
-        <div class="bar" />
+        <div class="bar"></div>
         <div class="markers">
           <div class="<%= @user.referrals >= 0 ? "marker active" : "marker" %>">
             <div class="circle"></div>
@@ -57,7 +57,11 @@
       <div class="space-2"></div>
 
       <!-- Render the user's unique link -->
-      <input class="unique-link" value="<%= request.original_url + 'register/' + current_user.id.to_s %>" readonly="readonly">
+      <input
+        class="unique-link"
+        value="<%= request.original_url + 'register/' + current_user.id.to_s %>"
+        readonly="readonly"
+      />
       <div class="space-4"></div>
     </div>
   </div>

@@ -8,6 +8,10 @@
       <h2 class="bold marg-bot-1">
         Listing all perfumes
       </h2>
+      <p>
+        Here, you can manage the perfumes that users see on this site. Note that only administrators have access to this page, and any changes are effective immediately.
+      </p>
+      <%= link_to "Add New Perfume", new_perfume_path, class: "btn btn-outline-purple marg-bot-1" %>
       <% @perfumes.each do |p| %>
         <div class="row perfume">
           <div class="push-2 col-8 push-md-0 col-md-3 col-lg-2">
@@ -30,7 +34,6 @@
           </div>
         </div>
       <% end %>
-      <%= link_to "Create New", new_perfume_path, class: "btn btn-outline-purple marg-top-1 marg-bot-2" %>
     </div>
   </div>
 </div>

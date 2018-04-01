@@ -35,12 +35,9 @@
   display: none;
 }
 
-.full-page {
-  min-height: 100vh !important;
-}
-
+.full-page,
 .full-height {
-  min-height: 100vh;
+  min-height: 100vh !important;
 }
 
 .display-none {

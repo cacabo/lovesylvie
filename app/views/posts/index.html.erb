@@ -1,36 +1,39 @@
 <head>
-    <% title 'Love Sylvie | Blog' %>
-    <% description "Learn more about Love Sylvie." %>
+  <% title 'Love Sylvie | Blog' %>
+  <% description "Learn more about Love Sylvie." %>
 </head>
 
 <div class="container marg-top-2">
-    <div class="row">
-        <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3">
-          <% if not current_user.nil? and current_user.isAdmin %>
-            <%= link_to "New post", new_post_path, class: "btn btn-outline-purple btn-sm right" %>
-          <% end %>
+  <div class="row">
+    <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      <% if not current_user.nil? and current_user.isAdmin %>
+        <%= link_to "New post", new_post_path, class: "btn btn-outline-purple btn-sm right" %>
+      <% end %>
 
-          <% if @posts and @posts.length > 0 %>
-            <h2 class="bold marg-bot-1">
-              Learn more about us
-            </h2>
+      <% if @posts and @posts.length > 0 %>
+        <h2 class="bold marg-bot-05">
+          Learn more about us
+        </h2>
+        <p>
+          We love empowering and exploring through perfume. Find your scent, find what excites you in life.
+        </p>
+        <div class="line-0"></div>
 
-            <% @posts.each do |post| %>
-              <%= render post %>
-            <% end %>
-          <% else %>
-            <h2 class="marg-bot-1">
-              Hey there
-            </h2>
-            <p>
-              We don't have any posts up yet, but we're in the process of making some great new content.
-            </p>
-            <p>
-              - Love, Sylvie
-            </p>
-          <% end %>
-          <div class="space-1"></div>
-          <%= link_to "Back to home", root_path, class: "btn btn-sm btn-outline-accent" %>
-        </div>
+        <% @posts.each do |post| %>
+          <%= render post %>
+        <% end %>
+      <% else %>
+        <h2 class="marg-bot-1">
+          Hey there!
+        </h2>
+        <p>
+          We don't have any posts up yet, but we're in the process of making some great new content.
+        </p>
+        <p>
+          - Love, Sylvie
+        </p>
+      <% end %>
+      <%= link_to "Back to home", root_path, class: "btn btn-sm btn-outline-accent marg-bot-2" %>
     </div>
+  </div>
 </div>

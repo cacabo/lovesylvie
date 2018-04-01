@@ -28,6 +28,8 @@
 
 // Post
 .post {
+  padding: 1rem 0rem;
+
   img {
     margin-bottom: 1rem;
     width: 100%;
@@ -37,6 +39,13 @@
   h2 {
     font-weight: bold;
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    color: black;
+  }
+
+  p {
+    font-family: 'Merriweather', 'Times New Roman', 'Times', serif;
+    line-height: 1.2;
+    margin-bottom: 0;
   }
 }
