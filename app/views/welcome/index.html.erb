@@ -3,17 +3,40 @@
     <div class="space-2"></div>
     <div class="space-3 hidden-md-down"></div>
     <div class="container-fluid">
-      <h1 class="bold">Perfume is an accessory</h1>
-      <h4 class="caps transparent-text thin">On-demand perfume to match your style</h4>
-      <a href="#" class="caps btn btn-outline-white marg-top-2">
+      <h1 class="bold">
+        Perfume is an accessory
+      </h1>
+      <h4 class="caps transparent-text thin">
+        On-demand perfume to match your style
+      </h4>
+      <% if current_user.nil? %>
+        <h4 class="caps transparent-text thin marg-bot-2">
+          Be the first to know
+        </h4>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+              <div class="form-top-wrapper">
+                <form id="form-top">
+                  <input id="top-email", placeholder="Email..." />
+                  <button class="submit">
+                    Step in &nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      <!-- <a href="#" class="caps btn btn-outline-white marg-top-2">
         Build your free* discovery kit
-      </a>
+      </a> -->
       <div class="space-2 hidden-md-down"></div>
       <div class="space-4"></div>
       <div class="space-4"></div>
-      <p class="caps transparent-text small white-text thin">
+      <!-- <p class="caps transparent-text small white-text thin">
         *With subscription purchase, otherwise $4.99 S&amp;H
-      </p>
+      </p> -->
     </div>
   </div>
 </div>
@@ -185,11 +208,12 @@
       <div class="row">
         <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
           <% if current_user.nil? %>
+            <!-- If the current user is not signed in, render a form to enter their email -->
             <h2 class="white-text marg-bot-2 center">
               Receive exclusive offers and updates
             </h2>
             <div class="space-1"></div>
-            <div class="form" id="front-page-form">
+            <div class="form" id="form-bottom-wrapper">
               <form id="form-bottom">
                 <input id="bottom-email", placeholder="Email..." />
                 <button class="submit">
@@ -198,6 +222,7 @@
               </form>
             </div>
           <% else %>
+            <!-- If the current user is logged in, render their unique link -->
             <h2 class="white-text marg-bot-2 center">
               Invite your friends and receive benefits
               <input class="unique-link" value="<%= request.original_url + 'register/' + current_user.id.to_s %>" readonly="readonly" />

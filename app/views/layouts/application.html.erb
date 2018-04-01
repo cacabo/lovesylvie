@@ -125,6 +125,22 @@
     <script type="text/javascript">
       var $formBottom = $('#form-bottom');
       var $formFooter = $('#footer-form');
+      var $formTop = $('#form-top');
+
+      $formTop.submit(function(e) {
+        e.preventDefault();
+        var email = $('#top-email').val();
+
+        // Email validation
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+          $formFooter.removeClass('hasError');
+          $('#register').modal('show');
+          $('.register-email').val(email);
+          $('.register-password').focus();
+        } else {
+          $formFooter.addClass('hasError');
+        }
+      });
 
       $formFooter.submit(function(e) {
         e.preventDefault();
