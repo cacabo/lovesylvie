@@ -3,13 +3,14 @@
   <head>
     <title><%= content_for?(:title) ? content_for(:title) : "Love Sylvie" %></title>
 
+    <!-- default rails security action -->
     <%= csrf_meta_tags %>
 
     <!-- meta tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Cameron Cabo">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <% description = content_for?(:description) ? content_for(:description) : 'Love Sylvie' %>
     <meta name="description" content="<%= description %>">
     <meta name="keywords" content="<%= content_for?(:keywords) ? content_for(:keywords) : 'love,sylvie,perfume,subscription,online,website,wharton,mba' %>">

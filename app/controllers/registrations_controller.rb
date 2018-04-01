@@ -1,4 +1,5 @@
 class RegistrationsController < Devise::RegistrationsController
+  # Handle displaying a form to register
   def new
     if params[:id]
       if User.exists?(params[:id])
@@ -29,6 +30,7 @@ class RegistrationsController < Devise::RegistrationsController
   #   end
   # end
 
+  # Create a new user
   def create
     if params[:id]
       if User.exists?(params[:id])
@@ -44,6 +46,7 @@ class RegistrationsController < Devise::RegistrationsController
     end
   end
 
+  # Update a user
   def update
     super
   end
