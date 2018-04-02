@@ -14,20 +14,29 @@
           <!-- Render each perfume -->
           <% @perfumes.each_with_index do |p, index| %>
             <div class="<%= index == 0 ? "carousel-item active" : "carousel-item" %>">
-              <div class="flex">
-                <% if p.image.file? %>
-                  <%= image_tag p.image.url, class: "img" %>
-                <% end %>
-                <div class="content">
-                  <h3 class="accent-text bold">
-                    <%= p.name %>
-                  </h3>
-                  <p class="characteristics">
-                    <%= p.characteristics %>
-                  </p>
-                  <p>
-                    <%= p.body %>
-                  </p>
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+                    <div class="flex">
+                      <% if p.image.file? %>
+                        <%= image_tag p.image.url, class: "img" %>
+                      <% end %>
+                      <div class="content">
+                        <div class="space-2"></div>
+                        <div class="space-4 hidden-md-down"></div>
+                        <div class="space-2 hidden-lg-down"></div>
+                        <h3 class="accent-text bold">
+                          <%= p.name %>
+                        </h3>
+                        <p class="characteristics">
+                          <%= p.characteristics %>
+                        </p>
+                        <p>
+                          <%= p.body %>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
