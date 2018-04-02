@@ -57,12 +57,36 @@
       <div class="space-2"></div>
 
       <!-- Render the user's unique link -->
-      <input
-        class="unique-link"
-        value="<%= request.original_url + 'register/' + current_user.id.to_s %>"
-        readonly="readonly"
-      />
+      <div class="unique-link">
+        <i
+          class="fa fa-copy"
+          aria-hidden="true"
+          id="unique-link-copy"
+        ></i>
+        <input
+          id="unique-link"
+          value="<%= request.url[0, request.url.index("/users")] + '/register/' + current_user.id.to_s %>"
+          readonly="readonly"
+        />
+      </div>
       <div class="space-4"></div>
     </div>
   </div>
 </div>
+
+<script>
+  var copy_btn = document.getElementById('unique-link-copy');
+  var copy_element = document.getElementById('unique-link');
+  copy_btn.onclick = function() {
+    copy_element.focus();
+    copy_element.select();
+
+    try {
+      var successful = document.execCommand('copy');
+      var msg = successful ? 'successful' : 'unsuccessful';
+      console.log('Copying text command was ' + msg);
+    } catch (err) {
+      console.log('Oops, unable to copy');
+    }
+  };
+</script>

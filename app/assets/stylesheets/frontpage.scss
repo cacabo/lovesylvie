@@ -96,22 +96,42 @@
 }
 
 .unique-link {
-  margin-top: 2rem;
   width: 100%;
-  background: white;
-  padding: 1rem;
-  border-radius: 0.4rem;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  color: $gray-text;
-  font-size: 1.2rem;
-  font-weight: 300;
-  outline: 0 !important;
-  overflow-y: hidden;
 
-  &:active,
-  &:focus {
+  input {
+    width: 100%;
+    background: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    color: $gray-text;
+    font-size: 1.2rem;
+    font-weight: 300;
     outline: 0 !important;
+    overflow-y: hidden;
+
+    &:active,
+    &:focus {
+      outline: 0 !important;
+    }
+  }
+
+  i.fa-copy {
+    margin-top: 1.5rem;
+    position: absolute;
+    right: 2rem;
+    font-size: 1.6rem;
+    color: $gray-text;
+    opacity: 0.5;
+    cursor: hand;
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:active {
+      opacity: 1;
+    }
   }
 }
 
