@@ -5,7 +5,7 @@
 
 <div class="container marg-top-2">
     <div class="row">
-        <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3 post">
+        <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 post">
           <% if @post.image and @post.image.url and @post.image.file? %>
             <%= image_tag @post.image.url, class: "img-fluid full-width" %>
           <% end %>

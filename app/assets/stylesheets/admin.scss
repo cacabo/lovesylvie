@@ -14,3 +14,11 @@
     min-height: 100vh;
   }
 }
+
+.table.admin {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  
+  thead {
+    background: $light-gray;
+  }
+}

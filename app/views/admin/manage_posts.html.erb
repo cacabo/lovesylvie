@@ -1,0 +1,39 @@
+<head>
+    <% title 'Love Sylvie | Manage Posts' %>
+    <% description "Manage posts" %>
+</head>
+
+<div class="container-fluid">
+  <div class="row">
+    <%= render "/shared/admin-sidebar" %>
+    <div class="col-12 col-md-8 col-lg-6">
+      <h2 class="bold marg-bot-1 marg-top-1">
+        Manage Posts
+      </h2>
+      <% if @posts.present? and @posts.length > 0 %>
+        <table class="table admin">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Title</th>
+              <th scope="col">Author</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @posts.each do |post| %>
+              <tr>
+                <td scope="row"><%= post.id %></td>
+                <td><%= link_to post.title, post %></td>
+                <td><%= post.user.email %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      <% else %>
+        <p>
+          There are no posts at this time.
+        </p>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -14,7 +14,8 @@ Rails.application.routes.draw do
   end
 
   # other admin routes
-  get '/admin/articles', to: 'admin#manage-articles', as: 'manage_articles'
+  get '/admin', to: 'admin#panel_home', as: 'panel'
+  get '/admin/posts', to: 'admin#manage_posts', as: 'manage_posts'
 
   # user show page
   get '/users/:id', to: 'users#show', as: 'user'

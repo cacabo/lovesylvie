@@ -3,10 +3,11 @@
     <% description "Edit an existing perfume" %>
 </head>
 
-<div class="container marg-top-2 marg-bot-2">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-      <h2 class="bold marg-bot-1">
+    <%= render "/shared/admin-sidebar" %>
+    <div class="col-12 col-md-8 col-lg-6">
+      <h2 class="bold marg-bot-1 marg-top-1">
         Edit perfume
       </h2>
       <%= render 'form' %>

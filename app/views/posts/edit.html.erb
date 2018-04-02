@@ -1,20 +1,17 @@
 <head>
-    <% title 'Love Sylvie | Edit Post' %>
-    <% description "Edit an existing blog post" %>
+  <% title 'Love Sylvie | Edit Post' %>
+  <% description "Edit an existing blog post" %>
 </head>
 
-<div class="container">
-    <div class="row pad-top-25 pad-bot-25">
-        <div class="col-12 col-md-8 offset-md-2 marg-top-2">
-            <%= render 'form' %>
-
-            <div class="space-1"></div>
-            <%= link_to posts_path do %>
-              <button class="btn btn-outline-purple btn-sm marg-bot-1">
-                <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                &nbsp;Back to all articles
-              </button>
-            <% end %>
-        </div>
+<div class="container-fluid">
+  <div class="row">
+    <%= render "/shared/admin-sidebar" %>
+    <div class="col-12 col-md-8 col-lg-6">
+      <h2 class="bold marg-bot-1 marg-top-1">
+        Edit an existing blog post
+      </h2>
+      <div class="line-1"></div>
+      <%= render 'form' %>
     </div>
+  </div>
 </div>
