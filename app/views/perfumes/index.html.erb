@@ -2,9 +2,11 @@
     <% title 'Love Sylvie | Perfumes' %>
 </head>
 
-<div class="container marg-top-2 marg-bot-2">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+    <%= render '/shared/admin-sidebar' %>
+    <div class="col-12 col-md-8">
+      <div class="space-1"></div>
       <h2 class="bold marg-bot-1">
         Listing all perfumes
       </h2>
@@ -14,7 +16,7 @@
       <%= link_to "Add New Perfume", new_perfume_path, class: "btn btn-outline-purple marg-bot-1" %>
       <% @perfumes.each do |p| %>
         <div class="row perfume">
-          <div class="push-2 col-8 push-md-0 col-md-3 col-lg-2">
+          <div class="push-4 col-4 push-md-0 col-md-3 col-lg-2">
             <% if p.image.file? %>
               <%= image_tag p.image.url, class: "img-fluid" %>
             <% end %>

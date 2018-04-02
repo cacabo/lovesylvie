@@ -9,7 +9,12 @@ Rails.application.routes.draw do
   resources :posts
 
   # resources for perfumes
-  resources :perfumes
+  scope "/admin" do
+    resources :perfumes
+  end
+
+  # other admin routes
+  get '/admin/articles', to: 'admin#manage-articles', as: 'manage_articles'
 
   # user show page
   get '/users/:id', to: 'users#show', as: 'user'
