@@ -1,0 +1,39 @@
+<head>
+    <% title 'Love Sylvie | Manage Posts' %>
+    <% description "Manage users" %>
+</head>
+
+<div class="container-fluid">
+  <div class="row">
+    <%= render "/shared/admin-sidebar" %>
+    <div class="col-12 col-md-8 col-lg-6">
+      <h2 class="bold marg-bot-1 marg-top-1">
+        Manage Users
+      </h2>
+      <% if @users.present? and @users.length > 0 %>
+        <table class="table admin">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th>Email</th>
+              <th>Admin?</th>
+              <th>Referrals</th>
+              <th>Joined</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @users.each do |user| %>
+              <tr>
+                <td scope="row"><%= user.id %></td>
+                <td><%= user.email %></td>
+                <td><%= user.isAdmin ? "Yes" : "No" %></td>
+                <td><%= user.referrals %></td>
+                <td><%= user.created_at.strftime("%B - %Y") %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      <% end %>
+    </div>
+  </div>
+</div>

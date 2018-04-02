@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   # other admin routes
   get '/admin', to: 'admin#panel_home', as: 'panel'
   get '/admin/posts', to: 'admin#manage_posts', as: 'manage_posts'
+  get '/admin/users', to: 'admin#manage_users', as: 'manage_users'
 
   # user show page
   get '/users/:id', to: 'users#show', as: 'user'
