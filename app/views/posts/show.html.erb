@@ -1,19 +1,22 @@
 <head>
-    <% title 'Love Sylvie | ' + @post.title %>
-    <% description @post.text[0, 200] %>
+  <% title 'Love Sylvie | ' + @post.title %>
+  <% description @post.text[0, 200] %>
 </head>
 
 <div class="container marg-top-1">
   <div class="row">
     <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 post pad-1">
+      <!-- Render the post image if there is one -->
       <% if @post.image and @post.image.url and @post.image.file? %>
         <%= image_tag @post.image.url, class: "img-fluid full-width" %>
       <% end %>
 
+      <!-- Post title -->
       <h2 class="serif">
         <%= @post.title %>
       </h2>
 
+      <!-- Time at which the post was posted, and (if different) updated -->
       <p class="timestamp">
         Posted on <span class="bold"><%= @post.created_at.strftime("%B %-d, %Y") %></span>.
         <% if @post.created_at != @post.updated_at %>
@@ -21,9 +24,30 @@
         <% end %>
       </p>
 
+      <!-- Render the content of the post -->
+      <!-- Note that this is a sequence of HTML elements -->
       <%= @post.text.html_safe %>
 
-      <div class="space-1"></div>
+      <div class="line-1"></div>
+
+      <!-- Render links to share the post -->
+      <p class="share">
+        <span class="text">
+          Share via:
+        </span>
+        <a href="http://www.facebook.com/sharer.php?u=<%=@encoded + '&amp;src=sdkpreparse'%>" target="_blank">
+          <i class="fa fa-facebook fa-lg" aria-hidden="true"></i>
+        </a>
+        <a href="https://twitter.com/share?text=<%=@post.title%>&url=<%=@encoded%>" target="_blank">
+          <i class="fa fa-twitter fa-lg" aria-hidden="true"></i>
+        </a>
+        <a href="mailto:?&subject=<%=@post.title%>&body=<%=@url%>">
+          <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=<%=@url%>&title=<%=@title%>&summary=<%=@subtitle%>&source=Youth%20Journal" target="_blank">
+          <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>
+      </p>
+
       <%= link_to "Back to all posts", posts_path, class: "btn btn-outline-accent btn-sm marg-top-1" %>
 
       <!-- Render links to edit and delete if the user is an admin -->

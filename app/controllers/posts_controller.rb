@@ -31,6 +31,9 @@ class PostsController < ApplicationController
     if @post.nil?
       flash[:alert] = "Post not found"
       redirect_to posts_path
+    else
+      @url = request.base_url + request.fullpath
+      @encoded = URI.escape(@url, Regexp.new("[^#{URI::PATTERN::UNRESERVED}]"))
     end
   end
 

@@ -57,6 +57,40 @@
       font-size: 0.8rem;
       opacity: 0.5;
     }
+
+    &.share {
+      .text {
+        opacity: 0.5;
+        margin-right: 0.25rem;
+      }
+
+      .fa {
+        margin-right: 0.5rem;
+        cursor: hand;
+        cursor: pointer;
+        opacity: 0.5;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        &.fa-facebook {
+          color: #3b5998;
+        }
+
+        &.fa-twitter {
+          color: #1DA1F2;
+        }
+
+        &.fa-linkedin {
+          color: #0077B5;
+        }
+
+        &.fa-envelope {
+          color: #576cd6;
+        }
+      }
+    }
   }
 }
 
