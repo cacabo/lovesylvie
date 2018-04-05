@@ -117,20 +117,40 @@
     }
   }
 
-  i.fa-copy {
+  .icons {
     margin-top: 1.5rem;
     position: absolute;
     right: 2rem;
-    font-size: 1.6rem;
-    color: $gray-text;
-    opacity: 0.5;
-    cursor: hand;
-    cursor: pointer;
+    background: white;
 
-    &:hover,
-    &:focus,
-    &:active {
-      opacity: 1;
+    .divider {
+      position: absolute;
+      height: 2rem;
+      transform: translate(-0.625rem, -0.2rem);
+      background: rgba(0, 0, 0, 0.1);
+      margin: 0rem 0.5rem;
+      width: 2px;
+      z-index: 1000;
+      display: inline-block;
+    }
+
+    i.fa {
+      font-size: 1.6rem;
+      color: $gray-text;
+      opacity: 0.3;
+      cursor: hand;
+      cursor: pointer;
+      margin-left: 0.5rem;
+
+      &:hover,
+      &:focus,
+      &:active {
+        opacity: 0.8;
+      }
+
+      &.fa-copy {
+        margin-right: 0.75rem;
+      }
     }
   }
 }

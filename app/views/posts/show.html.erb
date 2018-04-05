@@ -3,34 +3,35 @@
     <% description @post.text[0, 200] %>
 </head>
 
-<div class="container marg-top-2">
-    <div class="row">
-        <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 post">
-          <% if @post.image and @post.image.url and @post.image.file? %>
-            <%= image_tag @post.image.url, class: "img-fluid full-width" %>
-          <% end %>
+<div class="container marg-top-1">
+  <div class="row">
+    <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 post pad-1">
+      <% if @post.image and @post.image.url and @post.image.file? %>
+        <%= image_tag @post.image.url, class: "img-fluid full-width" %>
+      <% end %>
 
-          <h2 class="serif">
-            <%= @post.title %>
-          </h2>
+      <h2 class="serif">
+        <%= @post.title %>
+      </h2>
 
-          <p class="timestamp">
-            Posted on <span class="bold"><%= @post.created_at.strftime("%B %-d, %Y") %></span>.
-            <% if @post.created_at != @post.updated_at %>
-              Updated <span class="bold"><%= @post.updated_at.strftime("%B %-d, %Y") %></span>.
-            <% end %>
-          </p>
+      <p class="timestamp">
+        Posted on <span class="bold"><%= @post.created_at.strftime("%B %-d, %Y") %></span>.
+        <% if @post.created_at != @post.updated_at %>
+          Updated <span class="bold"><%= @post.updated_at.strftime("%B %-d, %Y") %></span>.
+        <% end %>
+      </p>
 
-          <%= @post.text.html_safe %>
+      <%= @post.text.html_safe %>
 
-          <div class="space-1"></div>
-          <%= link_to "Back to all posts", posts_path, class: "btn btn-outline-accent btn-sm marg-top-1" %>
+      <div class="space-1"></div>
+      <%= link_to "Back to all posts", posts_path, class: "btn btn-outline-accent btn-sm marg-top-1" %>
 
-          <!-- Render links to edit and delete if the user is an admin -->
-          <% if not current_user.nil? and current_user.isAdmin %>
-            <%= link_to "Edit post", edit_post_path(@post), class: "btn btn-outline-purple btn-sm marg-top-1" %>
-            <%= link_to "Delete post", post_path(@post), method: :delete, data: { confirm: "Permanently delete post. Are you sure? This cannot be undone." }, class: "btn btn-outline-purple btn-sm marg-top-1" %>
-          <% end %>
-        </div>
+      <!-- Render links to edit and delete if the user is an admin -->
+      <% if not current_user.nil? and current_user.isAdmin %>
+        <%= link_to "Edit post", edit_post_path(@post), class: "btn btn-outline-purple btn-sm marg-top-1" %>
+        <%= link_to "Delete post", post_path(@post), method: :delete, data: { confirm: "Permanently delete post. Are you sure? This cannot be undone." }, class: "btn btn-outline-purple btn-sm marg-top-1" %>
+      <% end %>
+      <div class="space-1"></div>
     </div>
+  </div>
 </div>
