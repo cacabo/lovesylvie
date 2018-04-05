@@ -20,13 +20,35 @@
         </p>
       <% else %>
         <p class="big">
-          Ride on, <strong><%= @user.referrals %></strong> of your friends have signed up by your referral. Might as well refer some more to get some awesome perks:
+          Ride on, <strong><%= @user.referrals %></strong> of your friends have signed up by your referral. Refer some more to get some awesome perks like free perfume:
         </p>
       <% end %>
 
       <!-- Visualize the user's referrals -->
-      <div class="referrals">
-        <div class="bar"></div>
+      <div class="referrals marg-top-2">
+        <div class="progress">
+          <%
+            width = 25
+            referrals = @user.referrals
+            if (referrals <= 5)
+              width = 100 / 3 * referrals / 5
+            elsif (referrals <= 25)
+              width = 100 / 3 + 100 / 3 * (referrals - 5) / 20
+            elsif (referrals <= 50)
+              width = 200 / 3 + 100 / 3 * (referrals - 25) / 25
+            else
+              width = 100
+            end
+          %>
+          <div
+            class="progress-bar"
+            role="progressbar"
+            style="width: <%= width %>%"
+            aria-valuenow="<%= width %>"
+            aria-valuemin="0"
+            aria-valuemax="100">
+          </div>
+        </div>
         <div class="markers">
           <div class="<%= @user.referrals >= 0 ? "marker active" : "marker" %>">
             <div class="circle"></div>
@@ -54,6 +76,7 @@
           </div>
         </div>
       </div>
+
       <div class="space-2"></div>
 
       <!-- Render the user's unique link -->
