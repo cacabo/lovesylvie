@@ -14,6 +14,13 @@
             <%= @post.title %>
           </h2>
 
+          <p class="timestamp">
+            Posted on <span class="bold"><%= @post.created_at.strftime("%B %-d, %Y") %></span>.
+            <% if @post.created_at != @post.updated_at %>
+              Updated <span class="bold"><%= @post.updated_at.strftime("%B %-d, %Y") %></span>.
+            <% end %>
+          </p>
+
           <%= @post.text.html_safe %>
 
           <div class="space-1"></div>

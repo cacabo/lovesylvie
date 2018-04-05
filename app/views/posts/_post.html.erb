@@ -1,4 +1,4 @@
-<div class="post">
+<div class="post-preview">
   <%= link_to post do %>
     <% if post.image and post.image.file? %>
       <%= image_tag post.image.url(:large) %>
@@ -6,6 +6,14 @@
     <h2 class="serif">
       <%= post.title %>
     </h2>
+    
+    <p class="timestamp">
+      Posted on <span class="bold"><%= post.created_at.strftime("%B %-d, %Y") %></span>.
+      <% if post.created_at != post.updated_at %>
+        Updated <span class="bold"><%= post.updated_at.strftime("%B %-d, %Y") %></span>.
+      <% end %>
+    </p>
+    
     <% if not post.text.nil? %>
       <% if post.text.length > 100 %>
         <p class="serif"><%= post.text[0, 100].html_safe %>...</p>

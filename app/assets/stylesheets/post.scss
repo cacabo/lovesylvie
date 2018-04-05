@@ -9,6 +9,10 @@
     font-weight: bold;
   }
 
+  #upload {
+    border-radius: 0.4rem;
+  }
+
   .form-control, input {
     margin-bottom: 1rem;
   }
@@ -46,6 +50,42 @@
   p {
     font-family: 'Merriweather', 'Times New Roman', 'Times', serif;
     line-height: 1.2;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
+
+    &.timestamp {
+      margin-bottom: 0.65rem;
+      font-size: 0.8rem;
+      opacity: 0.5;
+    }
+  }
+}
+
+// Post preview
+.post-preview {
+  padding-bottom: 1rem;
+
+  img {
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 0.4rem;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: black;
+  }
+
+  p {
+    font-family: 'Merriweather', 'Times New Roman', 'Times', serif;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+
+    &.timestamp {
+      margin-bottom: 0.65rem;
+      font-size: 0.8rem;
+      opacity: 0.5;
+    }
   }
 }

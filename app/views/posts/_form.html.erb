@@ -18,7 +18,10 @@
   <label>
     Article image
   </label>
-  <%= f.file_field :image %>
+  <%= f.file_field :image, id: "upload-field" %>
+
+  <!-- Render a preview of the uploaded image -->
+  <img id="upload" class="img-fluid marg-bot-1" display="none" />
 
   <%= f.cktext_area :text, class: "no-scroll animate min-30", placeholder: "Write your article here...", required: true, class: 'form-field form-control', id: "body" %>
 

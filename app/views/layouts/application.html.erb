@@ -197,6 +197,24 @@
       });
     </script>
 
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var preview = $('#upload');
+
+        $("#upload-field").change(function(event) {
+          var input = $(event.currentTarget);
+          var file = input[0].files[0];
+          var reader = new FileReader();
+          reader.onload = function(e){
+            image_base64 = e.target.result;
+            preview.attr("src", image_base64);
+            preview.attr("display", "block");
+          };
+          reader.readAsDataURL(file);
+        });
+      });
+    </script>
+
     <!-- autosize -->
     <script src="https://cdn.jsdelivr.net/jquery.autosize/3.0.20/autosize.min.js"></script>
 
