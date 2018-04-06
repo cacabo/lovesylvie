@@ -114,3 +114,28 @@
    background: $light-purple;
    color: white;
  }
+
+ /**
+  * Styling absolute background images
+  */
+.background-image.absolute {
+  position: absolute;
+  width: 100%;
+  height: 35vh;
+
+  .purple-shade {
+    height: 100%;
+    width: 100%;
+    background: $purple;
+    opacity: 0.4;
+  }
+}
+
+.gray-wrapper {
+  background: lighten($light-gray, 5%);
+  min-height: 100vh;
+}
+
+.card {
+  box-shadow: 0rem 0.2rem 0.3rem rgba(0, 0, 0, 0.1);
+}

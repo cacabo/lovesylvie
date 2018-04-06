@@ -210,18 +210,27 @@
                   class="fa fa-copy"
                   aria-hidden="true"
                   id="unique-link-copy"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Copy link"
                 ></i>
                 <span class="divider"></span>
                 <a href="http://www.facebook.com/sharer.php?u=<%=@encoded + '&amp;src=sdkpreparse'%>" target="_blank">
                   <i
                     class="fa fa-facebook"
                     aria-hidden="true"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Share on Facebook"
                   ></i>
                 </a>
                 <a href="https://twitter.com/share?text=<%=@text%>&url=<%=@encoded%>" target="_blank">
                   <i
                     class="fa fa-twitter"
                     aria-hidden="true"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Share on Twitter"
                   ></i>
                 </a>
               </div>
