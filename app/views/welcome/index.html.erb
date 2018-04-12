@@ -253,12 +253,14 @@
 <script>
   var copy_btn = document.getElementById('unique-link-copy');
   var copy_element = document.getElementById('unique-link');
-  copy_btn.onclick = function() {
-    copy_element.focus();
-    copy_element.select();
+  if (copy_btn) {
+    copy_btn.onclick = function() {
+      copy_element.focus();
+      copy_element.select();
 
-    try {
-      document.execCommand('copy');
-    } catch (err) {}
-  };
+      try {
+        document.execCommand('copy');
+      } catch (err) {}
+    };
+  }
 </script>

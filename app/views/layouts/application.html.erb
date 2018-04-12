@@ -229,5 +229,22 @@
         $('[data-toggle="tooltip"]').tooltip();
       });
     </script>
+
+    <% if Rails.env.production? %>
+      <!-- google analytics -->
+      <!-- NOTE that this only runs in production so that we don't collect
+           analytics while in development -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117282399-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag('set', {
+          'user_id': <%= (current_user.present?) ? current_user.id : '' %>
+        }) {
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-117282399-1');
+      </script>
+    <% end %>
   </body>
 </html>
