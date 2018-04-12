@@ -12,6 +12,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'loofah',  '~> 2.2.1'
 
 # For the mailer
 gem 'mail_form', '~> 1.7'
