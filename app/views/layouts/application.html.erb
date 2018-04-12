@@ -235,16 +235,27 @@
       <!-- NOTE that this only runs in production so that we don't collect
            analytics while in development -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117282399-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag('set', {
-          'user_id': <%= (current_user.present?) ? current_user.id : '' %>
-        }) {
-          dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-117282399-1');
-      </script>
+
+      <!-- Track by user_id if the user is logged in -->
+      <% if current_user.present %>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag('set', {'user_id': <%= current_user.id %>}) {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'UA-117282399-1');
+        </script>
+      <% else %>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag('set', {'user_id': <%= current_user.id %>}) {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', 'UA-117282399-1');
+        </script>
+      <% end %>
     <% end %>
   </body>
 </html>
