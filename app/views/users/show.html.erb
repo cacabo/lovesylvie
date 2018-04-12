@@ -9,7 +9,7 @@
         <div class="space-1 hidden-md-down"></div>
 
         <h4 class="white-text thin transparent">
-          YOUR SHAREABLE LINK:
+          YOUR SHAREABLE LINK
         </h4>
         <!-- Render the user's unique link -->
         <div class="unique-link marg-bot-2">
@@ -136,13 +136,16 @@
   var copy_btn = document.getElementById('unique-link-copy');
   var copy_element = document.getElementById('unique-link');
   if (copy_btn) {
-    copy_btn.onclick = function() {
+    var copy = function() {
       copy_element.focus();
       copy_element.select();
 
       try {
         document.execCommand('copy');
       } catch (err) {}
-    };
+    }
+
+    copy_btn.onclick = function() {copy()};
+    copy_element.onclick = function() {copy()};
   }
 </script>
