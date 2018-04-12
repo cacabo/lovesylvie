@@ -2,32 +2,14 @@
   <div class="hero-wrapper">
     <div class="space-2"></div>
     <div class="space-3 hidden-md-down"></div>
-    <div class="container-fluid">
+    <div class="container-fluid pad-0">
       <h1 class="bold">
         Perfume is an accessory
       </h1>
       <h4 class="caps transparent-text thin">
         On-demand perfume to match your style
       </h4>
-      <% if current_user.nil? %>
-        <h4 class="caps transparent-text thin marg-bot-2">
-          Be the first to know
-        </h4>
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-              <div class="form-top-wrapper">
-                <form id="form-top">
-                  <input id="top-email", placeholder="Email..." />
-                  <button class="submit">
-                    Step in &nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i>
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      <% end %>
+
       <!-- <a href="#" class="caps btn btn-outline-white marg-top-2">
         Build your free* discovery kit
       </a> -->
@@ -37,6 +19,27 @@
       <!-- <p class="caps transparent-text small white-text thin">
         *With subscription purchase, otherwise $4.99 S&amp;H
       </p> -->
+      <% if current_user.nil? %>
+        <div class="white-transparent-wrapper">
+          <h4 class="caps transparent-text thin marg-bot-1">
+            Be the first to know
+          </h4>
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                <div class="form-top-wrapper">
+                  <form id="form-top">
+                    <input id="top-email", placeholder="Email..." />
+                    <button class="submit">
+                      Step in &nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
