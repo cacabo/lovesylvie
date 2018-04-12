@@ -237,7 +237,7 @@
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117282399-1"></script>
 
       <!-- Track by user_id if the user is logged in -->
-      <% if current_user.present %>
+      <% if current_user.present? %>
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag('set', {'user_id': <%= current_user.id %>}) {
