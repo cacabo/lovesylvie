@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   # routes for posts
   resources :posts
 
+  # routes for discovery boxes
+  resources :discovery_boxes, path: '/discovery-boxes'
+
   # resources for perfumes
   scope "/admin" do
     resources :perfumes

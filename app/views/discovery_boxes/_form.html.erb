@@ -1,0 +1,22 @@
+<%= form_for @box do |f| %>
+  <% if @box.errors.any? %>
+    <div class="alert alert-danger" id="error_explanation">
+      <h4>
+        <%= pluralize(@box.errors.count, "error") %> prohibited
+        this discovery box from being saved:
+      </h4>
+      <ul>
+        <% @box.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <label>
+    Title
+  </label>
+  <%= f.text_field :title, placeholder: "Title...", required: true, class: 'form-field form-control', autofocus: true, id: "title" %>
+
+  <%= f.submit "Submit Discovery Box", class: "btn btn-purple" %>
+<% end %>
