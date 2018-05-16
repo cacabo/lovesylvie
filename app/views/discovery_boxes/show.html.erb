@@ -5,7 +5,12 @@
         <div class="space-2"></div>
         <div class="space-1 hidden-md-down"></div>
         <div class="card pad-2">
-          <h2><%= @box.title %></h2>
+          <h2 class="marg-bot-1"><%= @box.title %></h2>
+          <%= link_to discovery_boxes_path do %>
+            <div class="btn btn-purple">
+              Back to all boxes
+            </div>
+          <% end %>
         </div>
       </div>
     </div>

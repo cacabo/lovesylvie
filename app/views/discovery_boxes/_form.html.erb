@@ -18,5 +18,12 @@
   </label>
   <%= f.text_field :title, placeholder: "Title...", required: true, class: 'form-field form-control', autofocus: true, id: "title" %>
 
+  <label>
+    Perfumes
+  </label>
+  <% @perfumes.each do |p| %>
+    <div><%= p.name %></div>
+  <% end %>
+
   <%= f.submit "Submit Discovery Box", class: "btn btn-purple" %>
 <% end %>
