@@ -13,6 +13,7 @@
  *= require_self
  */
 
+// Import all other SCSS files
 @import './strapper';
 @import './palette';
 @import './notifications';
@@ -22,11 +23,12 @@
 @import './footer';
 @import './frontpage';
 @import './forms';
-@import './textAndColors';
+@import './text-and-colors';
 @import './modal';
 @import './post';
 @import './perfumes';
 @import './admin';
+@import './discovery-box';
 
 /**
  * GENERAL STYLING AND SPACING
@@ -60,10 +62,7 @@
   width: auto;
 }
 
-/**
- * PERFUMES
- */
-
+// Styling collapser used in the FAQ and about pages
 .collapser {
   position: absolute;
   right: 1rem;
@@ -101,23 +100,18 @@
   cursor: pointer;
 }
 
-/**
- * Highlight color
- */
+// Highlight color
+::selection {
+  background: $light-purple;
+  color: white;
+}
 
- ::selection {
-   background: $light-purple;
-   color: white;
- }
+::-moz-selection {
+  background: $light-purple;
+  color: white;
+}
 
- ::-moz-selection {
-   background: $light-purple;
-   color: white;
- }
-
- /**
-  * Styling absolute background images
-  */
+ // Styling absolute background images
 .background-image.absolute {
   position: absolute;
   width: 100%;
@@ -131,12 +125,14 @@
   }
 }
 
+// Modular gray wrapper used thoughout the application with cards
 .gray-wrapper {
   background: lighten($light-gray, 2.5%);
   min-height: 100vh;
 }
 
 .card {
+  background: white;
   box-shadow: 0rem 0.2rem 0.3rem rgba(0, 0, 0, 0.1);
 }
 

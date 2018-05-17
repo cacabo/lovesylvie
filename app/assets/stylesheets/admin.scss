@@ -1,3 +1,6 @@
+/**
+ * Styling the admin panel and sidebar
+ */
 .admin-sidebar {
   background: $light-gray;
 
@@ -9,16 +12,18 @@
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-width: 768px) {
-  .admin-sidebar {
-    min-height: 100vh;
+// Add styling for tables used in the admin panel
+.table.admin {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  thead {
+    background: $light-gray;
   }
 }
 
-.table.admin {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  
-  thead {
-    background: $light-gray;
+// Have the sidebar take up at least the full height of the page on larger screens
+@media screen and (min-width: 768px) and (min-device-width: 768px) {
+  .admin-sidebar {
+    min-height: 100vh;
   }
 }
