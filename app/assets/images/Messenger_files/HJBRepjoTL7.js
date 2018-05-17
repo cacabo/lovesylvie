@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["GT40e"]); }
-
-__d("MercurySyncThreadAdminsAddToGroupTransformer",["MercuryActionType","MercuryIDs"],(function a(b,c,d,e,f,g){"use strict";function h(i){return{action_type:c("MercuryActionType").ADD_GROUP_ADMINS,action_id:null,thread_fbid:i.messageMetadata.threadKey.threadFbId,added_admin_ids:i.addedAdmins.map(function(j){return c("MercuryIDs").getParticipantIDFromUserID(j.userFbId)})}}f.exports={transform:h}}),null);

@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["EpT0V"]); }
-
-__d("PagesPlatformDialogContainer.react",["PagesPlatformDialogStore","PureStoreBasedStateMixin","React"],(function a(b,c,d,e,f,g){"use strict";var h=c("React").createClass({displayName:"PagesPlatformDialogContainer",mixins:[c("PureStoreBasedStateMixin")(c("PagesPlatformDialogStore"))],statics:{calculateState:function i(){return c("PagesPlatformDialogStore").getState()}},render:function i(){if(!this.state.dialogClass)return null;var j=this.state.dialogClass;return c("React").createElement(j,babelHelpers["extends"]({},this.state.dialogProps,{key:"dialog"}))}});f.exports=h}),null);

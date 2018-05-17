@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["u590H"]); }
-
-__d("messengerBugNubReact",["utilsRe","ReasonReact","bs_js_null_undefined","MessengerBugNub.react"],(function a(b,c,d,e,f,g){"use strict";function h(i,j,k){return c("ReasonReact").wrapJsForReason(c("MessengerBugNub.react"),{isBetaEnabled:c("utilsRe").optionBoolToNullUndefinedBoolean(i),unixName:c("bs_js_null_undefined").from_opt(j)},k)}g.make=h}),null);

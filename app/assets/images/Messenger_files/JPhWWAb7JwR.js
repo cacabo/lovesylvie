@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["nUAnP"]); }
-
-__d("messengerDirectRe",["ReasonReact","MessengerDirect"],(function a(b,c,d,e,f,g){"use strict";var h=c("ReasonReact").statelessComponent("MessengerDirectRe");function i(l,m){var n=h.slice();n[9]=function(){return null};return n}var j=c("MessengerDirect").module,k=j==null?i:function(l,m){return c("ReasonReact").wrapJsForReason(j,{viewer:l},m)};g.component=h;g.emptyComponent=i;g.make=k}),null);

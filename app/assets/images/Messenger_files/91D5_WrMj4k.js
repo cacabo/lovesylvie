@@ -1,4 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["uHKDg"]); }
-
-__d("EventReminderConstants",[],(function a(b,c,d,e,f,g){"use strict";var h={INITIAL:"initial",GOING:"going",WATCHED:"watched",UNWATCHED:"unwatched"},i={ASSOCIATED_EVENT:"ASSOCIATED_EVENT"},j={GOING:"GOING",DECLINED:"DECLINED",INVITED:"INVITED"},k={NO_ERROR:"NO_ERROR",PAST_TIME:"PAST_TIME",AFTER_ONE_YEAR:"AFTER_ONE_YEAR"};f.exports={EventGuestStates:h,EventPlanType:i,GuestStates:j,TimeErrorType:k}}),null);
-__d("MercuryGiftSnippetRenderer",["fbt"],(function a(b,c,d,e,f,g,h){"use strict";var i={renderText:function j(k,l){return k?h._("You sent a valentine."):h._("{name} sent a valentine.",[h.param("name",l)])}};f.exports=i}),null);

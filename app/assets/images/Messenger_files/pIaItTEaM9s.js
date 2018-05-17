@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["AIYYU"]); }
-
-__d("MercurySyncDeliveryReceiptTransformer",[],(function a(b,c,d,e,f,g){"use strict";function h(i){return{delivery_receipts:[{other_user_fbid:i.threadKey.otherUserFbId?i.threadKey.otherUserFbId:"",thread_fbid:i.threadKey.threadFbId?i.threadKey.threadFbId:"",time:parseInt(i.deliveredWatermarkTimestampMs,10)}]}}f.exports={transform:h}}),null);

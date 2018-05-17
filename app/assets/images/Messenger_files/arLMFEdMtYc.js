@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["ad6yu"]); }
-
-__d("MessagingFlowerBorderChecker",["MercuryConfig","MercuryMessageCustomizations","MessageBorderType","MessageCustomizationType"],(function a(b,c,d,e,f,g){"use strict";var h={shouldRenderWithFlowerBorder:function i(j){return c("MercuryConfig").WWWMessengerFlowerBorderViewer&&c("MercuryMessageCustomizations").getCustomizationValue(j,c("MessageCustomizationType").BORDER)===c("MessageBorderType").FLOWERS}};f.exports=h}),null);

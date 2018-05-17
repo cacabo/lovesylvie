@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["2NYED"]); }
-
-__d("EmployeeLinkMatcher",["CurrentUser"],(function a(b,c,d,e,f,g){"use strict";var h=new RegExp("^[\\s.,:]"),i=new RegExp("(?:\\b)(([BDTPSXJ]|(AIP))\\d{4,})(?:\\b)","im"),j=new RegExp("(?:\\b)(designpack://.+)(?:\\b)","im"),k=function k(n){if(!c("CurrentUser").isEmployee())return null;var o=i.exec(n)||j.exec(n);if(o===null)return null;return{lnk:o[1],idx:o.index+(h.exec(o[0])?1:0)}},l=function l(n){var o=c("CurrentUser").isEmployee()&&(i.exec(n)!==null||j.exec(n)!==null);return o},m={match:k,isMatch:l};f.exports=m}),null);

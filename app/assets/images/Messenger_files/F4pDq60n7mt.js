@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["kIkxs"]); }
-
-__d("FlipDirection",["DOM","Input","Style"],(function a(b,c,d,e,f,g){var h={setDirection:function i(j){var k=c("DOM").isNodeOfType(j,"input")&&j.type=="text",l=c("DOM").isNodeOfType(j,"textarea");if(!(k||l)||j.getAttribute("data-prevent-auto-flip"))return;var m=c("Input").getValue(j),n=j.style&&j.style.direction;if(!n){var o=0,p=true;for(var q=0;q<m.length;q++){var r=m.charCodeAt(q);if(r>=48){if(p){p=false;o++}if(r>=1470&&r<=1920){c("Style").set(j,"direction","rtl");j.setAttribute("dir","rtl");return}if(o==5){c("Style").set(j,"direction","ltr");j.setAttribute("dir","ltr");return}}else p=true}}else if(m.length===0){c("Style").set(j,"direction","");j.removeAttribute("dir")}}};f.exports=h}),null);

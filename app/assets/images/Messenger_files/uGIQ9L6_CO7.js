@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["dKsnc"]); }
-
-__d("applyMessengerEmoticonToContentBlock",["CharacterMetadata","EmoticonEmojiList","immutable"],(function a(b,c,d,e,f,g){"use strict";var h=c("immutable").List,i="\u3000";function j(k,l,m,n){if(!c("EmoticonEmojiList").names[m])return l;var o=k.createEntity("EMOTICON","IMMUTABLE",{type:c("EmoticonEmojiList").names[m],originalEmoticon:m}),p=o.getLastCreatedEntityKey(),q=l.getText(),r=l.getCharacterList(),s=m.length,t=r.get(n);return l.merge({text:q.slice(0,n)+i+q.slice(n+s),characterList:r.slice(0,n).concat(h.of(c("CharacterMetadata").applyEntity(t,p)),r.slice(n+s))})}f.exports=j}),null);

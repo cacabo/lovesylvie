@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["CttEu"]); }
-
-__d("messengerMasterViewReact",["ReasonReact","bs_js_null_undefined","MessengerMasterView.react"],(function a(b,c,d,e,f,g){"use strict";function h(i,j,k,l,m,n,o){return c("ReasonReact").wrapJsForReason(c("MessengerMasterView.react"),{activeThreadID:c("bs_js_null_undefined").from_opt(i),detailView:c("bs_js_null_undefined").from_opt(j),filter:c("bs_js_null_undefined").from_opt(k),folder:l,view:m,viewer:n},o)}g.make=h}),null);

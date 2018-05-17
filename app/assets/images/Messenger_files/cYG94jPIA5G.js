@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["eE4pR"]); }
-
-__d("MercurySyncEnvironment",["Arbiter","ChannelInitialData","CurrentUser","MercurySyncDeltaHandler"],(function a(b,c,d,e,f,g){"use strict";function h(){if(!c("ChannelInitialData").channelConfig)return;c("MercurySyncDeltaHandler").get();c("Arbiter").inform("MercurySyncDeltaHandler/initSeqID",{fbid:c("CurrentUser").getAccountID(),seqID:c("ChannelInitialData").channelConfig.sequenceId})}f.exports={setUp:h}}),null);

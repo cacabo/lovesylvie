@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["TB9nt"]); }
-
-__d("MercurySyncThreadNameTransformer",["MercuryActionType","MercuryLogMessageType","MercurySyncNewMessageTransformer"],(function a(b,c,d,e,f,g){"use strict";function h(i,j){var k=c("MercurySyncNewMessageTransformer").transform(i,j);k.action_type=c("MercuryActionType").LOG_MESSAGE;k.log_message_body=j.messageMetadata.adminText;k.log_message_data={name:j.name};k.log_message_type=c("MercuryLogMessageType").THREAD_NAME;return k}f.exports={transform:h}}),null);

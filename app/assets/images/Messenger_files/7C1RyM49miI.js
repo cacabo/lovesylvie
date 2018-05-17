@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["oVusi"]); }
-
-__d("NavigationClickPointHandler",["Event","ScriptPath","collectDataAttributes"],(function a(b,c,d,e,f,g){var h={getClickPointInfo:function j(k){var l=null,m=c("collectDataAttributes")(k,["ft"],["href","data-click"]),n=m.normal.href;if(!n||n==="#")return false;var o=m.normal["data-click"];if(l===null&&o)l={click:o};var p=m.ft.tn;if(l===null&&p)l={tn:p};if(l===null&&k.getAttribute){var q=k.getAttribute("class");if(q)l={"class":q}}return l}};function i(event){var j=event.target||event.srcElement,k=h.getClickPointInfo(j);if(k!==false)c("ScriptPath").setClickPointInfo(k)}if(document.documentElement!==null)c("Event").listen(document.documentElement,{click:i});f.exports=h}),null);

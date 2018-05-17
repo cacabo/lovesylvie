@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["bCf20"]); }
-
-__d("decodeInlineStyleRanges",["immutable","UnicodeUtils"],(function a(b,c,d,e,f,g){"use strict";var h=c("immutable").OrderedSet,i=c("UnicodeUtils").substr,j=h();function k(l,m){var n=Array(l.length).fill(j);if(m)m.forEach(function(o){var p=i(l,0,o.offset).length,q=p+i(l,o.offset,o.length).length;while(p<q){n[p]=n[p].add(o.style);p++}});return n}f.exports=k}),null);

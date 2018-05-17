@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["00KdI"]); }
-
-__d("MercurySyncParticipantsAddedToGroupThreadTransformer",["MercuryActionType","MercuryIDs","MercuryLogMessageType","MercurySyncNewMessageTransformer"],(function a(b,c,d,e,f,g){"use strict";function h(i,j){var k=c("MercurySyncNewMessageTransformer").transform(i,j);k.action_type=c("MercuryActionType").LOG_MESSAGE;k.log_message_body=j.messageMetadata.adminText;k.log_message_data={added_participants:j.addedParticipants.map(function(l){return c("MercuryIDs").getParticipantIDFromUserID(l.userFbId)})};k.log_message_type=c("MercuryLogMessageType").SUBSCRIBE;return k}f.exports={transform:h}}),null);

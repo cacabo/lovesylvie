@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["CeZhN"]); }
-
-__d("shimButtonReact",["utilsRe","ReasonReact","ShimButton.react","bs_js_null_undefined"],(function a(b,c,d,e,f,g){"use strict";function h(i,j,k,l){return c("ReasonReact").wrapJsForReason(c("ShimButton.react"),{className:c("bs_js_null_undefined").from_opt(i),inline:c("utilsRe").optionBoolToNullUndefinedBoolean(j),onClick:c("bs_js_null_undefined").from_opt(k)},l)}g.make=h}),null);

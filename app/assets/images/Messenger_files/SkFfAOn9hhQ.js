@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["BTxQf"]); }
-
-__d("htmlSpecialChars",[],(function a(b,c,d,e,f,g){var h=/&/g,i=/</g,j=/>/g,k=/\"/g,l=/\'/g;function m(n){if(typeof n=="undefined"||n===null||!n.toString)return"";if(n===false)return"0";else if(n===true)return"1";return n.toString().replace(h,"&amp;").replace(k,"&quot;").replace(l,"&#039;").replace(i,"&lt;").replace(j,"&gt;")}f.exports=m}),null);

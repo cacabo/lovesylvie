@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["QD6Dd"]); }
-
-__d("CapitalizedNameMentionsStrategy",["DocumentMentionsRegex"],(function a(b,c,d,e,f,g){"use strict";var h=1,i=new RegExp("(^|[^#])((?:"+c("DocumentMentionsRegex").NAME+"{"+h+",})$)"),j={name:"CapitalizedNameMentionsStrategy",findMentionableString:function k(l){var m=i.exec(l);if(m!==null)return{matchingString:m[2],leadOffset:m[2].length};return null}};f.exports=j}),null);

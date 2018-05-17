@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["4ryIt"]); }
-
-__d("str2rstr",[],(function a(b,c,d,e,f,g){function h(i){var j="",k,l;for(var m=0;m<i.length;m++){k=i.charCodeAt(m);l=m+1<i.length?i.charCodeAt(m+1):0;if(55296<=k&&k<=56319&&56320<=l&&l<=57343){k=65536+((k&1023)<<10)+(l&1023);m++}if(k<=127)j+=String.fromCharCode(k);else if(k<=2047)j+=String.fromCharCode(192|k>>>6&31,128|k&63);else if(k<=65535)j+=String.fromCharCode(224|k>>>12&15,128|k>>>6&63,128|k&63);else if(k<=2097151)j+=String.fromCharCode(240|k>>>18&7,128|k>>>12&63,128|k>>>6&63,128|k&63)}return j}f.exports=h}),null);

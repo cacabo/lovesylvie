@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["efjoM"]); }
-
-__d("IrisProtocolMessageLifetime",[],(function a(b,c,d,e,f,g){f.exports={TTL_OFF:0,TTL_ON_UNKNOWN:1,TTL_30SECONDS:3e4,TTL_1MINUTE:6e4,TTL_3MINUTES:18e4,TTL_5MINUTES:3e5,TTL_10MINUTES:6e5,TTL_15MINUTES:9e5,TTL_30MINUTES:18e5,TTL_1HOUR:36e5,TTL_2HOURS:72e5,TTL_4HOURS:144e5,TTL_8HOURS:288e5,TTL_12HOURS:432e5,TTL_24HOURS:864e5}}),null);

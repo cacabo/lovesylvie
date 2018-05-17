@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["2ltOL"]); }
-
-__d("AtSignAllowEmptyMentionsStrategy",["DocumentMentionsRegex"],(function a(b,c,d,e,f,g){var h=c("DocumentMentionsRegex").PUNCTUATION,i=["@","\\uff20"].join(""),j="[^"+i+h+"\\s]",k="(?:\\.[ |$]| |["+h+"]|)",l=new RegExp("(?:^|\\s|\\()(["+i+"]((?:"+j+k+"){0,20}))$"),m={name:"AtSignAllowEmptyMentionsStrategy",findMentionableString:function n(o){var p=l.exec(o);if(p!==null){var q=p[2];return{matchingString:q,leadOffset:p[1].length}}return null}};f.exports=m}),null);

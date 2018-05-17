@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["ngEpA"]); }
-
-__d("MessengerRTCGroupCallRingParticipantsRow.react",["cx","fbt","React","intlList"],(function a(b,c,d,e,f,g,h,i){"use strict";var j=function j(k){var l=k.names;return c("React").createElement("div",{className:"_1wsd"},c("React").createElement("div",{className:"_1wse"},i._("Ring:")),c("React").createElement("div",{className:"_1wsg"},c("intlList")(l,c("intlList").CONJUNCTIONS.NONE)))};f.exports=j}),null);

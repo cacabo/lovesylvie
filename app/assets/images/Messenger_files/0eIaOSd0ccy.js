@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["w0foS"]); }
-
-__d("DocumentMentionsSource",["invariant"],(function a(b,c,d,e,f,g,h){"use strict";function i(j,k){typeof j.findMentionableString==="function"||h(0);this.$DocumentMentionsSource1=j;this.$DocumentMentionsSource2=k;this.$DocumentMentionsSource3=false}i.prototype.findMatch=function(j){return this.$DocumentMentionsSource1.findMentionableString(j)};i.prototype.bootstrap=function(j){if(!this.$DocumentMentionsSource3){this.$DocumentMentionsSource3=true;this.$DocumentMentionsSource2.bootstrap(j)}};i.prototype.search=function(j,k){this.$DocumentMentionsSource2.search(j,k,{strategyName:this.$DocumentMentionsSource1.name})};f.exports=i}),null);

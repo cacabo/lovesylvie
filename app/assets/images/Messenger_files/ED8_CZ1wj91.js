@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["q28Ht"]); }
-
-__d("FourLetterMentionsStrategy",["DocumentMentionsRegex"],(function a(b,c,d,e,f,g){"use strict";var h=3,i="\\b[a-z][^\\s"+c("DocumentMentionsRegex").PUNCTUATION+"]",j=new RegExp("(^|[^#])((?:"+i+"{"+h+",})$)"),k={name:"FourLetterMentionsStrategy",findMentionableString:function l(m){var n=j.exec(m);if(n!==null)return{matchingString:n[2],leadOffset:n[2].length};return null}};f.exports=k}),null);

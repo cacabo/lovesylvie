@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["+Wrli"]); }
-
-__d("MessengerSortParticipants",[],(function a(b,c,d,e,f,g){var h={sortAlphabeticalWithAdmins:function i(j,k){var l=k.filter(function(n){return!!n&&j&&j.indexOf(n.id)!==-1}).toArray().sort(function(n,o){return n.name.localeCompare(o.name)}),m=k.filter(function(n){return!!n&&(!j||j.indexOf(n.id)===-1)}).toArray().sort(function(n,o){return n.name.localeCompare(o.name)});return l.concat(m)}};f.exports=h}),null);

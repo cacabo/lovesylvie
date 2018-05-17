@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["v9W5K"]); }
-
-__d("MNCommerceDialogContainer.react",["MNCommerceDialogStateStore","PureStoreBasedStateMixin","React"],(function a(b,c,d,e,f,g){"use strict";var h=c("React").createClass({displayName:"MNCommerceDialogContainer",mixins:[c("PureStoreBasedStateMixin")(c("MNCommerceDialogStateStore"))],statics:{calculateState:function i(){var j=c("MNCommerceDialogStateStore").getDialogContainer();return{dialogContainer:j}}},render:function i(){var j=this.state.dialogContainer;if(!j)return null;return c("React").createElement(j,null)}});f.exports=h}),null);

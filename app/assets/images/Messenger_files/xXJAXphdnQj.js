@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["msM61"]); }
-
-__d("workChatThreadlistNewsfeedActionReact",["cx","fbt","React","ReasonReact","MercuryConfig","xUIButtonReact"],(function a(b,c,d,e,f,g,h,i){"use strict";var j=c("ReasonReact").statelessComponent("WorkChatThreadlistNewsfeedActionReact");function k(){var l=j.slice();l[9]=function(){var m=+c("MercuryConfig").WorkNewsfeedAction;if(m!==0)return c("React").createElement("div",{className:"_6364"},c("ReasonReact").element(0,0,c("xUIButtonReact").make(0,0,[i._("Go to Newsfeed")],0,0,0,0,["/feed?ref=chat_threadlist"],["_blank"],[])));else return null};return l}g.component=j;g.make=k}),null);

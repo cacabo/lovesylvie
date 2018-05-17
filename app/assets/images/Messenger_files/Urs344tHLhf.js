@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["Xk9HL"]); }
-
-__d("PerfXFlusher",["invariant","Banzai"],(function a(b,c,d,e,f,g,h){var i="perfx_custom_logger_endpoint",j=["perfx_page","perfx_page_type","lid"];function k(m){j.forEach(function(n){return h(n in m,'PerfXFlusher: Field "%s" missing in the PerfX payload',n)})}var l={flush:function m(n){k(n);c("Banzai").post(i,n,{signal:true})},registerToSendWithBeacon:function m(n){c("Banzai").registerToSendWithBeacon(i,n)}};f.exports=l}),null);

@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["xuGnu"]); }
-
-__d("MessengerAttachmentAttribution.react",["cx","ImmutableObject","MercuryAttachmentAttribution.react","React"],(function a(b,c,d,e,f,g,h){"use strict";var i,j,k=c("React").PropTypes;i=babelHelpers.inherits(l,c("React").Component);j=i&&i.prototype;l.prototype.render=function(){return c("React").createElement(c("MercuryAttachmentAttribution.react"),{attachment:this.props.attachment,className:"_2f5n _4br2"})};function l(){i.apply(this,arguments)}l.propTypes={attachment:k.instanceOf(c("ImmutableObject"))};f.exports=l}),null);

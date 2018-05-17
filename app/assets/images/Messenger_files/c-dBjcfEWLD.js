@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["u4tu7"]); }
-
-__d("P2PDialogStore",["EventEmitter","P2PActionConstants","P2PDispatcher"],(function a(b,c,d,e,f,g){"use strict";var h,i,j=void 0,k={};h=babelHelpers.inherits(l,c("EventEmitter"));i=h&&h.prototype;function l(){i.constructor.call(this);j=c("P2PDispatcher").register(this.onEventDispatched.bind(this));k={dialogClass:null,dialogProps:null}}l.prototype.getState=function(){return k};l.prototype.onEventDispatched=function(m){var n=m.type,o=m.data;switch(n){case c("P2PActionConstants").DIALOG_SHOWN:k.dialogClass=o.dialogClass;k.dialogProps=o.dialogProps;this.emit("change");break;case c("P2PActionConstants").DIALOG_CLOSED:k.dialogClass=null;k.dialogProps=null;this.emit("change");break}};f.exports=new l()}),null);

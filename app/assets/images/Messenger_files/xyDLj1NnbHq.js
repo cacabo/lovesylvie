@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["8ntvZ"]); }
-
-__d("messengerRealtimeAttachmentTransformerRe",["messengerMessageTransformerRe","messengerAttachmentTransformerRe"],(function a(b,c,d,e,f,g){"use strict";function h(i,j,k){var l=c("messengerMessageTransformerRe").unsafeCastBlobAttachments(j),m=j.extensible_attachment,n;if(m==null)n=null;else{var o=m.story_attachment;n={legacy_attachment_id:m.legacy_attachment_id,story_attachment:o==null?null:c("messengerMessageTransformerRe").unsafeCastExtensibleAttachment(o)}}return c("messengerAttachmentTransformerRe").transformAttachment(i,{extensible_attachment:n,blob_attachments:l,sticker:j.sticker},k)}g.transform=h}),null);

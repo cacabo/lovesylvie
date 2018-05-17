@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["JKPs+"]); }
-
-__d("MercurySyncReplaceMessageTransformer",["MercuryActionType","MercurySyncNewMessageTransformer"],(function a(b,c,d,e,f,g){"use strict";function h(i,j){j=Object.assign({},j.newMessage,j);return Object.assign(c("MercurySyncNewMessageTransformer").transform(i,j),{action_type:c("MercuryActionType").REPLACE_MESSAGE,replaced_message_id:j.replacedMessageId})}f.exports={transform:h}}),null);

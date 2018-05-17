@@ -1,5 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["AEhw6"]); }
-
-__d("MercuryShareAttachmentRenderLocations",[],(function a(b,c,d,e,f,g){"use strict";var h={CHAT:"chat",CHAT_PREVIEW:"chat_preview",MESSENGER:"messenger",PAGES_INBOX:"pages_inbox",getValues:function i(){return[h.CHAT,h.CHAT_PREVIEW,h.MESSENGER,h.PAGES_INBOX]},isPreview:function i(j){return j===h.CHAT_PREVIEW}};f.exports=h}),null);
-__d("getPageIDFromThreadID",["FBID","MercuryIDs"],(function a(b,c,d,e,f,g){"use strict";function h(i){var j=c("MercuryIDs").getUserIDFromThreadID(i);if(!j||c("FBID").isUser(j))return null;return j}f.exports=h}),null);
-__d("uuid",[],(function a(b,c,d,e,f,g){function h(){return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(i){var j=Math.random()*16|0,k=i=="x"?j:j&3|8;return k.toString(16)})}f.exports=h}),null);

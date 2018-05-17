@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["oop9G"]); }
-
-__d("MercuryProfileRanges",["idx"],(function a(b,c,d,e,f,g){"use strict";function h(i){if(!i.id&&i.i)return{id:i.i,offset:i.o,length:i.l};return i}f.exports={extractFromDelta:function i(j){var k,l=(k=j)!=null?(k=k.data)!=null?k.prng:k:k;if(!l)return undefined;var m=[];try{m=JSON.parse(l);if(m.length>0)return m.map(h)}catch(n){}return m}}}),null);

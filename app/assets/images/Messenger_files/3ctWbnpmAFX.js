@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["8aBCY"]); }
-
-__d("ProfileWizardStrings",["fbt"],(function a(b,c,d,e,f,g,h){var i={CANCEL:h._("Cancel"),CHOOSE_FROM_MY_PHOTOS:h._("Choose From My Photos"),COVER_PHOTO_CHANGE_NOTICE:h._("Change your cover photo any time from the camera icon."),COVER_PHOTO_LEAVE_WARNING:h._("The changes you made to your cover photo haven't been saved."),PROFILE_PICTURE_CHANGE_NOTICE:h._("Change your profile picture any time from the camera icon."),SAVE:h._("Save"),UPDATE_COVER_PHOTO:h._("Update Cover Photo"),UPLOAD_PHOTO:h._("Upload Photo"),UPDATE_PROFILE_PICTURE:h._("Update Profile Picture")};f.exports=i}),null);

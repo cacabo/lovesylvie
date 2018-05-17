@@ -1,3 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["oh2qd"]); }
-
-__d("insertEmoticonIntoEditorState",["DraftModifier","EditorState","insertEmoticonIntoContentState"],(function a(b,c,d,e,f,g){"use strict";var h=" ";function i(j,k){var l=k.getSelection(),m=k.getCurrentContent(),n=l.getStartOffset(),o=l.getEndOffset(),p=m.getBlockForKey(l.getStartKey()).getText(),q=m.getBlockForKey(l.getEndKey()).getText(),r="";if(o<=q.length&&q[o]!==h)r=h;if(n>0&&p[n-1]!==h){m=c("DraftModifier").insertText(m,l,h);l=m.getSelectionAfter()}var s=c("insertEmoticonIntoContentState")(j,m,l);m=c("DraftModifier").insertText(s,s.getSelectionAfter(),r);return c("EditorState").push(k,m,"insert-characters")}f.exports=i}),null);
