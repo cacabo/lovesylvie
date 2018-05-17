@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180516191225) do
+ActiveRecord::Schema.define(version: 20180516203608) do
+
+  create_table "box_perfume_relationships", force: :cascade do |t|
+    t.integer "perfume_id"
+    t.integer "discovery_box_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["discovery_box_id"], name: "index_box_perfume_relationships_on_discovery_box_id"
+    t.index ["perfume_id"], name: "index_box_perfume_relationships_on_perfume_id"
+  end
 
   create_table "discovery_boxes", force: :cascade do |t|
     t.string "title"

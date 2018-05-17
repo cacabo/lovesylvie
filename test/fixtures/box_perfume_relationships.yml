@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  perfume: one
+  discovery_box: one
+
+two:
+  perfume: two
+  discovery_box: two

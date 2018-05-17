@@ -7,4 +7,8 @@ class Perfume < ApplicationRecord
   validates :name, presence: true
   validates :characteristics, presence: true
   validates :body, presence: true
+
+  # Relationship to users
+  has_many :box_perfume_relationships, dependent: :destroy
+  has_many :users, through: :box_perfume_relationships
 end
