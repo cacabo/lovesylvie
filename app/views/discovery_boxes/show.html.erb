@@ -6,19 +6,43 @@
         <div class="space-1 hidden-md-down"></div>
         <div class="card pad-2 marg-bot-2">
           <h2>Your discovery box</h2>
-          <% if @box.nil? %>
-            <p>You haven't made a discovery box yet!</p>
-            <%= link_to new_discovery_box_path do %>
-              <div class="btn btn-purple">
-                Create your new discovery box
-              </div>
-            <% end %>
+          <% if @box.perfumes.empty? %>
+            <p>You haven't added any perfumes to your box yet. Select some from the list below.</p>
           <% else %>
             <p>Contained in this box:</p>
             <% @box.perfumes.each do |p| %>
-              <p><%= p.name %></p>
+              <div class="row perfume">
+                <div class="push-4 col-4 push-md-0 col-md-3 col-lg-2">
+                  <% if p.image.file? %>
+                    <%= image_tag p.image.url, class: "img-fluid" %>
+                  <% end %>
+                </div>
+                <div class="col-12 col-md-9 col-lg-10">
+                  <h4 class="bold">
+                    <%= p.name %>
+                  </h4>
+                  <p class="characteristics">
+                    <%= p.characteristics %>
+                  </p>
+                  <p>
+                    <%= p.body %>
+                  </p>
+                  <%= link_to remove_perfume_path(@box, p), method: :delete do %>
+                    <div class="btn btn-primary">
+                      Remove perfume
+                    </div>
+                  <% end %>
+                </div>
+              </div>
             <% end %>
-            <!-- <p class="bold marg-bot-0"><%= @box.title %></p> -->
+          <% end %>
+
+          <!-- <p class="bold marg-bot-0"><%= @box.title %></p> -->
+          <div class="space-1"></div>
+          <% if @perfumes.nil? or @perfumes.empty? %>
+            <p>All perfumes are in your box!</p>
+          <% else %>
+            <p>Perfumes not in your box:</p>
             <% @perfumes.each do |p| %>
               <div class="row perfume">
                 <div class="push-4 col-4 push-md-0 col-md-3 col-lg-2">
@@ -45,7 +69,6 @@
               </div>
             <% end %>
           <% end %>
-          <div class="space-1"></div>
         </div>
       </div>
     </div>

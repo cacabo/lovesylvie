@@ -2,6 +2,7 @@ class DiscoveryBoxesController < ApplicationController
   before_action :check_logged_in
   before_action :correct_user, only: [:show, :add_perfume, :edit, :update, :destroy]
 
+  # Redirect the user to their own discovery box
   def index
     # Find the current user's discovery box
     box = current_user.discovery_box
@@ -10,7 +11,12 @@ class DiscoveryBoxesController < ApplicationController
     if box.nil?
       box = current_user.discovery_box.build
       if box.save
+        # If the box saves / is created, redirect to it
+        redirect_to box
       else
+        # If the box does not save for whatever reason
+        flash[:alert] = 'Failed to create your discovery box'
+        redirect_to root_path
       end
     else
       # If the user has a box, redirect to it
@@ -18,27 +24,30 @@ class DiscoveryBoxesController < ApplicationController
     end
   end
 
+  # Show an individual box
   def show
     @box = current_user.discovery_box
-    @perfumes = Perfume.all
+    @perfumes = Perfume.all - @box.perfumes
   end
 
-  def new
-    @box = current_user.discovery_boxes.build
-  end
+  # def new
+  # end
 
+  # Create a new discovery box
   def create
     @box = current_user.discovery_box.build(discovery_box_params)
-
     if @box.save
+      # If the box saves
       flash[:notice] = "Discovery box created successfully"
       redirect_to @box
     else
+      # If the box does not save
       flash[:alert] = "There was an issue creating your discovery box"
-      render "new"
+      redirect_to root_path
     end
   end
 
+  # Add a perfume to the discovery box
   def add_perfume
     # Find the perfume with the passed in ID
     perfume = Perfume.find(params[:perfume_id])
@@ -66,18 +75,45 @@ class DiscoveryBoxesController < ApplicationController
 
       # Attempt to save
       if box.save
-        flash[:notice] = "Added perfume successfully"
+        flash[:notice] = 'Added perfume successfully'
         redirect_to box
       else
-        flash[:alert] = "There was an issue adding the perfume"
+        flash[:alert] = 'There was an issue adding the perfume'
         redirect_to box
       end
     end
   end
 
-  def edit
-    # TODO?
+  # Remove a perfume from the discovery box
+  def remove_perfume
+    # Find the perfume with the passed in ID
+    perfume = Perfume.find(params[:perfume_id])
+
+    # If the perfume was deleted / the request was improper
+    if (perfume.nil?)
+      flash[:alert] = 'Perfume not found'
+      redirect_to discovery_box_path
+      return
+    end
+
+    # Isolate the current user's discovery box
+    box = current_user.discovery_box
+
+    if box.perfumes.exists?(perfume.id)
+      # Find the linking record
+      relationship = box.box_perfume_relationships.where(discovery_box_id: box.id, perfume_id: perfume.id).first
+      relationship.destroy
+      flash[:notice] = 'Perfume removed from your box'
+      redirect_to box
+    else
+      flash[:alert] = 'Perfume is not in your discovery box'
+      redirect_to discovery_box_path
+    end
   end
+
+  # def edit
+  #   # TODO?
+  # end
 
   def update
     if @box.update(post_params)
@@ -89,11 +125,11 @@ class DiscoveryBoxesController < ApplicationController
     end
   end
 
-  def destroy
-    @box.destroy
-    flash[:notice] = "Discovery box deleted successfully"
-    redirect_to discovery_box_path
-  end
+  # def destroy
+  #   @box.destroy
+  #   flash[:notice] = "Discovery box deleted successfully"
+  #   redirect_to discovery_box_path
+  # end
 
   private
 

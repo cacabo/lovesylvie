@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   # routes for discovery boxes
   resources :discovery_boxes, path: '/discovery-box'
   post '/discovery-box/:id/perfumes/:perfume_id', to: 'discovery_boxes#add_perfume', as: 'add_perfume'
+  delete '/discovery-box/:id/perfumes/:perfume_id', to: 'discovery_boxes#remove_perfume', as: 'remove_perfume'
 
   # resources for perfumes
   scope '/admin' do
