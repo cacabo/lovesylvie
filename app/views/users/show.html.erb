@@ -1,133 +1,131 @@
-<div class="background-image parallax absolute" style="background-image: url(<%= asset_path "background.jpg" %>)">
-  <div class="purple-shade"></div>
-</div>
-<div class="gray-wrapper">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-        <div class="space-2"></div>
-        <div class="space-1 hidden-md-down"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      <div class="space-2"></div>
+      <div class="space-1 hidden-md-down"></div>
 
-        <h4 class="white-text thin transparent">
-          YOUR SHAREABLE LINK
-        </h4>
-        <!-- Render the user's unique link -->
-        <div class="unique-link marg-bot-2">
-          <div class="icons">
+      <h1>
+        Invite some friends to score some goodies!
+      </h1>
+
+      <h4>
+        Your sharable link
+      </h4>
+      <!-- Render the user's unique link -->
+      <div class="unique-link white-background marg-bot-2">
+        <div class="icons">
+          <i
+            class="fa fa-copy"
+            aria-hidden="true"
+            id="unique-link-copy"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Copy link"
+          ></i>
+          <!-- <a href="http://www.facebook.com/sharer.php?u=<%=@encoded + '&amp;src=sdkpreparse'%>" target="_blank">
             <i
-              class="fa fa-copy"
+              class="fa fa-facebook"
               aria-hidden="true"
-              id="unique-link-copy"
               data-toggle="tooltip"
               data-placement="top"
-              title="Copy link"
+              title="Share on Facebook"
             ></i>
-            <span class="divider"></span>
-            <a href="http://www.facebook.com/sharer.php?u=<%=@encoded + '&amp;src=sdkpreparse'%>" target="_blank">
-              <i
-                class="fa fa-facebook"
-                aria-hidden="true"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Share on Facebook"
-              ></i>
-            </a>
-            <a href="https://twitter.com/share?text=<%=@text%>&url=<%=@encoded%>" target="_blank">
-              <i
-                class="fa fa-twitter"
-                aria-hidden="true"
-                data-toggle="tooltip"
-                data-placement="top"
-                title="Share on Twitter"
-              ></i>
-            </a>
-          </div>
-          <input
-            id="unique-link"
-            value="<%= @url %>"
-            readonly="readonly"
-          />
+          </a>
+          <a href="https://twitter.com/share?text=<%=@text%>&url=<%=@encoded%>" target="_blank">
+            <i
+              class="fa fa-twitter"
+              aria-hidden="true"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Share on Twitter"
+            ></i>
+          </a> -->
         </div>
-
-        <div class="card pad-2">
-          <h2 class="marg-bot-1">
-            Hi <%= @user.email %>
-          </h2>
-
-          <!-- If the user is an admin, print out "admin" -->
-          <% if current_user.isAdmin %>
-            <p class="tag">
-              Admin
-            </p>
-          <% end %>
-
-          <!-- Render text based on if the user has referred anyone yet or not -->
-          <% if @user.referrals == 0 %>
-            <p class="big">
-              It looks like you haven't referred anyone yet. Want some awesome perks? Get a friend to sign up with your unique link:
-            </p>
-          <% else %>
-            <p class="big">
-              Ride on, <strong><%= @user.referrals %></strong> of your friends have signed up by your referral. Refer some more to get some awesome perks like free perfume:
-            </p>
-          <% end %>
-
-          <!-- Visualize the user's referrals -->
-          <div class="referrals marg-top-2">
-            <div class="progress">
-              <%
-                width = 25
-                referrals = @user.referrals
-                if (referrals <= 5)
-                  width = 100 / 3 * referrals / 5
-                elsif (referrals <= 25)
-                  width = 100 / 3 + 100 / 3 * (referrals - 5) / 20
-                elsif (referrals <= 50)
-                  width = 200 / 3 + 100 / 3 * (referrals - 25) / 25
-                else
-                  width = 100
-                end
-              %>
-              <div
-                class="progress-bar"
-                role="progressbar"
-                style="width: <%= width %>%"
-                aria-valuenow="<%= width %>"
-                aria-valuemin="0"
-                aria-valuemax="100">
-              </div>
-            </div>
-            <div class="markers">
-              <div class="<%= @user.referrals >= 0 ? "marker active" : "marker" %>">
-                <div class="circle"></div>
-                <div class="number">
-                  0
-                </div>
-              </div>
-              <div class="<%= @user.referrals >= 5 ? "marker active" : "marker" %>">
-                <div class="circle"></div>
-                <div class="number">
-                  5
-                </div>
-              </div>
-              <div class="<%= @user.referrals >= 25 ? "marker active" : "marker" %>">
-                <div class="circle"></div>
-                <div class="number">
-                  25
-                </div>
-              </div>
-              <div class="<%= @user.referrals >= 50 ? "marker active" : "marker" %>">
-                <div class="circle"></div>
-                <div class="number">
-                  50
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="space-4"></div>
+        <input
+          id="unique-link"
+          value="<%= @url %>"
+          readonly="readonly"
+        />
       </div>
+
+      <div class="card pad-2">
+        <h2 class="marg-bot-1">
+          Hi <%= @user.email %>
+        </h2>
+
+        <!-- If the user is an admin, print out "admin" -->
+        <% if current_user.isAdmin %>
+          <p class="tag">
+            Admin
+          </p>
+        <% end %>
+
+        <!-- Render text based on if the user has referred anyone yet or not -->
+        <% if @user.referrals == 0 %>
+          <p class="big">
+            It looks like you haven't referred anyone yet. Want some awesome perks? Get a friend to sign up with your unique link:
+          </p>
+        <% else %>
+          <p class="big">
+            Ride on, <strong><%= @user.referrals %></strong> of your friends have signed up by your referral. Refer some more to get some awesome perks like free perfume:
+          </p>
+        <% end %>
+
+        <!-- Visualize the user's referrals -->
+        <div class="referrals marg-top-2">
+          <div class="progress">
+            <%
+              width = 25
+              referrals = @user.referrals
+              if (referrals <= 5)
+                width = 100 / 3 * referrals / 5
+              elsif (referrals <= 25)
+                width = 100 / 3 + 100 / 3 * (referrals - 5) / 20
+              elsif (referrals <= 50)
+                width = 200 / 3 + 100 / 3 * (referrals - 25) / 25
+              else
+                width = 100
+              end
+            %>
+            <div
+              class="progress-bar"
+              role="progressbar"
+              style="width: <%= width %>%"
+              aria-valuenow="<%= width %>"
+              aria-valuemin="0"
+              aria-valuemax="100">
+            </div>
+          </div>
+          <div class="markers">
+            <div class="<%= @user.referrals >= 0 ? "marker active" : "marker" %>">
+              <div class="circle"></div>
+              <div class="number">
+                0
+              </div>
+            </div>
+            <div class="<%= @user.referrals >= 5 ? "marker active" : "marker" %>">
+              <div class="circle"></div>
+              <div class="number">
+                5
+              </div>
+            </div>
+            <div class="<%= @user.referrals >= 25 ? "marker active" : "marker" %>">
+              <div class="circle"></div>
+              <div class="number">
+                25
+              </div>
+            </div>
+            <div class="<%= @user.referrals >= 50 ? "marker active" : "marker" %>">
+              <div class="circle"></div>
+              <div class="number">
+                50
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-4"></div>
     </div>
   </div>
 </div>
