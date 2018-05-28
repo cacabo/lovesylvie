@@ -6,8 +6,14 @@
  * Style background image on the about page
  */
 
-.about-background-image {
+#about-background-image {
   background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 768px) {
+  #about-background-image {
+    background-image: url(mug.png);
+  }
 }
 
 /**
@@ -87,7 +93,7 @@
         width: auto;
         overflow: hidden;
         margin: 0;
-        height: 30vh;
+        height: 28vh;
         display: inline-block;
       }
 
