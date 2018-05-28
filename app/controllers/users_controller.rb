@@ -14,4 +14,11 @@ class UsersController < ApplicationController
       @encoded = URI.escape(@url, Regexp.new("[^#{URI::PATTERN::UNRESERVED}]"))
     end
   end
+
+  def refer
+    @user = User.find(params[:id])
+    ReferralNotifierMailer.send_referral_email(@user, 'ccabo@seas.upenn.edu').deliver
+    flash[:notice] = "Referrals sent successfully"
+    redirect_to @user
+  end
 end

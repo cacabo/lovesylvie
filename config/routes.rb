@@ -25,6 +25,7 @@ Rails.application.routes.draw do
 
   # user show page
   get '/users/:id', to: 'users#show', as: 'user'
+  get '/users/:id/refer', to: 'users#refer', as: 'refer'
 
   # devise links for users
   devise_for :users, controllers: {registrations: 'registrations'}, path: '', path_names: { sign_in: 'login', sign_out: 'logout', password: 'password', confirmation: 'verification', unlock: 'unblock', registration: 'register', sign_up: '' }
