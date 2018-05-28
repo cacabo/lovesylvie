@@ -63,3 +63,16 @@ $email: #8298bc;
     }
   }
 }
+
+@media screen and (max-width: 448px) {
+  .share-buttons {
+    display: block;
+    margin-bottom: 1.5rem;
+
+    .btn {
+      width: 100%;
+      display: block;
+      margin: 0 0 0.5rem 0;
+    }
+  }
+}

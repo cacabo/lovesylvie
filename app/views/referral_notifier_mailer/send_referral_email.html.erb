@@ -3,23 +3,45 @@
   <head>
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
+  <style media="screen">
+    h2 {
+      color: #7e6b8f
+    }
+    p {
+      color: #767171;
+      font-size: 1.2rem;
+    }
+    a {
+      font-size: 1.2rem;
+    }
+    div {
+      width: 100%;
+    }
+    body {
+      background: white;
+    }
+  </style>
   <body>
     <div>
-      <h4 color="#7e6b8f" style="color: #7e6b8f;"><%= @user.email %> has referred you for the Love, Sylvie Store</h4>
-      <p>An account has been authorized for you at the Love, Sylvie store. Please click the link below to activate your account and set your password.</p>
-      <a href="http://lovesylvie.com/register/<%= @user.id %>" style="padding: 1rem; background: #7e6b8f; color: #ffffff;" color="#ffffff" background="#7e6b8f" bgcolor="#7e6b8f" background-color="#7e6b8f">
+      <h2 color="#7e6b8f" style="color: #7e6b8f;">
+        <%= @user.email %> has referred you for the Love, Sylvie Store
+      </h2>
+      <p style="margin-bottom: 1rem; color: #767171; font-size: 1.2rem;" color="#767171">
+        An account has been authorized for you at the Love, Sylvie store. Please click the link below to activate your account and set your password.
+      </p>
+      <a href="http://lovesylvie.com/register/<%= @user.id %>" style="padding: 1rem; background: #7e6b8f; color: #ffffff; text-decoration: none; font-weight: bold; margin-bottom: 1rem; font-size: 1.2rem;" color="#ffffff" background="#7e6b8f" bgcolor="#7e6b8f" background-color="#7e6b8f">
         Create your account
       </a>
     </div>
     <div>
-      <p>
+      <p style="font-size: 1rem; color: #767171;" color="#767171">
         PLEASE BE AWARE LOVE, SYLVIE STORE PRICING AND ACCESS INFORMATION IS NOT TO BE SHARED AND PRODUCTS ARE FOR PERSONAL USE ONLY.
       </p>
     </div>
     <div>
-      <h6>
+      <p>
         <strong>NEED HELP?</strong>
-      </h6>
+      </p>
       <p>Email us at support@lovesylvie.com or call us at 1-800-624-0601</p>
     </div>
     <div>

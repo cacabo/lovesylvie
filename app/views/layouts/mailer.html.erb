@@ -2,15 +2,20 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style media="screen">
+      body {
+        width: 100%;
+      }
+    </style>
   </head>
 
   <body>
-    <div>
-      <div>
-        <%= yield %>
+    <div style="width: 100%">
+      <div style="width: 100%" width="100%">
+        <img src="https://s3.amazonaws.com/lovesylvie/logo.jpg" style="width: 100px; max-width: 100%; margin-bottom: 16px;" width="100px" />
       </div>
       <div>
-        <img src="https://s3.amazonaws.com/lovesylvie/logo.jpg" style="width: 100px; max-width: 100%; margin-top: 16px;" />
+        <%= yield %>
       </div>
     </div>
   </body>
