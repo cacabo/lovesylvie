@@ -6,10 +6,6 @@
 <div class="container marg-top-2">
   <div class="row">
     <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-      <% if not current_user.nil? and current_user.isAdmin %>
-        <%= link_to "New post", new_post_path, class: "btn btn-outline-purple btn-sm right" %>
-      <% end %>
-
       <% if @posts and @posts.length > 0 %>
         <h2 class="bold marg-bot-05">
           Updates from Love, Sylvie
@@ -17,6 +13,12 @@
         <p class="marg-bot-0">
           We love empowering through our perfumes. Find your scent, find what excites you in life. Read the posts below to learn more, explore, and stay up to date.
         </p>
+
+        <% if not current_user.nil? and current_user.isAdmin %>
+          <div class="space-1"></div>
+          <%= link_to "Write a new post", new_post_path, class: "btn btn-outline-purple btn-sm" %>
+        <% end %>
+
         <div class="line-1"></div>
         <div class="space-05"></div>
 

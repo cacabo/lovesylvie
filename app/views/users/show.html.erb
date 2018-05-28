@@ -4,13 +4,45 @@
       <div class="space-2"></div>
       <div class="space-1 hidden-md-down"></div>
 
-      <h1>
+      <h1 class="marg-bot-1">
         Invite some friends to score some goodies!
       </h1>
+
+      <div class="share-buttons">
+        <!-- TODO is sharing on messenger possible? -->
+        <!-- <a href="fb-messenger://share/?link=http%3A%2F%2Flovesylvie.com" class="btn btn-sm" id="messenger">
+          <%= image_tag 'messengerIcon.svg' %>&nbsp; Send
+        </a> -->
+        <a href="http://www.facebook.com/sharer.php?u=<%=@encoded + '&amp;src=sdkpreparse'%>" target="_blank" class="btn btn-sm" id="facebook">
+          <i
+            class="fa fa-facebook"
+            aria-hidden="true"
+          ></i>
+          <span class="divider"></span>
+          Share
+        </a>
+        <a href="https://twitter.com/share?text=<%=@text%>&url=<%=@encoded%>" target="_blank" class="btn btn-sm" id="twitter">
+          <i
+            class="fa fa-twitter"
+            aria-hidden="true"
+          ></i>
+          <span class="divider"></span>
+          Tweet
+        </a>
+        <a href="mailto:?&subject=Try%20Love%2C%20Sylvie&body=Create%20an%20account%20and%20we%20both%20get%20rewarded%3A%20<%=@encoded%>" class="btn btn-sm" id="email">
+          <i
+            class="fa fa-envelope"
+            aria-hidden="true"
+          ></i>
+          <span class="divider"></span>
+          Email
+        </a>
+      </div>
 
       <h4>
         Your sharable link
       </h4>
+      <p>Send this anywhere across the internet and, when someone signs up with it, your account will be credited.</p>
       <!-- Render the user's unique link -->
       <div class="unique-link white-background marg-bot-2">
         <div class="icons">
@@ -48,18 +80,11 @@
         />
       </div>
 
-      <div class="card pad-2">
-        <h2 class="marg-bot-1">
-          Hi <%= @user.email %>
-        </h2>
+      <h4>Or share via email</h4>
 
-        <!-- If the user is an admin, print out "admin" -->
-        <% if current_user.isAdmin %>
-          <p class="tag">
-            Admin
-          </p>
-        <% end %>
-
+      <div>
+        <h4>Your referrals to date</h4>
+        
         <!-- Render text based on if the user has referred anyone yet or not -->
         <% if @user.referrals == 0 %>
           <p class="big">
