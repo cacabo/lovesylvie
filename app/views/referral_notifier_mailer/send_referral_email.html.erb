@@ -4,8 +4,26 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>Thanks for signing up, <%= @user.email %>!</h1>
-    <p>Thanks for joining and have a great day! Now sign in and do
-awesome things!</p>
+    <div>
+      <h4 color="#7e6b8f" style="color: #7e6b8f;"><%= @user.email %> has referred you for the Love, Sylvie Store</h4>
+      <p>An account has been authorized for you at the Love, Sylvie store. Please click the link below to activate your account and set your password.</p>
+      <a href="http://lovesylvie.com/register/<%= @user.id %>" style="padding: 1rem; background: #7e6b8f; color: #ffffff;" color="#ffffff" background="#7e6b8f" bgcolor="#7e6b8f" background-color="#7e6b8f">
+        Create your account
+      </a>
+    </div>
+    <div>
+      <p>
+        PLEASE BE AWARE LOVE, SYLVIE STORE PRICING AND ACCESS INFORMATION IS NOT TO BE SHARED AND PRODUCTS ARE FOR PERSONAL USE ONLY.
+      </p>
+    </div>
+    <div>
+      <h6>
+        <strong>NEED HELP?</strong>
+      </h6>
+      <p>Email us at support@lovesylvie.com or call us at 1-800-624-0601</p>
+    </div>
+    <div>
+      Copyright &copy; 2018 Love, Sylvie | All rights reserved.
+    </div>
   </body>
 </html>
