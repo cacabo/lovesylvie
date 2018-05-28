@@ -26,6 +26,12 @@ $blue: #2289d8;
   padding: 2rem;
 }
 
+@media screen and (max-width: 548px) {
+  .pad-2.responsive {
+    padding: 1rem 0rem;
+  }
+}
+
 .pad-0-1 {
   padding: 0 1rem;
 }

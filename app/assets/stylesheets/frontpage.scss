@@ -48,6 +48,7 @@
     color: white !important;
     font-weight: bold;
     line-height: 3rem;
+    outline: 0.4rem solid white;
 
     p {
       color: white;
@@ -63,6 +64,16 @@
 
 #video-wrapper {
   overflow: hidden !important;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 769.5px) {
+  #video-wrapper {
+    background-image: url(video-screenshot.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .accent-transparent {
