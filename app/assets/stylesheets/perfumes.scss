@@ -69,17 +69,31 @@
 
 @media screen and (max-width: 548px) {
   #perfumes {
+    .container {
+      margin: 0;
+      width: 100%;
+      padding: 0;
+    }
+
     .flex {
+      display: block;
+      width: 100%;
+
+      .image-wrapper {
+        text-align: center;
+      }
+
       .img {
-        position: absolute;
-        z-index: -1;
-        opacity: 0.8;
-        max-width: none;
+        width: auto;
+        overflow: hidden;
+        margin: 0;
+        height: 30vh;
+        display: inline-block;
       }
 
       .content {
-        margin-top: 1rem;
-        margin-left: 4rem;
+        text-align: center;
+        width: 100%;
       }
     }
   }
