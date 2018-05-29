@@ -1,0 +1,15 @@
+/**
+ * Styling rewards and referrals
+ */
+#rewards {
+  .image-wrapper {
+    text-align: center;
+
+    img {
+      display: inline-block;
+      height: 6rem;
+      width: auto;
+      max-width: 100%;
+    }
+  }
+}
