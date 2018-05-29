@@ -113,7 +113,7 @@
         <% end %>
 
         <!-- Visualize the user's referrals -->
-        <div class="row">
+        <div class="row hidden-sm-down">
           <div class="col-12 col-md-10 offset-md-1">
             <div class="referrals marg-top-2">
               <div class="progress">
@@ -140,7 +140,7 @@
                 </div>
               </div>
               <div class="markers">
-                <div class="<%= @user.referrals >= 0 ? "marker active" : "marker" %>">
+                <div class="marker active">
                   <div class="circle"></div>
                   <div class="number">
                     0
@@ -169,25 +169,34 @@
           </div>
         </div>
         <div class="row" id="rewards">
-          <div class="col-12 col-md-3 center">
+          <div class="col-12 col-md-3 center hidden-sm-down">
             <div class="image-wrapper">
               <%= image_tag 'purple-box.jpg', class: 'img-fluid marg-bot-1' %>
             </div>
             <p>Welcome to Love, Sylvie!</p>
           </div>
           <div class="col-12 col-md-3 center">
+            <div class="<%= @user.referrals >= 5 ? "marker active" : "marker" %> hidden-md-up">
+              5
+            </div>
             <div class="image-wrapper">
               <%= image_tag 'discovery-box.jpg', class: 'img-fluid marg-bot-1' %>
             </div>
             <p>Discovery box of 5 scents</p>
           </div>
           <div class="col-12 col-md-3 center">
+            <div class="<%= @user.referrals >= 25 ? "marker active" : "marker" %> hidden-md-up">
+              25
+            </div>
             <div class="image-wrapper">
               <%= image_tag 'clutch.png', class: 'img-fluid marg-bot-1' %>
             </div>
             <p>3 months of perfume in a wristlet</p>
           </div>
           <div class="col-12 col-md-3 center">
+            <div class="<%= @user.referrals >= 50 ? "marker active" : "marker" %> hidden-md-up">
+              50
+            </div>
             <div class="image-wrapper">
               <%= image_tag 'clutches.png', class: 'img-fluid marg-bot-1' %>
             </div>

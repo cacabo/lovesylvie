@@ -12,4 +12,22 @@
       max-width: 100%;
     }
   }
+
+  .marker {
+    background: $light-gray;
+    color: $gray-text;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3.2rem;
+    z-index: 10;
+    transform: translate(-3rem, 1.5rem);
+
+    &.active {
+      color: white;
+      background: $purple;
+    }
+  }
 }
