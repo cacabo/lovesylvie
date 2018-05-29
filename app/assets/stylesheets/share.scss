@@ -48,18 +48,42 @@ $email: #8298bc;
 
     &#messenger {
       background: $messenger;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: darken($facebook, 5%);
+      }
     }
 
     &#facebook {
       background: $facebook;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: darken($facebook, 5%);
+      }
     }
 
     &#twitter {
       background: $twitter;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: darken($twitter, 5%);
+      }
     }
 
     &#email {
       background: $email;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: darken($email, 5%);
+      }
     }
   }
 }

@@ -16,9 +16,30 @@ class UsersController < ApplicationController
   end
 
   def refer
+    # Parse comma separated emails and remove leading or
+    # trailing whitespace
+    strings = params[:emails].split(',').map { |e| e.strip }
+
+    # Isolate strings which are valid email addresses
+    emails = strings.select { |e| e[/\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i] }
+
+    # Find the user sending the referral
     @user = User.find(params[:id])
-    ReferralNotifierMailer.send_referral_email(@user, 'ccabo@seas.upenn.edu').deliver
-    flash[:notice] = "Referrals sent successfully"
-    redirect_to @user
+    if @user.nil?
+      flash[:alert] = "User not found"
+      redirect_to root_path
+    elsif emails.empty?
+      flash[:alert] = "Invalid emails entered"
+      redirect_to @user
+    else
+      # Send an email to each referred email address
+      emails.each do |e|
+        ReferralNotifierMailer.send_referral_email(@user, e).deliver
+      end
+
+      # Redirect back to the user's referrals page
+      flash[:notice] = "Referrals sent successfully"
+      redirect_to @user
+    end
   end
 end

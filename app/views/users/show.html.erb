@@ -42,7 +42,7 @@
       <h4>
         Your sharable link
       </h4>
-      <p>Send this anywhere across the internet and, when someone signs up with it, your account will be credited.</p>
+      <p class="big">Send this anywhere across the internet and, when someone signs up with it, your account will be credited.</p>
       <!-- Render the user's unique link -->
       <div class="unique-link white-background marg-bot-2">
         <div class="icons">
@@ -79,20 +79,27 @@
           readonly="readonly"
         />
       </div>
-
-      <!-- <h4>Or share via email</h4> -->
-
+      <div>
+        <h4>Or share via email</h4>
+        <p class="big">
+          Enter email addresses separated by commas.
+        </p>
+        <%= form_tag(refer_path, method: "POST") do %>
+          <input name="emails" class="form-control" placeholder="example@gmail.com, ..." required></input>
+          <input type="submit" class="btn btn-purple marg-bot-2" value="Send"></input>
+        <% end %>
+      </div>
       <div>
         <h4>Your referrals to date</h4>
 
         <!-- Render text based on if the user has referred anyone yet or not -->
         <% if @user.referrals == 0 %>
           <p class="big">
-            It looks like you haven't referred anyone yet. Want some awesome perks? Get a friend to sign up with your unique link:
+            It looks like you haven't referred anyone yet. Want some awesome perks? Get a friend to sign up with your unique link.
           </p>
         <% else %>
           <p class="big">
-            Ride on, <strong><%= @user.referrals %></strong> of your friends have signed up by your referral. Refer some more to get some awesome perks like free perfume:
+            Ride on, <strong><%= @user.referrals %></strong> of your friends have signed up by your referral. Refer some more to get some awesome perks like free perfume.
           </p>
         <% end %>
 
