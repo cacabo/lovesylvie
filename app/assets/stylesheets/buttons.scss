@@ -7,21 +7,22 @@ button {
   text-transform: uppercase;
 }
 
-.btn {
-  cursor: pointer;
-  cursor: hand;
-}
-
 a.btn.white-text {
   color: white !important;
 }
 
 .btn {
+  cursor: pointer;
+  cursor: hand;
   border-radius: 0;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.8rem;
   padding: 1rem 1.5rem;
+
+  &.round {
+    border-radius: 0.2rem;
+  }
 
   &.btn-sm {
     padding: 0.5rem 1rem;

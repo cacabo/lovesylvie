@@ -85,8 +85,10 @@
           Enter email addresses separated by commas.
         </p>
         <%= form_tag(refer_path, method: "POST") do %>
-          <input name="emails" class="form-control" placeholder="example@gmail.com, ..." required></input>
-          <input type="submit" class="btn btn-purple marg-bot-2" value="Send"></input>
+          <div class="input-flex marg-bot-2">
+            <input name="emails" class="form-control marg-bot-0" placeholder="example@gmail.com, ..." required></input>
+            <input type="submit" class="btn btn-purple round" value="Send"></input>
+          </div>
         <% end %>
       </div>
       <div>
@@ -104,55 +106,73 @@
         <% end %>
 
         <!-- Visualize the user's referrals -->
-        <div class="referrals marg-top-2">
-          <div class="progress">
-            <%
-              width = 25
-              referrals = @user.referrals
-              if (referrals <= 5)
-                width = 100 / 3 * referrals / 5
-              elsif (referrals <= 25)
-                width = 100 / 3 + 100 / 3 * (referrals - 5) / 20
-              elsif (referrals <= 50)
-                width = 200 / 3 + 100 / 3 * (referrals - 25) / 25
-              else
-                width = 100
-              end
-            %>
-            <div
-              class="progress-bar"
-              role="progressbar"
-              style="width: <%= width %>%"
-              aria-valuenow="<%= width %>"
-              aria-valuemin="0"
-              aria-valuemax="100">
+        <div class="row">
+          <div class="col-12 col-md-10 offset-md-1">
+            <div class="referrals marg-top-2">
+              <div class="progress">
+                <%
+                  width = 25
+                  referrals = @user.referrals
+                  if (referrals <= 5)
+                    width = 100 / 3 * referrals / 5
+                  elsif (referrals <= 25)
+                    width = 100 / 3 + 100 / 3 * (referrals - 5) / 20
+                  elsif (referrals <= 50)
+                    width = 200 / 3 + 100 / 3 * (referrals - 25) / 25
+                  else
+                    width = 100
+                  end
+                %>
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: <%= width %>%"
+                  aria-valuenow="<%= width %>"
+                  aria-valuemin="0"
+                  aria-valuemax="100">
+                </div>
+              </div>
+              <div class="markers">
+                <div class="<%= @user.referrals >= 0 ? "marker active" : "marker" %>">
+                  <div class="circle"></div>
+                  <div class="number">
+                    0
+                  </div>
+                </div>
+                <div class="<%= @user.referrals >= 5 ? "marker active" : "marker" %>">
+                  <div class="circle"></div>
+                  <div class="number">
+                    5
+                  </div>
+                </div>
+                <div class="<%= @user.referrals >= 25 ? "marker active" : "marker" %>">
+                  <div class="circle"></div>
+                  <div class="number">
+                    25
+                  </div>
+                </div>
+                <div class="<%= @user.referrals >= 50 ? "marker active" : "marker" %>">
+                  <div class="circle"></div>
+                  <div class="number">
+                    50
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="markers">
-            <div class="<%= @user.referrals >= 0 ? "marker active" : "marker" %>">
-              <div class="circle"></div>
-              <div class="number">
-                0
-              </div>
-            </div>
-            <div class="<%= @user.referrals >= 5 ? "marker active" : "marker" %>">
-              <div class="circle"></div>
-              <div class="number">
-                5
-              </div>
-            </div>
-            <div class="<%= @user.referrals >= 25 ? "marker active" : "marker" %>">
-              <div class="circle"></div>
-              <div class="number">
-                25
-              </div>
-            </div>
-            <div class="<%= @user.referrals >= 50 ? "marker active" : "marker" %>">
-              <div class="circle"></div>
-              <div class="number">
-                50
-              </div>
-            </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-3 center">
+            <p>Welcome to Love, Sylvie!</p>
+          </div>
+          <div class="col-12 col-md-3 center">
+            <p>Discovery box of 5 scents</p>
+          </div>
+          <div class="col-12 col-md-3 center">
+            <p>3 months of perfume in a wristlet</p>
+          </div>
+          <div class="col-12 col-md-3 center">
+            <p>1 year of perfume and 4 wristlets</p>
           </div>
         </div>
       </div>

@@ -44,6 +44,18 @@ form h2 {
   transform: translateY(-3.25rem);
 }
 
+.input-flex {
+  display: flex;
+
+  .form-control {
+    flex: 1;
+  }
+
+  .btn {
+    margin-left: 0.8rem;
+  }
+}
+
 /**
  * FRONTPAGE EMAIL FORM
  */
